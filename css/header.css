@@ -6,6 +6,7 @@
     font-size: 16px;
     font-weight: bolder;
     overflow: hidden;
+    width: 100%;
 }
 
 /* LINK MENU */
@@ -17,7 +18,7 @@
 
 /* HOVER MENU */
 .menu-top ul li:hover{
-    background: rgb(110, 154, 219);
+    background: rgb(19, 17, 17);
     padding: 10px;
 }
 
@@ -37,11 +38,15 @@
     height: 50px;
 }
 
-/* SLIDES */
-.slides{
-    margin-top: 0;
-    height: 300px;
+/* CAPA */
+.cover{
     background: black;
+    display: flex;
+}
+.cover img{
+    width: 100%;
+    height: auto;
+    margin: auto;
 }
 
 /* MEDIA QUERY'S */
@@ -49,7 +54,7 @@
     div.menu-top {
       display: none;
     }
-    .slides{
+    .cover{
         display: none;
     }
 }

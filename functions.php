@@ -31,8 +31,8 @@ add_action( 'wp_enqueue_scripts', 'load_scripts' );
         );
         
         $args = array(
-            'height' => 383,
-            'width'  => 1129
+            'height' => 380,
+            'width'  => 1920
         );
         add_theme_support('custom-header', $args );
     }
