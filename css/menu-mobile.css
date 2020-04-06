@@ -1,0 +1,72 @@
+
+/* MENU PARA O MOBILE */
+.menu-mobile{
+    background: #493f3f;
+    display: none;
+    padding: 0;
+}
+
+/* LISTA MENU */
+.menu-mobile ul{
+    padding: 0;
+}
+.menu-mobile li{
+    display: block;
+    padding: 15px;
+    border-top: 1px solid white;
+    text-align: center;
+}
+.menu-mobile ul li:hover{
+    background: #6e9adb;
+}
+
+/* LINK MENU */
+.menu-mobile a{
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px #000000;
+    font-weight: bolder;
+    padding: 30px;
+
+}
+
+/* BOTÃO DO MENU */
+label[for="bt_menu"]{
+    font-size: 30px;
+    color: white;
+    background: #493f3f;
+    text-shadow: 2px 2px 4px #000000;
+    cursor: pointer;
+    margin: 0;
+    text-align: center;
+}
+#bt_menu{
+    display: none;
+}
+label[for="bt_menu"]{
+    display: none;
+}
+
+/* MEDIA QUERY MENU MOBILE */
+@media(max-width: 1119px){
+    #bt_menu:checked ~ .menu-mobile{
+        display: block;
+        margin-left: 0;
+    }
+    label[for="bt_menu"]{
+        display: block;
+        width: 100%;
+    }
+    .menu-mobile{
+        margin-left: -100%;
+        transition: all .10s linear;
+        height: 385px;
+    }
+    .menu-mobile ul li{
+        float: none;
+    }
+    .menu-mobile ul{
+        overflow: hidden;
+    }
+}

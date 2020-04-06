@@ -1,0 +1,55 @@
+
+/* MENU TOPO */
+.menu-top{
+    height: 50px;
+    background: rgb(73, 63, 63);
+    font-size: 16px;
+    font-weight: bolder;
+    overflow: hidden;
+}
+
+/* LINK MENU */
+.menu-top a{
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* HOVER MENU */
+.menu-top ul li:hover{
+    background: rgb(110, 154, 219);
+    padding: 10px;
+}
+
+/* LIST MENU */
+.menu-top ul {    
+    display: flex;
+}
+.menu-top li{
+    padding: 15px;
+    display: inline;
+    padding-top: 10px;
+}
+
+/* BARRA MENU */
+.social-media-icons {
+    background:  rgb(73, 63, 63);
+    height: 50px;
+}
+
+/* SLIDES */
+.slides{
+    margin-top: 0;
+    height: 300px;
+    background: black;
+}
+
+/* MEDIA QUERY'S */
+@media screen and (max-width: 1119px) {
+    div.menu-top {
+      display: none;
+    }
+    .slides{
+        display: none;
+    }
+}

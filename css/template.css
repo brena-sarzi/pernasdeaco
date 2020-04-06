@@ -1,0 +1,55 @@
+/* TOPO */
+body{
+    overflow-x: hidden;
+}
+
+/* ICONS TOPO */
+.icons {
+   font-size: 20px;
+   margin-top: 5px;
+   margin-left: 30px;
+   
+}
+ i{
+    margin-top: 10px;
+    padding: 0px 10px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+i:hover{
+    color: rgb(110, 154, 219);
+}
+
+/* BARRA DE PESQUISA */
+.search {
+    background: rgb(73, 63, 63);
+    height: 50px;
+}
+.search input{
+    padding: 6px;
+    border: none;
+    font-size: 14px;
+    margin-top: 8px;
+    border-radius: 4px;
+}
+
+/* BARRA PÓS MENU */
+.services{
+    background: gray;
+    height: 300px;
+    margin-top: 20px;
+}
+
+/* BARRA LATERAL */
+.sidebar{
+    background: black;
+    height: 600px;
+    margin-top: 20px;
+}
+
+/* CONTEÚDO DO SITE */
+.news{
+    background: rgb(66, 66, 66);
+    margin-top: 20px;
+}
+
