@@ -5,11 +5,14 @@
            <div class="row">
             <section class="services col-12">
                 <div class="container">
-                    <div class="row">Serviços</div>
+                    <div class="row">
+                        serviços
+                    </div>
                 </div>    
             </section>
             </div>
             </div>
+            
             <section class="middle-area">
                 <div class="container">
                     <div class="row">

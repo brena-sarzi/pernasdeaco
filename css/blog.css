@@ -1,0 +1,22 @@
+/* CONTEÚDO DO SITE */
+.post{
+    background: rgb(73, 63, 63);
+    margin-top: 20px;
+    color: white;
+    font-size: 16px;
+}
+.post a{
+    color: rgb(195, 195, 248);
+    text-decoration: none;
+}
+h2{
+    background: rgb(116, 108, 108);
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    color: white;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px black;
+    border-radius: 5px;
+}
