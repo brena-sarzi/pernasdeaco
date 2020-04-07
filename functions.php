@@ -18,8 +18,8 @@ function load_scripts(){
     'all' );
     wp_enqueue_style( 'blog', get_template_directory_uri() . '/css/blog.css', array(), '1.0',
     'all' );
-
-
+    wp_enqueue_style( 'home', get_template_directory_uri() . '/css/home.css', array(), '1.0',
+    'all' );
 }
 
 add_action( 'wp_enqueue_scripts', 'load_scripts' );
@@ -44,6 +44,57 @@ add_action( 'wp_enqueue_scripts', 'load_scripts' );
     }
 
 add_action('after_setup_theme','wpsite_config',0);
+add_action('widgets_init','wpsite_sidebars');
+function wpsite_sidebars(){
+    register_sidebar(
+        array(
+            'name' => 'Page Sidebar',
+            'id' => 'sidebar',
+            'description' => 'Sidebar to be used on Page',
+            'before_widget'=> '<div class="widget_wrapper">',
+            'after_widget' => '</div>',
+            'before_title' => '<h2 class="widget-title">',
+            'after_title' => '</h2>'
+        )
+    );
+
+    register_sidebar(
+        array(
+            'name' => 'Services 1',
+            'id' => 'services-1',
+            'description' => 'Services Area',
+            'before_widget'=> '<div class="widget_wrapper">',
+            'after_widget' => '</div>',
+            'before_title' => '<h2 class="widget-title">',
+            'after_title' => '</h2>'
+        )
+    );
+
+    register_sidebar(
+        array(
+            'name' => 'Services 2',
+            'id' => 'services-2',
+            'description' => 'Services Area',
+            'before_widget'=> '<div class="widget_wrapper">',
+            'after_widget' => '</div>',
+            'before_title' => '<h2 class="widget-title">',
+            'after_title' => '</h2>'
+        )
+    );
+
+    register_sidebar(
+        array(
+            'name' => 'Services 3',
+            'id' => 'services-3',
+            'description' => 'Services Area',
+            'before_widget'=> '<div class="widget_wrapper">',
+            'after_widget' => '</div>',
+            'before_title' => '<h2 class="widget-title">',
+            'after_title' => '</h2>'
+        )
+    );
+
+}
 
 
 

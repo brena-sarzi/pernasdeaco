@@ -1,0 +1,29 @@
+/* BARRA LATERAL */
+.sidebar{
+    background: rgb(73, 63, 63);
+    height: auto;
+    margin-top: 10px;
+    float: right;
+    padding: 10px 20px 0px 20px;
+    color: white;
+    border-left:10px solid white ;
+}
+.widget_wrapper{
+    text-align: center;
+    display: block;
+}
+
+.news{
+    background: black;
+    height: auto;
+    margin-top: 10px;
+
+}
+
+@media(max-width: 600px){
+    .sidebar{
+        display: none;
+    }
+
+}
+ 

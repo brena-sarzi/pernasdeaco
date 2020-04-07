@@ -16,7 +16,7 @@
             <section class="middle-area">
                 <div class="container">
                     <div class="row">
-                        <aside class="sidebar col-md-4">Barra Lateral</aside>
+                        
                         <div class="news col-md-8">
                             <?php 
                             // Se houver algum post
@@ -32,9 +32,10 @@
                             endwhile;
                         else:
                             ?>
-                            <p>There's nothing yet to be displayed...</p>
+                            <p>Ainda não há nada a ser exibido ...</p>
                         <?php endif; ?>
                         </div>
+                        <?php get_sidebar(); ?>
                     </div>
                 </div> 
             </section>

@@ -2,24 +2,46 @@
  
 <div class="content-area">
         <main>
-        <div class="container">
-            <div class="row">
+                <div class="container">
                 <section class="services col-12">
-                    <div class="container">
                     <div class="row">
-                         
+                        <div class="col-sm-4">
+                            <div class="services-item">
+                                <?php 
+                                if(is_active_sidebar( 'services-1' )){
+                                    dynamic_sidebar( 'services-1' );
+                                }
+                                ?>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                        <div class="services-item">
+                                <?php 
+                                if(is_active_sidebar( 'services-2' )){
+                                    dynamic_sidebar( 'services-2' );
+                                }
+                                ?>
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-4">
+                            <div class="services-item">
+                                <?php 
+                                if(is_active_sidebar( 'services-3' )){
+                                    dynamic_sidebar( 'services-3' );
+                                }
+                                ?>
+                            </div>
+                        </div>
+                        </section>
                     </div>
+                    
                 </div>    
-            </section>
-            </div>
         </div>
-            
-        
-        
     <section class="middle-area">
         <div class="container">
             <div class="row">
-                <div class="post col-md-8">    
+                <div class="post col-md-8 col-sm-10 col-12">    
                     <?php 
                     // Se houver algum post
                     if(have_posts()):
@@ -28,15 +50,7 @@
 
                     ?>
 
-                    <article>
-                        <h2><?php the_title(); ?></h2>
-                        <?php the_post_thumbnail('medium') ?>
-                        <span style="color:black;"><p>Publicado em <?php echo get_the_date(); ?> por <?php
-                            the_author_posts_link(); ?></p></span>
-                        <span style="color:black;"><p>Categorias: <?php the_category(''); ?></p></span>
-                        <p><?php the_tags( 'Tags:',','); ?></p>
-                        <?php the_content(); ?>
-                    </article>
+                        <?php get_template_part( 'template-parts/content' ); ?>
 
                     <?php 
                     endwhile;
@@ -45,7 +59,7 @@
                     <p>There's nothing yet to be displayed...</p>
                 <?php endif; ?>
                 </div>
-                <aside class="sidebar col-md-4">Barra Lateral</aside>
+                <?php get_sidebar(); ?>
             </div>
         </div> 
     </section>
