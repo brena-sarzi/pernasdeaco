@@ -1,17 +1,40 @@
 <?php get_header();?>
     <div class="content-area">
         <main>
-           <div class="container">
-           <div class="row">
-            <section class="services col-12">
-                <div class="container">
+        <div class="container">
+                <section class="services col-12">
                     <div class="row">
-                        serviços
+                        <div class="col-xl-4 col-12">
+                            <div class="services-item">
+                                <?php 
+                                if(is_active_sidebar( 'services-1' )){
+                                    dynamic_sidebar( 'services-1' );
+                                }
+                                ?>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-12">
+                        <div class="services-item">
+                                <?php 
+                                if(is_active_sidebar( 'services-2' )){
+                                    dynamic_sidebar( 'services-2' );
+                                }
+                                ?>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xl-4 col-12">
+                            <div class="services-item">
+                                <?php 
+                                if(is_active_sidebar( 'services-3' )){
+                                    dynamic_sidebar( 'services-3' );
+                                }
+                                ?>
+                            </div>
+                        </div>
                     </div>
-                </div>    
-            </section>
-            </div>
-            </div>
+                </section>  
+            </div>    
             
             <section class="middle-area">
                 <div class="container">
