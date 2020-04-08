@@ -6,30 +6,11 @@
             <div class="container">
                 <section class="services col-12">
                     <div class="row">
-                        <div class="col-xl-4 col-12">
+                        <div class="col-12">
                             <div class="services-item">
                                 <?php 
                                 if(is_active_sidebar( 'services-1' )){
                                     dynamic_sidebar( 'services-1' );
-                                }
-                                ?>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-12">
-                        <div class="services-item">
-                                <?php 
-                                if(is_active_sidebar( 'services-2' )){
-                                    dynamic_sidebar( 'services-2' );
-                                }
-                                ?>
-                            </div>
-                        </div>
-                        
-                        <div class="col-xl-4 col-12">
-                            <div class="services-item">
-                                <?php 
-                                if(is_active_sidebar( 'services-3' )){
-                                    dynamic_sidebar( 'services-3' );
                                 }
                                 ?>
                             </div>

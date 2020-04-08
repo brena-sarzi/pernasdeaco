@@ -1,17 +1,26 @@
 /* CONTEÚDO DO SITE */
 .post{
-    background: rgb(73, 63, 63);
-    margin-top: 10px;
+    margin-top: 25px;
     color: white;
     font-size: 16px;
+    padding: 0;
 }
 .post a{
-    color: rgb(195, 195, 248);
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
     text-decoration: none;
+    background: rgb(15, 15, 15);
+   
 }
+.post-categories {
+    margin-top: 20px;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
 /* TITULO DO SITE */
 h2{
-    background: rgb(116, 108, 108);
     text-align: center;
     padding: 10px;
     margin-top: 10px;
@@ -30,7 +39,19 @@ h2{
     margin-top: 10px;
     padding:15px;
 }
-img{
-    width: 350px;
-    height: auto;
+
+.wp-post-image{
+    width: 100%;
+    height:auto;
+}
+.wp-post-image:hover{
+    width: 110%;
+
+}
+
+.cards{
+    float: left;
+    width: 47%;
+    margin-right: 22px; 
+    background: rgb(73, 63, 63);
 }

@@ -36,20 +36,10 @@ i:hover{
 }
 
 /* IMAGENS DA LOJA */
-.wp-post-image{
-    float: left;
-    margin: 0 20px 10px 0;
-}
 .bolg article{
     display: inline-block;
 }
-.image{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 15px;
-    overflow: hidden;
-}
+
 .wp-image-151{
    margin-top: 50px;
 }
