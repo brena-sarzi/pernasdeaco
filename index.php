@@ -2,10 +2,10 @@
  
 <div class="content-area">
         <main>
-                <div class="container">
+            <div class="container">
                 <section class="services col-12">
                     <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col-xl-4 col-12">
                             <div class="services-item">
                                 <?php 
                                 if(is_active_sidebar( 'services-1' )){
@@ -14,7 +14,7 @@
                                 ?>
                             </div>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-xl-4 col-12">
                         <div class="services-item">
                                 <?php 
                                 if(is_active_sidebar( 'services-2' )){
@@ -24,7 +24,7 @@
                             </div>
                         </div>
                         
-                        <div class="col-sm-4">
+                        <div class="col-xl-4 col-12">
                             <div class="services-item">
                                 <?php 
                                 if(is_active_sidebar( 'services-3' )){
@@ -33,11 +33,10 @@
                                 ?>
                             </div>
                         </div>
-                        </section>
                     </div>
-                    
-                </div>    
-        </div>
+                </section>  
+            </div>    
+</div>
     <section class="middle-area">
         <div class="container">
             <div class="row">
@@ -63,11 +62,13 @@
             </div>
         </div> 
     </section>
-            <section class="map">
+    
                 <div class="container">
-                    <div class="row">Mapa</div>
-                </div>    
-            </section>
+                    <div class="row">
+                        <section class="map">Mapa</section> 
+                    </div>
+                </div>  
+              
         </main>
     </div>
 <?php get_footer(); ?>

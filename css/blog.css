@@ -20,3 +20,7 @@ h2{
     border-radius: 5px;
     margin: 10px;
 }
+.map{
+    background: black;
+    color: white;
+}

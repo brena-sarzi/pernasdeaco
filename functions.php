@@ -45,6 +45,8 @@ add_action( 'wp_enqueue_scripts', 'load_scripts' );
 
 add_action('after_setup_theme','wpsite_config',0);
 add_action('widgets_init','wpsite_sidebars');
+add_action('widgets_init','wpsite_services');
+
 function wpsite_sidebars(){
     register_sidebar(
         array(
@@ -57,44 +59,44 @@ function wpsite_sidebars(){
             'after_title' => '</h2>'
         )
     );
-
+}
+function wpsite_services(){
     register_sidebar(
-        array(
-            'name' => 'Services 1',
-            'id' => 'services-1',
-            'description' => 'Services Area',
-            'before_widget'=> '<div class="widget_wrapper">',
-            'after_widget' => '</div>',
-            'before_title' => '<h2 class="widget-title">',
-            'after_title' => '</h2>'
-        )
-    );
+    array(
+        'name' => 'Services 1',
+        'id' => 'services-1',
+        'description' => 'Services Area',
+        'before_widget'=> '<div class="widget_wrapper">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>'
+    )
+);
 
-    register_sidebar(
-        array(
-            'name' => 'Services 2',
-            'id' => 'services-2',
-            'description' => 'Services Area',
-            'before_widget'=> '<div class="widget_wrapper">',
-            'after_widget' => '</div>',
-            'before_title' => '<h2 class="widget-title">',
-            'after_title' => '</h2>'
-        )
-    );
+register_sidebar(
+    array(
+        'name' => 'Services 2',
+        'id' => 'services-2',
+        'description' => 'Services Area',
+        'before_widget'=> '<div class="widget_wrapper">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>'
+    )
+);
 
-    register_sidebar(
-        array(
-            'name' => 'Services 3',
-            'id' => 'services-3',
-            'description' => 'Services Area',
-            'before_widget'=> '<div class="widget_wrapper">',
-            'after_widget' => '</div>',
-            'before_title' => '<h2 class="widget-title">',
-            'after_title' => '</h2>'
-        )
-    );
+register_sidebar(
+    array(
+        'name' => 'Services 3',
+        'id' => 'services-3',
+        'description' => 'Services Area',
+        'before_widget'=> '<div class="widget_wrapper">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>'
+    )
+);
 
 }
-
 
 
