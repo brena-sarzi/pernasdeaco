@@ -2,8 +2,12 @@
 .post{
     margin-top: 25px;
     color: white;
-    font-size: 16px;
-    padding: 0;
+    font-size: 14px;
+    padding:0;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+    font-weight: bolder;
+    overflow: hidden;
 }
 .post a{
     color: rgb(255, 255, 255);
@@ -13,7 +17,7 @@
    
 }
 .post-categories {
-    margin-top: 20px;
+    margin-top: 10px;
     list-style-type: none;
     text-align: center;
     padding: 0;
@@ -22,13 +26,11 @@
 /* TITULO DO SITE */
 h2{
     text-align: center;
-    padding: 10px;
-    margin-top: 10px;
+    padding: 5px;
     color: white;
     font-weight: bolder;
     text-shadow: 2px 2px 4px black;
-    border-radius: 5px;
-    margin: 10px;
+    margin-top: 5px;
 }
 /* MAPA */
 .map{
@@ -43,15 +45,21 @@ h2{
 .wp-post-image{
     width: 100%;
     height:auto;
+padding: 0;
+
 }
 .wp-post-image:hover{
     width: 110%;
 
 }
 
+.text-cards{
+    height: 312px;
+    background: rgb(73, 63, 63);
+    padding: 20px;
+}
 .cards{
     float: left;
     width: 47%;
     margin-right: 22px; 
-    background: rgb(73, 63, 63);
 }

@@ -6,15 +6,11 @@
             <div class="container">
                 <section class="services col-12">
                     <div class="row">
-                        <div class="col-12">
                             <div class="services-item">
-                                <?php 
-                                if(is_active_sidebar( 'services-1' )){
-                                    dynamic_sidebar( 'services-1' );
-                                }
-                                ?>
+                              
                             </div>
                         </div>
+                     
                     </div>
                 </section>  
             </div>    

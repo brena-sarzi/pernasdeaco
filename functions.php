@@ -41,6 +41,7 @@ add_action( 'wp_enqueue_scripts', 'load_scripts' );
         add_theme_support('custom-header', $args );
         add_theme_support('post-thumbnails');
         add_theme_support('post-formats', array('video', 'image'));
+        add_theme_support('custom-store', $args);
     }
 
 add_action('after_setup_theme','wpsite_config',0);

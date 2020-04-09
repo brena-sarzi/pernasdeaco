@@ -1,7 +1,7 @@
 <?php get_header();?>
     <div class="content-area">
         <main>
-        <div class="container">
+        <!-- <div class="container">
                 <section class="services col-12">
                     <div class="row">
                         <div class="col-12">
@@ -15,7 +15,7 @@
                         </div>
                     </div>
                 </section>  
-            </div>    
+            </div>     -->
             
             <section class="middle-area">
                 <div class="container">
