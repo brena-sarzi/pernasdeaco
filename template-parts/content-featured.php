@@ -1,9 +1,11 @@
 <!-- POST -->
-<article class="cards">
+<article class="cards" <?php post_class( array('class' => 'featured') ); ?>>
     
     <!-- IMAGEM DO POST -->
-    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium') ?></a>
-        
+    <div class="thumbnail">
+        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium', array('class' => 'img-fluid' ) ); ?></a>
+    </div>
+    
         <!-- DIVISAO DE TEXTO -->
         <div class="text-cards">
             
@@ -33,5 +35,5 @@
             </div></a>
         
         </div>
+        <?php the_excerpt(); ?>
 </article>
-

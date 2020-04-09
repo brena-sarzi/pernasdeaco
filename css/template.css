@@ -3,45 +3,8 @@ body{
     overflow-x: hidden;
 }
 
-/* ICONS TOPO */
-.icons {
-   font-size: 20px;
-   margin-top: 5px;
 
-}
- i{
-    margin-top: 10px;
-    color: white;
-    text-shadow: 2px 2px 4px #000000;
-    padding:0px 10px;
-    cursor: pointer;
-}
-i:hover{
-    color: rgb(99, 96, 96);
-}
 
-/* BARRA DE PESQUISA */
-.search {
-    background: rgb(73, 63, 63);
-    height: 50px;
-    padding-right:20px ;
-}
-.search input{
-    padding: 6px 4px;
-    border: none;
-    font-size: 14px;
-    margin-top: 10px;
-    border-radius: 4px;
-    width: 150px;
-}
 
-/* IMAGENS DA LOJA */
-.bolg article{
-    display: inline-block;
-}
-
-.wp-image-151{
-   margin-top: 50px;
-}
 
 
