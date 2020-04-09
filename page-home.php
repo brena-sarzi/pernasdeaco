@@ -1,27 +1,21 @@
 <?php get_header();?>
     <div class="content-area">
         <main>
-        <!-- <div class="container">
+            <!-- ÁREA DE SERVIÇOS - LOJA -->
+            <div class="container">
                 <section class="services col-12">
                     <div class="row">
-                        <div class="col-12">
-                            <div class="services-item">
-                                <?php 
-                                if(is_active_sidebar( 'services-1' )){
-                                    dynamic_sidebar( 'services-1' );
-                                }
-                                ?>
-                            </div>
-                        </div>
+                        <div class="services-item"></div>     
                     </div>
                 </section>  
-            </div>     -->
-            
-            <section class="middle-area">
-                <div class="container">
-                    <div class="row">
-                        
-                        <div class="news col-md-8">
+            </div>    
+    </div>
+
+        <!-- POSTS PAGE HOME -->
+        <section class="middle-area">
+            <div class="container">
+                <div class="row">
+                    <div class="post col-md-8 col-sm-10 col-12" style="display:block;">    
                             <?php 
                             // Se houver algum post
                             if(have_posts()):
@@ -29,26 +23,29 @@
                                 while(have_posts() ): the_post(); 
 
                             ?>
-
-                                <p>Conteúdo vindo do arquivo home.php</p>
-
+                            <?php get_template_part( 'template-parts/content' ); ?>
                             <?php 
                             endwhile;
                         else:
                             ?>
-                            <p>Ainda não há nada a ser exibido ...</p>
+                            <p>There's nothing yet to be displayed...</p>
                         <?php endif; ?>
-                        </div>
-                        <?php get_sidebar(); ?>
                     </div>
-                </div> 
-            </section>
+                        <?php get_sidebar(); ?>
+                </div>
+            </div> 
+        </section>      
+       
+            <!-- MAPA ACIMA FOOTER -->
             <section class="map">
                 <div class="container">
                     <div class="row">Mapa</div>
                 </div>    
             </section>
+
         </main>
     </div>
+
+<!-- FOOTER -->
 <?php get_footer(); ?>
    
