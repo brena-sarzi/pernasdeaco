@@ -8,15 +8,29 @@
     padding: 0;
    
 }
+
+/* IMAGEM */
 img{
     display: flex;
     width: 100%;
     height: auto;
 }
-
 .widget_wrapper{
     text-align: center;
     display: block;
+}
+
+/* TITULO DO SIDEBAR */
+.widget-title{
+    margin-top: 20px;
+}
+
+/* TEXTO DO SIDEBAR */
+.textwidget{
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 16px;
+    text-shadow: 2px 2px 4px black;
 }
 
 .news{
