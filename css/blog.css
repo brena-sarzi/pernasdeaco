@@ -43,7 +43,7 @@ h2{
 .cards{
     float: left;
     width: 47%;
-    margin-right: 22px; 
+    margin-right: 15px; 
 }
 
 /* IMAGEM DO POST CARD */
@@ -76,4 +76,44 @@ padding: 0;
     height: 120px;
     margin-top: 10px;
     padding:15px;
+}
+@media(max-width: 600px){
+   .cards{
+       width: 100%;
+       margin-bottom: 20px;
+       padding: 0;
+       margin-left: 8px;
+   }
+
+}
+@media(max-width: 1119px){
+    .cards{
+        float: left;
+        margin: 0;
+        margin-right: 15px;
+        padding: 0;
+        
+    }
+}
+@media(max-width: 767px){
+    .cards{
+        margin-bottom: 20px;
+    }
+    .sidebar{
+        display: none;
+    }
+}
+@media(max-width: 992px){
+    .cards{
+        margin-left: 11px;
+    }
+    p{
+        margin: 5px;
+    }
+    h2{
+        margin: 0;
+    }
+    .post-categories{
+        margin: 0;
+    }
 }

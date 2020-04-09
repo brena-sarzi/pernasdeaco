@@ -13,9 +13,10 @@
 
         <!-- POSTS BLOG -->
         <section class="middle-area">
-            <div class="container">
+            <div class="container-full">
+            <div class="container container_up">
                 <div class="row">
-                    <div class="post col-md-8 col-sm-10 col-12" style="display:block;">    
+                    <div class="post col-xl-8 col-md-9 col-12" style="display:block;">
                             <?php 
                             // Se houver algum post
                             if(have_posts()):
@@ -30,10 +31,12 @@
                             ?>
                             <p>There's nothing yet to be displayed...</p>
                         <?php endif; ?>
+                       
                     </div>
                     <?php get_sidebar(); ?>
                 </div>
             </div> 
+            </div>
         </section>
     
             <!-- MAPA ACIMA FOOTER -->
