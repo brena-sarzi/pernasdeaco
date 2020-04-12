@@ -1,15 +1,4 @@
 <?php get_header();?>
-    <div class="content-area">
-        <main>
-            <!-- ÁREA DE SERVIÇOS - LOJA -->
-            <div class="container">
-                <section class="services col-12">
-                    <div class="row">
-                        <div class="services-item"></div>
-                    </div>
-                </section>  
-            </div>    
-    </div>
 
         <!-- POSTS BLOG -->
         <section class="middle-area">
@@ -24,7 +13,7 @@
                                 while(have_posts() ): the_post(); 
 
                             ?>
-                                <?php get_template_part( 'template-parts/content' ); ?>
+                                <?php get_template_part( 'template-parts/content', 'single' ); ?>
                             <?php 
                             endwhile;
                         else:

@@ -2,7 +2,7 @@
 <article class="cards col-xl-8 col-md-8 col-12">
     
     <!-- IMAGEM DO POST -->
-    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium') ?></a>
+    <a class="imagem" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium') ?></a>
         
         <!-- DIVISAO DE TEXTO -->
         <div class="text-cards">

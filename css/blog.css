@@ -44,13 +44,14 @@ h2{
     float: left;
     width: 47%;
     margin-right: 15px; 
+    margin-bottom: 20px;
 }
 
 /* IMAGEM DO POST CARD */
-.wp-post-image{
+.imagem{
     width: 100%;
     height:auto;
-padding: 0;
+    padding: 0;
 
 }
 .wp-post-image:hover{
@@ -115,5 +116,56 @@ padding: 0;
     }
     .post-categories{
         margin: 0;
+    }
+}
+
+.post-card{
+    background:rgb(73, 73, 73) ;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    
+
+}
+.post-card .wp-post-image{
+    width: 70%;
+    height: auto;
+    margin:0 0 10px 100px;
+    padding-top: 20px;
+    align-items: center;
+    display: block;
+    
+    
+}
+.post-card h2 {
+    padding-top: 20px;
+}
+.post-card p{
+    padding-right: 20px;
+}
+@media(max-width: 600px){
+    .post-card{
+       align-items: center;
+       margin-left: 20px;
+       padding: 10px;
+       margin-top: 0;
+    }
+    .post-card .wp-post-image{
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+        margin: 0;
+        padding-top: 0;
+    }
+    
+}
+@media(max-width: 992px){
+    .post-card{
+        height: auto;
+    }
+    .post-card .wp-post-image{
+        margin: 0;
+        width: 100%;
+        padding-top: 0;
     }
 }
