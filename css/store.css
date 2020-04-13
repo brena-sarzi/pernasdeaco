@@ -1,14 +1,27 @@
 /* BARRA PÓS MENU */
 .services{
-    background: rgb(73, 63, 63);
-    height: 300px;
+    height: auto;
     margin-top: 20px;
+    margin-bottom: 20px;
+
 }
 /* IMAGENS DA LOJA */
-.bolg article{
-    display: inline-block;
+
+.services-item{
+    width: 100%;
 }
 
-.wp-image-151{
-   margin-top: 50px;
+@media screen and (max-width: 992px){
+    .services{
+        margin-bottom: 0px;
+        margin-top: 20px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .services{
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
 }

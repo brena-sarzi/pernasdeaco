@@ -49,7 +49,7 @@ label[for="bt_menu"]{
 }
 
 /* MEDIA QUERY MENU MOBILE */
-@media(max-width: 1119px){
+@media(max-width: 992px){
     #bt_menu:checked ~ .menu-mobile{
         display: block;
         margin-left: 0;

@@ -81,7 +81,7 @@
  }
 
 /* MEDIA QUERY'S */
-@media screen and (max-width: 1119px) {
+@media screen and (max-width: 992px) {
     div.menu-top {
       display: none;
     }

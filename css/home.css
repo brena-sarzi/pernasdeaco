@@ -26,7 +26,7 @@ img{
     margin-top: 20px;
 }
 
-/* TEXTO DO SIDEBAR */
+/* TEXTO DO SIDEBAR */<br>
 .textwidget{
     padding: 10px;
     font-weight: bolder;
@@ -46,4 +46,39 @@ img{
         display: none;
     }
 
+}
+
+form{
+    padding: 50px;
+}
+.name{
+    margin-bottom: 10px;
+}
+.email{
+    margin-bottom: 10px;
+}
+form label{
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px black;
+}
+button{
+    background-color: black;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bolder;
+}
+form input{
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 8px 9px 13px 1px rgba(0,0,0,0.58);
+}
+form textarea{
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 8px 9px 13px 1px rgba(0,0,0,0.58);
 }
