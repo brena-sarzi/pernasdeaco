@@ -1,23 +1,58 @@
-/* PAGINA APOIAR */
-.apoiar{
-    background: gray;
-    margin-top: 25px;
+
+/* TITULO DO SITE */
+h2{
+    text-align: center;
+    color: orange;
+}
+
+/* PARAGRÁFO DO SITE */
+p{
     color: white;
 }
 
-.caixa-comentarios{
+/* TITULO COMENTARIO */
+.comments-title {
+    color: orange;
+    margin-top: 30px;
+}
+/* COMENTARIO */
+ol{
+    font-size: 14px;
+    color: white;
     float: left;
-    margin-top: 100px;
-}
-.button-comentarios{
-    float: right;
-    margin-bottom: 10px;
-    width: 100%;
 }
 
-/* PAGINA PROJETOS */
-.projetos{
-    background: gray;
+
+/* CONTEÚDO DO SITE */
+.post{
     margin-top: 25px;
     color: white;
+    font-size: 14px;
+    padding:0;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+    font-weight: bolder;
+}
+
+/* LINK POST */
+.post a{
+    color: rgb(155, 155, 255);
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+/* CATEGORIAS */
+.post-categories {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+/* IMAGEM DO POST */
+.post-card .wp-post-image{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    
 }
