@@ -1,6 +1,6 @@
 <?php 
 
-//Carregando nossos scripts e folhas de estilos
+//Carregando scripts e folhas de estilos
 function load_scripts(){
     wp_enqueue_script( 'bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js', 
     array( 'jquery' ), '4.4.1', true );
@@ -19,6 +19,10 @@ function load_scripts(){
     wp_enqueue_style( 'blog', get_template_directory_uri() . '/css/blog.css', array(), '1.0',
     'all' );
     wp_enqueue_style( 'home', get_template_directory_uri() . '/css/home.css', array(), '1.0',
+    'all' );
+    wp_enqueue_style( 'login', get_template_directory_uri() . '/css/login.css', array(), '1.0',
+    'all' );
+    wp_enqueue_style( 'posts', get_template_directory_uri() . '/css/posts.css', array(), '1.0',
     'all' );
 }
 
@@ -48,6 +52,7 @@ add_action('after_setup_theme','wpsite_config',0);
 add_action('widgets_init','wpsite_sidebars');
 
 function wpsite_sidebars(){
+    // SIDEBAR 
     register_sidebar(
         array(
             'name' => 'Page Sidebar',
@@ -59,11 +64,48 @@ function wpsite_sidebars(){
             'after_title' => '</h2>'
         )
     );
+    // STORE
     register_sidebar (
         array(
             'name' => 'Services',
             'id' => 'services',
             'description' => 'Services',
+            'before_widget'=> '<div class="widget_wrapper">',
+            'after_widget' => '</div>',
+            'before_title' => '<h2 class="widget-title">',
+            'after_title' => '</h2>'
+        )
+    );
+    // PAGE LOGIN
+    register_sidebar (
+        array(
+            'name' => 'Login',
+            'id' => 'login',
+            'description' => 'login',
+            'before_widget'=> '<div class="widget_wrapper">',
+            'after_widget' => '</div>',
+            'before_title' => '<h2 class="widget-title">',
+            'after_title' => '</h2>'
+        )
+    );
+    // PAGE APOIAR
+    register_sidebar (
+        array(
+            'name' => 'Apoiar',
+            'id' => 'apoiar',
+            'description' => 'apoiar',
+            'before_widget'=> '<div class="widget_wrapper">',
+            'after_widget' => '</div>',
+            'before_title' => '<h2 class="widget-title">',
+            'after_title' => '</h2>'
+        )
+    );
+    // PAGEPROJETOS
+    register_sidebar (
+        array(
+            'name' => 'Projetos',
+            'id' => 'projetos',
+            'description' => 'projetos',
             'before_widget'=> '<div class="widget_wrapper">',
             'after_widget' => '</div>',
             'before_title' => '<h2 class="widget-title">',

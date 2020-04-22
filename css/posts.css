@@ -1,0 +1,23 @@
+/* PAGINA APOIAR */
+.apoiar{
+    background: gray;
+    margin-top: 25px;
+    color: white;
+}
+
+.caixa-comentarios{
+    float: left;
+    margin-top: 100px;
+}
+.button-comentarios{
+    float: right;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/* PAGINA PROJETOS */
+.projetos{
+    background: gray;
+    margin-top: 25px;
+    color: white;
+}

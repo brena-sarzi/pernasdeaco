@@ -1,4 +1,6 @@
-
+html{
+    margin-top: 0;
+}
 /* MENU TOPO */
 .menu-top{
     height: 50px;
@@ -19,6 +21,7 @@
 .menu-top ul li:hover{
     background: rgb(19, 17, 17);
     padding: 10px;
+    height: auto;
 }
 
 /* LIST MENU */
@@ -28,7 +31,6 @@
 .menu-top li{
     padding: 15px;
     display: inline;
-    padding-top: 10px;
 }
 
 /* BARRA MENU */
@@ -58,8 +60,8 @@
      margin-top: 10px;
      color: white;
      text-shadow: 2px 2px 4px #000000;
-     padding:0px 10px;
      cursor: pointer;
+     margin-left: 20px;
  }
  i:hover{
      color: rgb(99, 96, 96);

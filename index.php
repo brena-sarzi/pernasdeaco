@@ -1,6 +1,7 @@
 <?php get_header();?>
     <div class="content-area">
         <main>
+
         <!-- ÁREA DE SERVIÇOS - LOJA -->
         <div class="container-full">
             <div class="container container_up">
@@ -17,7 +18,6 @@
                 </section>  
             </div>    
         </div>
-
 
         <!-- POSTS BLOG -->
         <section class="middle-area">
@@ -47,10 +47,11 @@
             </div>
         </section>
     
-            <!-- MAPA ACIMA FOOTER -->
-            <div class="row">
+        <!-- MAPA ACIMA FOOTER -->
+        <div class="row">
             <section class="map">Mapa</section> 
-            </div>
+        </div>
+        
         </main>
     </div>
 

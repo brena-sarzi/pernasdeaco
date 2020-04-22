@@ -50,15 +50,13 @@ h2{
 }
 
 /* IMAGEM DO POST CARD */
-.imagem{
+.attachment-medium{
     width: 100%;
     height:auto;
     padding: 0;
-
 }
 .wp-post-image:hover{
     width: 105%;
-
 }
 
 /* ICON */
@@ -111,33 +109,96 @@ h2{
 
 /* CONTEÚDO DO POST */
 .post-card{
-    background:rgb(73, 73, 73) ;
     width: 100%;
-    height: 100%;
+    height: auto;
     padding: 20px;
-    
+    color:black;
+    font-size: 16px;
 
 }
 /* IMAGEM DO POST */
 .post-card .wp-post-image{
-    width: 70%;
+    width: 35%;
     height: auto;
-    margin:0 0 10px 100px;
     padding-top: 20px;
-    align-items: center;
     display: block;
-    
+    float: left;
+    margin-right: 20px;
     
 }
 /* TITULO POST */
-.post-card h2 {
-    padding-top: 20px;
+.comments-title {
+    color: black;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+ol{
+    font-size: 16px;
+    color: black;
+}
+ol a{
+    font-size: 12px;
+    color: rgb(65, 64, 64);
+}
+.comment-body{
+    padding: 10px;
+}
+.comment-reply-title{
+    color: black;
+    margin: 0px 40% 0 40%;
+    width: 250px;
+    padding-top: 10px;
+    align-self: center;
+}
+#respond{
+    background: gray;
+    height: auto;
+}
+.comment-notes{
+    font-size: 12px;
+    margin: 5px 20% 10px 30%;
+
+}
+/* TEXT AREA */
+.comment-form-comment{
+    color: black;
+    float: right;
+}
+textarea{
+    height: 100px;
+    width: 300px;
+    margin-left: 10px;
+    float: right;
+    margin-right: 20px;
+}
+.comment-form-cookies-consent{
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+.comment-form label{
+    color: black;
+    text-shadow: none;
+    font-size: 12px;
+    margin-left:20px ;
+}
+#author{
+    margin-left: 35px;
+    width: 300px;
+}
+#email{
+    margin-left: 31px;
+    width: 300px;
+}
+#url{
+    margin-left: 54px;
+    width: 300px
 }
 
-/* TEXTO POST */
-.post-card p{
-    padding-right: 20px;
+#submit{
+    background: rgb(189, 183, 183);
+    margin: 10px 0px 20px 20px ;
 }
+
 
 /* MEDIA QUERY'S */
 
@@ -177,4 +238,12 @@ h2{
         padding-top: 0;
     }
     
+}
+/* img{
+    width: 100%;
+    height: auto;
+} */
+.avatar{
+    width: auto;
+    height: auto;
 }
