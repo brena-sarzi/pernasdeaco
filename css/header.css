@@ -69,12 +69,18 @@ html{
      
  }
  .search input{
-     padding: 6px 4px;
+    float: left;
+    width: 150px;
+    margin-top: 10px;
+    color: white;
+ }
+ .search-submit{
+     color: white;
+     height: 20px;
+     width: 25px;
+     background: rgb(73, 63, 63) ;
      border: none;
-     font-size: 14px;
-     margin-top: 10px;
-     border-radius: 4px;
-     width: 150px;
+     font-size: 20px;
  }
 
 /* MEDIA QUERY'S */

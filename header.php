@@ -40,7 +40,7 @@
                         </nav>
                                     
                     <!-- SOCIAL ICONS -->
-                        <section class="social-media-icons col-3 ">
+                        <section class="social-media-icons col-2 ">
                             <div class="icons">
                                 <a class="header" href="https://www.facebook.com/pernasdeacocicloturismo/" target="_blank">
                                     <i class="fab fa-facebook-square"></i>
@@ -58,9 +58,9 @@
             
                 
                 <!-- BARRA DE PESQUISA MENU DESKTOP -->
-                        <div class="search col-2">
-                            <input type="text" placeholder="Procurar..">
-                            <i class="fas fa-search"></i>
+                        <div class="search col-3">
+                            <?php get_search_form() ?>
+                            
                 
                     </div>
                 </div>
