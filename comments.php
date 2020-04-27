@@ -23,7 +23,7 @@ if ( post_password_required() ) {
 <div id="comments" class="comments-area">
 
 	<?php if ( have_comments() ) : ?>
-		<h3 class="comments-title">
+		<h6 class="comments-title">
 			<?php
 				$comments_number = get_comments_number();
 			if ( '1' === $comments_number ) {
@@ -44,21 +44,21 @@ if ( post_password_required() ) {
 				);
 			}
 			?>
-		</h3>
+		</h6>
 
 		<?php the_comments_navigation(); ?>
 
-		<ol class="comment-list">
+		<ul class="comment-list">
 			<?php
 				wp_list_comments(
 					array(
-						'style'       => 'ol',
+						'style'       => 'ul',
 						'short_ping'  => true,
-						'avatar_size' => 42,
+						'avatar_size' => 32,
 					)
 				);
 			?>
-		</ol><!-- .comment-list -->
+		</ul><!-- .comment-list -->
 
 		<?php the_comments_navigation(); ?>
 
@@ -74,8 +74,8 @@ if ( post_password_required() ) {
 	<?php
 		comment_form(
 			array(
-				'title_reply_before' => '<h3 id="reply-title" class="comment-reply-title">',
-				'title_reply_after'  => '</h3>',
+				'title_reply_before' => '<h6 id="reply-title" class="comment-reply-title">',
+				'title_reply_after'  => '</h6>',
 			)
 		);
 		?>

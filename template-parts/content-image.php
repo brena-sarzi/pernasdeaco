@@ -1,5 +1,5 @@
 <article>
-<?php the_post_thumbnail('medium') ?>
+<?php the_post_thumbnail('full') ?>
 
 <div class="text-cards">
     <?php the_category(''); ?>    

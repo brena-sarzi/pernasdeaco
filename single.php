@@ -11,21 +11,24 @@
                         while(have_posts() ): the_post(); 
 
                         get_template_part( 'template-parts/content', 'single' );
-
+                        ?>
+                       
+                    <?php
                         if( comments_open() || get_comments_number() ):
                             comments_template();
                         endif;
 
                     endwhile;
-                ?>
+                    ?>
+             
+                   </div>
+                   <?php get_sidebar(); ?>
                 </div>
-                <?php get_sidebar(); ?>
-
-                </div>
+       
                 </div> 
                 
             </div> 
-            
+           
         </div>
 <!-- FOOTER -->
 <?php get_footer(); ?>

@@ -1,58 +1,189 @@
 
-/* TITULO DO SITE */
-h2{
-    text-align: center;
-    color: orange;
-}
-
-/* PARAGRÁFO DO SITE */
-p{
-    color: white;
-}
-
-/* TITULO COMENTARIO */
-.comments-title {
-    color: orange;
-    margin-top: 30px;
-}
-/* COMENTARIO */
-ol{
-    font-size: 14px;
-    color: white;
-    float: left;
-}
-
-
-/* CONTEÚDO DO SITE */
-.post{
-    margin-top: 25px;
-    color: white;
-    font-size: 14px;
-    padding:0;
-    text-align: center;
-    text-shadow: 2px 2px 4px black;
-    font-weight: bolder;
-}
-
-/* LINK POST */
-.post a{
-    color: rgb(155, 155, 255);
-    font-weight: bolder;
-    text-decoration: none;
-}
-
-/* CATEGORIAS */
-.post-categories {
-    list-style-type: none;
-    text-align: center;
-    padding: 0;
-}
-
 /* IMAGEM DO POST */
-.post-card .wp-post-image{
+.imagem-post{
     width: 100%;
     height: auto;
     display: block;
     margin-bottom: 20px;
+}
+
+/* CONTEÚDO DO SITE */
+.post-card h2{
+    color: orange;
+}
+.post-card{
+    color: white;
+    background: #494949;
+    width: 100%;
+    padding: 0;
+} 
+.post-card h2{
+    margin-bottom: 25px;
+}
+.post-card p{
+    text-align: center;
+    padding: 0px 25px 25px 25px;
+    color: white;
+}
+
+/* ICONS SOCIAIS */
+.icons-post{
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    padding-bottom:25px ;
+}
+.icons-single i{
+   padding: 10px;
+   color: white;
+}
+.icons-single i:hover{
+    color: rgb(128, 102, 53);
+}
+
+/* LINK LOGIN */
+.comment-reply-title{
+    color: orange;
+    padding-top: 10px;
+    text-align: center;
+}
+.logged-in-as{
+    text-align: center;
+}
+.comment-form a{
+    color: rgb(128, 102, 53);
+    font-size: 16px;
+    text-align: center;
+}
+.comment-form a:hover{
+    color: orange;
+}
+
+.comment-respond{
+    background:#494949 ;
+    margin-top: 25px;
+}
+
+/* TITULO COMENTARIO */
+.comments-title {
+    display: none;
+}
+/* COMENTARIO */
+.comment-list{
+    display: none;
+}
+.comment-form-comment label{
+    display: none;
+}
+/* TEXT AREA */
+.comment-form textarea{
+    height: 200px;
+    border: 2px solid orange;
+    width: 90%;
+    margin: 10px 35px;
+    background: #494949;
+    padding: 10px;
+    color: white;
+}
+/* BUTTON */
+#submit{
+    border: 2px solid orange;
+    background: rgb(80, 79, 79);
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    font-size: 12px;
+    padding: 0 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+#submit:hover{
+    color: rgb(128, 102, 53);
+}
+.form-submit{
+    margin: 0;
+    text-align: center;
+}
+
+/* IMPORTANT */
+.comment-notes{
+    font-size: 12px;
+    text-align: center;
+    color: rgb(128, 102, 53);
+
+}
+/* LABEL AND INPUT */
+.comment-form-author{
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+.comment-form-email{
+    float:left;
+    margin-bottom: 25px;
+}
+.comment-form-url{
+    float: left;
+    margin-bottom: 25px;
+}
+.comment-form input{
+    width: 150px;
+    border: 2px solid orange;
+    background:rgb(80, 79, 79);
+    color: white;
+}
+.comment-form-cookies-consent input{
+    width: auto;
+    margin-left: 35px;
+}
+.comment-form-cookies-consent {
+    text-align: center;
+}
+#author{
+    font-size: 12px;
+}
+#email{
+    font-size: 12px;
+}
+#url{
+    font-size: 12px;
+}
+
+
+/* MEDIA QUERY'S */
+/* desktop */
+@media(max-width: 992px){
+    .post-card{
+        height: auto;
+    }
+    .post-card .wp-post-image{
+        margin: 0;
+        width: 100%;
+        padding-top: 0;
+    }
+}
+/* tablet */
+@media(max-width: 767px){
+    .cards{
+        margin-bottom: 20px;
+    }
+    .sidebar{
+        display: none;
+    }
+}
+/* celular */
+@media(max-width: 600px){
+    .post-card{
+       align-items: center;
+       margin-left: 20px;
+       padding: 10px;
+       margin-top: 0;
+    }
+    .post-card .wp-post-image{
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+        margin: 0;
+        padding-top: 0;
+    }
     
 }

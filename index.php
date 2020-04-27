@@ -3,8 +3,7 @@
         <main>
 
         <!-- ÁREA DE SERVIÇOS - LOJA -->
-        <div class="container-full">
-            <div class="container container_up">
+        <div class="container">
                 <section class="services col-12">
                     <div class="row">
                         <div class="services-item">
@@ -21,8 +20,7 @@
 
         <!-- POSTS BLOG -->
         <section class="middle-area">
-            <div class="container-full">
-            <div class="container container_up">
+            <div class="container">
                 <div class="row">
                 <div class="post col-xl-8 col-md-9 col-12" style="display:block;">
                             <?php 

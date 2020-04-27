@@ -8,6 +8,7 @@ html{
     font-size: 16px;
     font-weight: bolder;
     overflow: hidden;
+    padding: 0;
 }
 
 /* LINK MENU */
@@ -20,13 +21,13 @@ html{
 /* HOVER MENU */
 .menu-top ul li:hover{
     background: rgb(19, 17, 17);
-    padding: 10px;
     height: auto;
 }
 
 /* LIST MENU */
 .menu-top ul {    
     display: flex;
+    padding-inline-start: 0;
 }
 .menu-top li{
     padding: 15px;
@@ -54,24 +55,18 @@ html{
 .icons {
     font-size: 20px;
     margin-top: 5px;
- 
+    color: white;
+    width: auto;
  }
-  i{
-     margin-top: 10px;
-     color: white;
-     text-shadow: 2px 2px 4px #000000;
-     cursor: pointer;
-     margin-left: 20px;
- }
- i:hover{
-     color: rgb(99, 96, 96);
- }
+ .icons i{
+     padding: 10px;
+ } 
  
  /* BARRA DE PESQUISA */
  .search {
      background: rgb(73, 63, 63);
      height: 50px;
-     padding-right:20px ;
+     
  }
  .search input{
      padding: 6px 4px;

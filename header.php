@@ -33,35 +33,38 @@
     <!-- MENU DESKTOP RESPONSIVO -->
         <section class="top-bar">
             <div class="menu-top">
-            <div class="row">  
-                <nav class="menu-top col-8">
-                    <?php wp_nav_menu( array('theme_location' => 'my_main_menu') ); ?>
-                </nav>
-                    
-    <!-- SOCIAL ICONS -->
-            <div class="social-media-icons col-2 ">
-                <div class="icons">
-
-                    <a class="header" href="https://www.facebook.com/pernasdeacocicloturismo/" target="_blank">
-                        <i class="fab fa-facebook-square"></i>
-                    </a>
-                    
-                    <a class="header" href="https://www.instagram.com/pernas_de_aco/" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    
-                    <a class="header" href="https://www.youtube.com/channel/UCR4_IdacBcPapezoASfjKoQ" target="_blank">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    
-                </div>    
-            </div>
+                <div class="container">
+                    <div class="row">
+                        <nav class="menu-top col-7">
+                            <?php wp_nav_menu( array('theme_location' => 'my_main_menu') ); ?>
+                        </nav>
+                                    
+                    <!-- SOCIAL ICONS -->
+                        <section class="social-media-icons col-3 ">
+                            <div class="icons">
+                                <a class="header" href="https://www.facebook.com/pernasdeacocicloturismo/" target="_blank">
+                                    <i class="fab fa-facebook-square"></i>
+                                </a>
+                                
+                                <a class="header" href="https://www.instagram.com/pernas_de_aco/" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                
+                                <a class="header" href="https://www.youtube.com/channel/UCR4_IdacBcPapezoASfjKoQ" target="_blank">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>    
+                        </section>
+            
                 
-    <!-- BARRA DE PESQUISA MENU DESKTOP -->
-            <div class="search col-2">
-                <input type="text" placeholder="Procurar..">
-                    <i class="fas fa-search"></i>
-</div>
+                <!-- BARRA DE PESQUISA MENU DESKTOP -->
+                        <div class="search col-2">
+                            <input type="text" placeholder="Procurar..">
+                            <i class="fas fa-search"></i>
+                
+                    </div>
+                </div>
+            </div>
     </div>
         </div>
             </div>

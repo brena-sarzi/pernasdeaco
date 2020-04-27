@@ -1,13 +1,12 @@
 /* BARRA LATERAL */
 .sidebar{
-    background: rgb(73, 63, 63);
+    background: #494949;
     height: auto;
-    margin-top: 25px;
+    margin-top: 0px;
     float: right;
     color: white;
     padding: 0;
 }
-
 
 .widget_wrapper{
     text-align: center;
@@ -22,9 +21,7 @@
 /* TEXTO DO SIDEBAR */
 .textwidget{
     padding: 10px;
-    font-weight: bolder;
     font-size: 16px;
-    text-shadow: 2px 2px 4px black;
 }
 
 .news{
@@ -50,9 +47,10 @@
 .email-sidebar{
     margin-bottom: 10px;
 }
-form label{
-    font-weight: bolder;
-    text-shadow: 2px 2px 4px black;
+.comment-form label{
+    font-size: 12px;
+    margin: 0 10px 0 20px;
+
 }
 button{
     background-color: black;
@@ -65,13 +63,4 @@ button{
     font-size: 16px;
     font-weight: bolder;
 }
-form input{
-    border: 1px solid black;
-    border-radius: 4px;
-    box-shadow: 8px 9px 13px 1px rgba(0,0,0,0.58);
-}
-form .textarea{
-    border: 1px solid black;
-    border-radius: 4px;
-    box-shadow: 8px 9px 13px 1px rgba(0,0,0,0.58);
-}
+

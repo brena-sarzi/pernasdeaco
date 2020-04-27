@@ -1,10 +1,40 @@
-
 /* TOPO */
 body{
     overflow-x: hidden;
     font-family: 'Manrope', sans-serif !important;
     background: #2f2f2f !important;
+    font-size: 20px !important;
 }
+#main{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.middle-area{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* TITULO */
+h1{
+    color: black;
+    text-align: center;
+    width: 100%;
+}
+
+h2{
+    font-size: 28px ;
+    text-align: center;
+    color: white; 
+}
+h2:hover{
+    color: #8eb4c5;
+}
+/* PARAGRAFO */
+p{
+    color: white;
+    padding: 0;
+}
+
 
 /* FORMULÁRIO */
 .logo-login{
@@ -15,11 +45,7 @@ body{
     align-self: center;
     margin-left: 25%;
 }
-h1{
-    color: black;
-    text-align: center;
-    width: 100%;
-}
+
 .notification{
     color: red;
     text-align: center;

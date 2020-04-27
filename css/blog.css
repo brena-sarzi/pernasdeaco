@@ -1,3 +1,48 @@
+/* POST CARDS */
+
+.cards{
+    float: left;
+    width: 50%;
+    margin-bottom: 20px;
+    color: white !important; 
+}
+
+/* IMAGEM DO POST CARD */
+img{
+    width: 100%;
+    height: auto;
+}
+/* ANIMATION IMG */
+.hover10 img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    width: 100%;
+    height: 234px;
+}
+.hover10:hover img {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+/* CATEGORIAS */
+.post-categories {
+    list-style-type: none;
+    text-align: center;
+    margin-right: 40px; 
+}
+.post-categories a{
+    border: 2px solid #ffa500;
+    padding: 2px 5px;
+    color: rgb(194, 191, 191);
+    font-size: 12px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.post-categories a:hover{
+    color: #8eb4c5;
+}
 
 /* CONTEÚDO DO POST */
 .text-cards{
@@ -5,37 +50,40 @@
     background: rgb(73, 73, 73);
     padding: 20px;
     overflow: hidden;
+    text-align: center;
+    color: white;
 }
 
-/* POST CARDS */
-.cards{
-    float: left;
-    width: 47%;
-    margin-bottom: 15px;
-    
-}
-
-/* IMAGEM DO POST CARD */
-.attachment-medium{
-    width: 100%;
-    height:auto;
-    padding: 0;
-}
-.wp-post-image:hover{
-    width: 105%;
-}
-
-/* ICON */
+/* ICON AND LINK POST */
 .icon-post{
     font-size: 20px;
     padding: 10px;
 }
-.leia-mais
-{
+.leia-mais{
     font-size:16px ;
 }
 
+/* LINK PARA O POST */
+.link-post i{
+    margin-right: 5px;
+    color: orange;
+}
+.link-post a{
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+}
+.link-post a:hover{
+    color: rgb(142, 180, 197);
+    border-bottom: 1px solid orange;
+}
+.link-post{
+    margin-top: 20px;
+}
+
+
 /* MEDIA QUERY'S */
+/* DESKTOP */
 @media(max-width: 1119px){
     .cards{
         float: left;
@@ -45,7 +93,7 @@
         
     }
 }
-/* 992px tablet */
+/* TABLET */
 @media(max-width: 992px){
     .cards{
         margin-left: 11px;
@@ -60,7 +108,7 @@
         margin: 0;
     }
 }
-/* 600px celular */
+/* MOBILE */
 @media(max-width: 600px){
    .cards{
        width: 100%;
@@ -69,114 +117,4 @@
        margin-left: 8px;
    }
 
-}
-
-/* CONTEÚDO DO POST */
-.post-card{
-    width: 100%;
-    height: auto;
-    color:black;
-    font-size: 16px;
-    margin: 0;
-
-}
-
-
-
-.comment-body{
-    padding: 10px;
-}
-.comment-reply-title{
-    color: orange;
-    padding-top: 10px;
-}
-
-.comment-notes{
-    font-size: 12px;
-
-}
-/* TEXT AREA */
-.comment-form-comment{
-    color: black;
-
-}
-
-.comment-form-cookies-consent{
-
-}
-.comment-form label{
-    color: black;
-    text-shadow: none;
-    font-size: 12px;
-}
-#author{
-
-    width: 300px;
-}
-#email{
-
-    width: 300px;
-}
-#url{
-
-    width: 300px
-}
-
-#submit{
-    background: rgb(189, 183, 183);
-
-    padding: 10px;
-    box-shadow: 10px 10px 16px 6px rgba(0,0,0,0.52);
-}
-#submit:hover{
-    background: rgb(80, 79, 79);
-}
-
-
-/* MEDIA QUERY'S */
-
-/* desktop */
-@media(max-width: 992px){
-    .post-card{
-        height: auto;
-    }
-    .post-card .wp-post-image{
-        margin: 0;
-        width: 100%;
-        padding-top: 0;
-    }
-}
-/* tablet */
-@media(max-width: 767px){
-    .cards{
-        margin-bottom: 20px;
-    }
-    .sidebar{
-        display: none;
-    }
-}
-/* celular */
-@media(max-width: 600px){
-    .post-card{
-       align-items: center;
-       margin-left: 20px;
-       padding: 10px;
-       margin-top: 0;
-    }
-    .post-card .wp-post-image{
-        width: 100%;
-        height: auto;
-        margin-top: 0;
-        margin: 0;
-        padding-top: 0;
-    }
-    
-}
-/* img{
-    width: 100%;
-    height: auto;
-} */
-.avatar{
-    width: auto;
-    height: auto;
 }
