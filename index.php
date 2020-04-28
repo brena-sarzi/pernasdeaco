@@ -3,20 +3,17 @@
         <main>
 
         <!-- ÁREA DE SERVIÇOS - LOJA -->
-        <div class="container">
-                <section class="services col-12">
-                    <div class="row">
-                        <div class="services-item">
+            <div class="container">
+                <div class="row">
+                    <div class="services-item">
                         <?php 
                         if(is_active_sidebar('services' )){
                             dynamic_sidebar('services');
                         }
                         ?>
-                        </div>
                     </div>
-                </section>  
+                </div>  
             </div>    
-        </div>
 
         <!-- POSTS BLOG -->
         <section class="middle-area">
@@ -37,10 +34,10 @@
 
                             <div class="row">
                                 <div class="pages text-left col-6">
-                                    <?php previous_posts_link("<< Newer posts"); ?>
+                                    <?php previous_posts_link('<i class="fas fa-angle-double-left"></i>'); ?>
                                 </div>
                                 <div class="pages text-right col-6">
-                                    <?php next_posts_link("Older posts >>") ?>
+                                    <?php next_posts_link('<i class="fas fa-angle-double-right"></i>') ?>
                                 </div>
                             </div>
 

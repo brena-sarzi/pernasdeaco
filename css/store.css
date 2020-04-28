@@ -1,14 +1,9 @@
-/* BARRA PÓS MENU */
-.services{
-    height: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
 
-}
-/* IMAGENS DA LOJA */
-
+/* IMAGEM DA LOJA */
 .services-item{
     width: 100%;
+    margin-top: 20px;
+    padding-left: 30px;
 }
 
 @media screen and (max-width: 992px){

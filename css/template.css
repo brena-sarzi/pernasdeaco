@@ -12,6 +12,7 @@ body{
 .middle-area{
     margin-top: 20px;
     margin-bottom: 20px;
+    height: auto;
 }
 
 /* TITULO */
@@ -105,5 +106,18 @@ p{
     color: white;
 }
 
-
-
+.error-404{
+    margin-top: 20%;
+}
+.error-404 h1{
+   color: #fc6000;
+}
+.error-404 p{
+    color: white;
+    text-align: center;
+}
+.error-404 img{
+    width: 225px;
+    margin: auto;
+    display: block;
+}

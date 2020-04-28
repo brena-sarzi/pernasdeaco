@@ -44,7 +44,7 @@
 /* LINK LOGIN */
 .comment-reply-title{
     color: orange;
-    padding-top: 10px;
+    padding-top: 30px;
     text-align: center;
 }
 .logged-in-as{
@@ -148,6 +148,21 @@
     font-size: 12px;
 }
 
+.pages a{
+    color: rgb(206, 137, 8);
+    font-size: 28px;
+}
+.pages a:hover{
+    color: orange;
+}
+
+.pages-post a{
+    color: orange;
+    text-decoration: none;
+}
+.pages-post a:hover{
+    color: rgb(128, 102, 54);
+}
 
 /* MEDIA QUERY'S */
 /* desktop */

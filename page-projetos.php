@@ -2,19 +2,18 @@
     <div class="content-area">
         <main>
         
-        <!-- ÁREA DE SERVIÇOS - LOJA -->
-            <div class="container">
-                    <div class="row">
-                        <div class="services-item">
+          <!-- ÁREA DE SERVIÇOS - LOJA -->
+          <div class="container">
+                <div class="row">
+                    <div class="services-item">
                         <?php 
                         if(is_active_sidebar('services' )){
                             dynamic_sidebar('services');
                         }
                         ?>
-                        </div>
                     </div>
+                </div>  
             </div>    
-        </div>
 
 
         <!-- POSTS BLOG -->
