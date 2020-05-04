@@ -5,6 +5,7 @@
     width: 50%;
     margin-bottom: 20px;
     color: white !important; 
+    padding: 0px 15px 0 15px;
 }
 
 /* IMAGEM DO POST CARD */
@@ -33,7 +34,7 @@ img{
     margin-right: 40px; 
 }
 .post-categories a{
-    border: 2px solid orange;
+    border: 2px solid #a6523f;
     padding: 2px 5px;
     color: rgb(194, 191, 191);
     font-size: 12px;
@@ -47,7 +48,7 @@ img{
 /* CONTEÚDO DO POST */
 .text-cards{
     height: 312px;
-    background: rgb(73, 73, 73);
+    background: #162840;
     padding: 20px;
     overflow: hidden;
     text-align: center;
@@ -66,7 +67,7 @@ img{
 /* LINK PARA O POST */
 .link-post i{
     margin-right: 5px;
-    color: orange;
+    color: #a6523f;
 }
 .link-post a{
     font-size: 12px;
@@ -75,7 +76,7 @@ img{
 }
 .link-post a:hover{
     color: rgb(142, 180, 197);
-    border-bottom: 1px solid orange;
+    border-bottom: 1px solid #a6523f;
 }
 .link-post{
     margin-top: 20px;
@@ -87,25 +88,42 @@ img{
 @media(max-width: 1119px){
     .cards{
         float: left;
-        margin: 0;
-        margin-right: 15px;
+        margin-bottom: 20px;
         padding: 0;
-        
+        width: 40%;
+        padding: 0 15px 0 15px;
+    }
+    .sidebar{
+        display: none;
+    }
+    .post{
+        align-items: center;
     }
 }
 /* TABLET */
 @media(max-width: 992px){
     .cards{
-        margin-left: 11px;
+        float: left;
+        margin-bottom: 20px;
+        padding: 0;
+        width:50%;
+        padding: 0 10px 0 10px;
     }
+    .cards img{
+        width: 100%;
+        height:180px;
+    }
+
     p{
         margin: 5px;
+        font-size: 10px;
     }
     h2{
         margin: 0;
     }
-    .post-categories{
-        margin: 0;
+
+    .sidebar{
+        display: none;
     }
 }
 /* MOBILE */
@@ -113,8 +131,9 @@ img{
    .cards{
        width: 100%;
        margin-bottom: 20px;
-       padding: 0;
-       margin-left: 8px;
+   }
+   .sidebar{
+       display: none;
    }
 
 }

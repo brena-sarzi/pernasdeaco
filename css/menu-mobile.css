@@ -1,7 +1,7 @@
 
 /* MENU PARA O MOBILE */
 .menu-mobile{
-    background: #493f3f;
+    background: #162840;
     display: none;
     padding: 0;
 }
@@ -12,8 +12,9 @@
 }
 .menu-mobile li{
     display: block;
-    padding: 15px;
+    padding: 12px;
     border-top: 1px solid white;
+    border-bottom: 1px solid white;
     text-align: center;
 }
 .menu-mobile ul li:hover{
@@ -35,7 +36,7 @@
 label[for="bt_menu"]{
     font-size: 30px;
     color: white;
-    background: #493f3f;
+    background: #162840;
     text-shadow: 2px 2px 4px #000000;
     cursor: pointer;
     margin: 0;
@@ -59,9 +60,8 @@ label[for="bt_menu"]{
         width: 100%;
     }
     .menu-mobile{
-        margin-left: -100%;
         transition: all .10s linear;
-        height: 385px;
+        height: 100%;
     }
     .menu-mobile ul li{
         float: none;

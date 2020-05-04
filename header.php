@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -25,10 +25,11 @@
     <!-- SLIDE RESPONSIVO -->
         <div class="row">
             <section class="cover col-12">
-                <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height;?>"
+                <img src="<?php header_image(); ?>" height="<?php echo get_custom_header('full')->height;?>"
                 width="<?php echo get_custom_header()->width;?>" alt="" />
-        </div>
                 </section>  
+        </div>
+               
         
     <!-- MENU DESKTOP RESPONSIVO -->
         <section class="top-bar">

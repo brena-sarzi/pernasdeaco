@@ -2,7 +2,7 @@
 /* MENU TOPO */
 .menu-top{
     height: 50px;
-    background: rgb(73, 63, 63);
+    background: #162840;
     font-size: 16px;
     font-weight: bolder;
     overflow: hidden;
@@ -18,7 +18,7 @@
 
 /* HOVER MENU */
 .menu-top ul li:hover{
-    background: rgb(19, 17, 17);
+    background: #061527;
     height: auto;
 }
 
@@ -34,7 +34,7 @@
 
 /* BARRA MENU */
 .social-media-icons {
-    background:  rgb(73, 63, 63);
+    background:  #162840;
     height: 50px;
 }
 
@@ -62,7 +62,7 @@
  
  /* BARRA DE PESQUISA */
  .search {
-     background: rgb(73, 63, 63);
+     background: #162840;
      height: 50px;
      
  }
@@ -76,7 +76,7 @@
      color: white;
      height: 20px;
      width: 25px;
-     background: rgb(73, 63, 63) ;
+     background: #162840;
      border: none;
      font-size: 20px;
  }

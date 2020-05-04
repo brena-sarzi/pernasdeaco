@@ -43,12 +43,16 @@
             </div>
         </section>
     
-            <!-- MAPA ACIMA FOOTER -->
-            <div class="row">
-            <section class="map">Mapa</section> 
-            </div>
-        </main>
-    </div>
+        <!-- MAPA ACIMA FOOTER -->
+        <div class="row">
+            <iframe
+                width="100%"
+                height="200"
+                frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC55IpUaK2VJ1jAeaCLTlhDjSj5jH6C7nM
+                &q=Eiffel+Tower,Paris+France" allowfullscreen>
+            </iframe>
+        </div>
 
 <!-- FOOTER -->
 <?php get_footer(); ?>

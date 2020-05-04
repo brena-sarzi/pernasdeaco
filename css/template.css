@@ -2,9 +2,15 @@
 body{
     overflow-x: hidden;
     font-family: 'Manrope', sans-serif !important;
-    background: #2f2f2f !important;
+    background: #282a2e !important;
     font-size: 20px !important;
+    width: 100%;
 }
+
+html{
+    margin-top: 0 !important;
+}
+
 #main{
     margin-bottom: 20px;
     margin-top: 20px;

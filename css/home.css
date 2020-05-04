@@ -1,13 +1,17 @@
 /* BARRA LATERAL */
 .sidebar{
-    background: #494949;
+    background: #a6523f;
     height: auto;
     margin-top: 0px;
     float: right;
     color: white;
     padding: 0;
 }
-
+.sidebar p{
+    font-size: 20px;
+    padding: 10px 25px 35px 25px ;
+    color: white;
+}
 .widget_wrapper{
     text-align: center;
     display: block;
@@ -16,6 +20,7 @@
 /* TITULO DO SIDEBAR */
 .widget-title{
     margin-top: 20px;
+    color: white;
 }
 
 /* TEXTO DO SIDEBAR */
@@ -35,7 +40,6 @@
     .sidebar{
         display: none;
     }
-
 }
 
 .formulario-sidebar{

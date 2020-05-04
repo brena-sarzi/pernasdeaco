@@ -19,7 +19,7 @@
         <section class="middle-area">
             <div class="container">
                 <div class="row">
-                <div class="post col-xl-8 col-md-9 col-12" style="display:block;">
+                <div class="post col-xl-8 col-12" style="display:block;">
                             <?php 
                             // Se houver algum post
                             if(have_posts()):
@@ -34,10 +34,10 @@
 
                             <div class="row">
                                 <div class="pages text-left col-6">
-                                    <?php previous_posts_link('<i class="fas fa-angle-double-left"></i>'); ?>
+                                    <?php previous_posts_link('<i class="fas fa-angle-double-left"></i> <i class="fas fa-bicycle"></i>'); ?>
                                 </div>
                                 <div class="pages text-right col-6">
-                                    <?php next_posts_link('<i class="fas fa-angle-double-right"></i>') ?>
+                                    <?php next_posts_link('<i class="fas fa-bicycle"></i> <i class="fas fa-angle-double-right"></i>') ?>
                                 </div>
                             </div>
 
@@ -56,7 +56,13 @@
     
         <!-- MAPA ACIMA FOOTER -->
         <div class="row">
-            <section class="map">Mapa</section> 
+            <iframe
+                width="100%"
+                height="200"
+                frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC55IpUaK2VJ1jAeaCLTlhDjSj5jH6C7nM
+                &q=Eiffel+Tower,Paris+France" allowfullscreen>
+            </iframe>
         </div>
         
         </main>

@@ -1,9 +1,9 @@
 <!-- POST -->
-<article class="cards col-xl-12 col-md-8 col-12">
+<article class="cards col-full-2 col-12 ">
     
     <!-- IMAGEM DO POST -->
     <div class="hover10">
-    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium') ?></a>
+    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('full') ?></a>
     </div>
         <!-- DIVISAO DE TEXTO -->
         <div class="text-cards">

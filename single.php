@@ -5,7 +5,7 @@
             <div id="main">
                 <div class="container">
                     <div class="row">
-                        <div class="post col-xl-8">
+                        <div class="post col-xl-8 col-md-8 col-12">
                     <?php 
                         // Enquanto houver posts, mostre-os pra gente 
                         while(have_posts() ): the_post(); 
