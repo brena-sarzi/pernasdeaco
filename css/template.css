@@ -40,17 +40,24 @@ h2:hover{
 p{
     color: white;
     padding: 0;
+    margin-bottom: 0;
+    height: auto;
 }
 
 
 /* FORMULÁRIO */
-.logo-login{
-    margin-left: 42%;
-    margin-bottom: 20px;
+.widget_wrapper img{
+    width: 100%;
+    margin: auto;
+    display: flex;
 }
 .login{
     align-self: center;
     margin-left: 25%;
+}
+.logo-login{
+    display: flex;
+    margin: auto;
 }
 
 .notification{
@@ -113,17 +120,21 @@ p{
 }
 
 .error-404{
-    margin-top: 20%;
+    margin-top: 15%;
+
 }
 .error-404 h1{
-   color: #fc6000;
+   color: #b9513c;
+   text-shadow: 2px 2px 4px  #000000;
 }
 .error-404 p{
     color: white;
     text-align: center;
+    margin-top: 20px;
 }
 .error-404 img{
-    width: 225px;
+    width: 300px;
+    height: auto;
     margin: auto;
     display: block;
 }

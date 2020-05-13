@@ -3,7 +3,7 @@
     
     <!-- IMAGEM DO POST -->
     <div class="imagem-post">
-    <?php the_post_thumbnail('full') ?>  
+        <?php the_post_thumbnail('full') ?>  
     </div>
      
     <!-- CATEGORIAS -->

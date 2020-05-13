@@ -22,10 +22,5 @@
 
 /* MAPA */
 .map{
-    background: black;
-    color: white;
     width: 100%;
-    height: 120px;
-    margin-top: 10px;
-    padding:15px;
 }

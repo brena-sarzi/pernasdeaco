@@ -15,55 +15,58 @@
                 </div>  
             </div>    
 
-
         <!-- POSTS BLOG -->
         <section class="middle-area">
             <div class="container">
                 <div class="row">
                     <div class="apoiar col-8">
-                    <div class="apoiar">
                         <?php 
                         if(is_active_sidebar('apoiar' )){
                             dynamic_sidebar('apoiar');
                         }
                         ?>
-                        </div>
+                    </div>
                                     
-                            <div class="caixa-comentarios">
-                                <form class="caixa-comentarios">
-                                    <div class="name-comentario">
-                                        <label for="name">Nome:</label>
-                                        <input type="text"><br>
-                                    </div>
+                    <div class="caixa-comentarios">
+                        <form class="caixa-comentarios">
 
-                                    <div class="mensagem-comentario">
-                                        <label for="text">Mensagem:</label>
-                                        <textarea name="mensagem" rows="5" cols="60"></textarea>
-                                        
-                                    </div>
-                                    <div class="button-comentarios">
-                                    <button type="button">Enviar</button>
-                                    </div>
-                                    
-                                </form>  
+                            <div class="name-comentario">
+                                <label for="name">Nome:</label>
+                                <input type="text"><br>
                             </div>
 
-                    </div>  
-                    <?php get_sidebar(); ?>
-                </div>
+                            <div class="mensagem-comentario">
+                                <label for="text">Mensagem:</label>
+                                <textarea name="mensagem" rows="5" cols="60"></textarea>
+                            </div>
+
+                            <div class="button-comentarios">
+                                <button type="button">Enviar</button>
+                            </div>
+                        
+                        </form>  
+                    </div>
+
+                </div>  
+                <?php get_sidebar(); ?>
             </div>
         </section>
-    
+        
         <!-- MAPA ACIMA FOOTER -->
-        <div class="row">
+        <section class="map">
+            <?php
+            
+            $key = get_theme_mod( 'set_map_apikey' );
+            $address = urlencode( get_theme_mod( 'set_map_address' ) );
+
+            ?>
             <iframe
                 width="100%"
                 height="200"
                 frameborder="0" style="border:0"
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC55IpUaK2VJ1jAeaCLTlhDjSj5jH6C7nM
-                &q=Eiffel+Tower,Paris+France" allowfullscreen>
+                src="https://www.google.com/maps/embed/v1/place?key=<?php echo $key; ?>&q=<?php echo $address; ?>" allowfullscreen>
             </iframe>
-        </div>
+         </section>
 
 <!-- FOOTER -->
 <?php get_footer(); ?>

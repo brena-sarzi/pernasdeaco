@@ -1,5 +1,7 @@
 <?php 
 
+require get_template_directory() . '/inc/customizer.php';
+
 //Carregando scripts e folhas de estilos
 function load_scripts(){
     wp_enqueue_script( 'bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js', 
@@ -23,6 +25,8 @@ function load_scripts(){
     wp_enqueue_style( 'login', get_template_directory_uri() . '/css/login.css', array(), '1.0',
     'all' );
     wp_enqueue_style( 'posts', get_template_directory_uri() . '/css/posts.css', array(), '1.0',
+    'all' );
+    wp_enqueue_style( 'woocommerce', get_template_directory_uri() . '/css/woocommerce.css', array(), '1.0',
     'all' );
 }
 
@@ -116,3 +120,43 @@ function wpsite_sidebars(){
 
 
 
+function videoThumbSize($embed_size){
+    if ( is_home() == 1 ) {
+        $embed_size['width'] = 335;
+        $embed_size['height'] = 280;
+        return $embed_size;
+    } else {
+        $embed_size['width'] = 600;
+        $embed_size['height'] = 480;
+        return $embed_size;
+    }
+
+}
+    
+add_filter('embed_defaults', 'videoThumbSize');
+
+function buy_now_submit_form() {
+    ?>
+     <script>
+         jQuery(document).ready(function(){
+             // listen if someone clicks 'Buy Now' button
+             jQuery('#buy_now_button').click(function(){
+                 // set value to 1
+                 jQuery('#is_buy_now').val('1');
+                 //submit the form
+                 jQuery('form.cart').submit();
+             });
+         });
+     </script>
+    <?php
+   }
+   add_action('woocommerce_after_add_to_cart_form', 'buy_now_submit_form');
+
+   add_filter('woocommerce_add_to_cart_redirect', 'redirect_to_checkout');
+function redirect_to_checkout($redirect_url) {
+  if (isset($_REQUEST['is_buy_now']) && $_REQUEST['is_buy_now']) {
+     global $woocommerce;
+     $redirect_url = wc_get_checkout_url();
+  }
+  return $redirect_url;
+}

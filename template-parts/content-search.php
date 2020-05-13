@@ -3,7 +3,8 @@
     
     <!-- IMAGEM DO POST -->
     <div class="hover10">
-    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium') ?></a>
+        <a href="<?php the_permalink(); ?>">
+        <?php the_post_thumbnail('medium') ?></a>
     </div>
         <!-- DIVISAO DE TEXTO -->
         <div class="text-cards">
@@ -29,12 +30,12 @@
             $result = substr($excerpt, 0, strrpos($excerpt, ' '));
             echo $result;?>
             <div id="fourth">
-            <div class="link-post">
-                <a href="<?php the_permalink(); ?>">
-                   <i class="fas fa-book-reader"></i>
-                    Leia mais...
-                </a>
-            </div>
+                <div class="link-post">
+                    <a href="<?php the_permalink(); ?>">
+                        <i class="fas fa-book-reader"></i>
+                            Leia mais...
+                    </a>
+                </div>
             </div>
         
         </div>

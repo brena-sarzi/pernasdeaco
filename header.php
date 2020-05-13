@@ -29,7 +29,6 @@
                 width="<?php echo get_custom_header()->width;?>" alt="" />
                 </section>  
         </div>
-               
         
     <!-- MENU DESKTOP RESPONSIVO -->
         <section class="top-bar">
@@ -39,38 +38,30 @@
                         <nav class="menu-top col-7">
                             <?php wp_nav_menu( array('theme_location' => 'my_main_menu') ); ?>
                         </nav>
+                                        
+                            <!-- SOCIAL ICONS -->
+                            <section class="social-media-icons col-2 ">
+                                <div class="icons">
+                                    <a class="header" href="https://www.facebook.com/pernasdeacocicloturismo/" target="_blank">
+                                        <i class="fab fa-facebook-square"></i>
+                                    </a>
                                     
-                    <!-- SOCIAL ICONS -->
-                        <section class="social-media-icons col-2 ">
-                            <div class="icons">
-                                <a class="header" href="https://www.facebook.com/pernasdeacocicloturismo/" target="_blank">
-                                    <i class="fab fa-facebook-square"></i>
-                                </a>
+                                    <a class="header" href="https://www.instagram.com/pernas_de_aco/" target="_blank">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
                                 
-                                <a class="header" href="https://www.instagram.com/pernas_de_aco/" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                
-                                <a class="header" href="https://www.youtube.com/channel/UCR4_IdacBcPapezoASfjKoQ" target="_blank">
-                                    <i class="fab fa-youtube"></i>
-                                </a>
-                            </div>    
-                        </section>
+                                    <a class="header" href="https://www.youtube.com/channel/UCR4_IdacBcPapezoASfjKoQ" target="_blank">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </div>    
+                            </section>
             
-                
-                <!-- BARRA DE PESQUISA MENU DESKTOP -->
-                        <div class="search col-3">
-                            <?php get_search_form() ?>
-                            
-                
+                        <!-- BARRA DE PESQUISA MENU DESKTOP -->
+                            <div class="search col-3">
+                                <?php get_search_form() ?>
+                            </div>
                     </div>
                 </div>
             </div>
-    </div>
-        </div>
-            </div>
-                </section>                 
-            </div>
-        </div>
-    </section>
+        </section>                 
 </header>

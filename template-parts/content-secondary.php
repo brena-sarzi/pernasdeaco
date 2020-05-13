@@ -30,10 +30,14 @@
             $result = substr($excerpt, 0, strrpos($excerpt, ' '));
             echo $result;?>
             
-            <a href="<?php the_permalink(); ?>"><div class="icon-post">
-            <i class="fas fa-book-reader"><div class="leia-mais">Leia mais...</div></i>
-            </div></a>
+            <a href="<?php the_permalink(); ?>">
+                <div class="icon-post">
+                    <i class="fas fa-book-reader">
+                        <div class="leia-mais">Leia mais...</div>
+                    </i>
+                </div>
+            </a>
         
         </div>
-        <?php the_excerpt(); ?>
+    <?php the_excerpt(); ?>
 </article>

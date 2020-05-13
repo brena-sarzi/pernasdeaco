@@ -1,12 +1,22 @@
+<!-- IMAGEM DOS POSTS -->
 <article>
-<?php the_post_thumbnail('full') ?>
 
-<div class="text-cards">
-    <?php the_category(''); ?>    
-    <h2><?php the_title(); ?></h2> por <?php
-        the_author_posts_link(); ?></p>
-    <p><?php the_tags( 'Tags:',','); ?></p>
-    <?php the_content(); ?>
+    <!-- TAMANHO IMAGEM -->
+    <?php the_post_thumbnail('full') ?>
+
+    <!-- IMAGEM DO CARD -->
+    <div class="text-cards">
+        <!-- CATEGORIA -->
+        <?php the_category(''); ?> 
+        <!-- TITULO -->
+        <h2><?php the_title(); ?></h2> por 
+        <!-- AUTOR -->
+        <?php the_author_posts_link(); ?></p>
+        <!-- TAGS -->
+        <p><?php the_tags( 'Tags:',','); ?></p>
+        <!-- CONTEÚDO -->
+        <?php the_content(); ?>
     </div>
+    
 </article>
 
