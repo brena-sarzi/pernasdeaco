@@ -1,17 +1,24 @@
-/* FOOTER */
+/* footer site */
 .footer{
-    background: #162840;
+    background: #2d3027;
     height: 100px; 
+    width: 100%;
 }
-
-/* ICONS DO FOOTER */
+/* icons footer */
 .link{
     text-align: center;
     font-size: 20px;
     margin-top: 5px;
+    padding: 0px 10px 0px 10px ;
 }
-
-/* PARAGRAFO FOOTER */
+.link a{
+    padding: 0px 10px 0px 10px;
+    color: white;
+}
+.link a:hover{
+    color: #a6523f;
+}
+/* paragraph footer */
 .text-footer p{
     text-align: center;
     margin:0;
@@ -19,8 +26,7 @@
     color: white;
     text-shadow: 2px 2px 4px black;
 }
-
-/* MAPA */
+/* map */
 .map{
     width: 100%;
 }

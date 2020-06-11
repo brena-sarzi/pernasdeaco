@@ -1,7 +1,7 @@
 
 /* MENU PARA O MOBILE */
 .menu-mobile{
-    background: #162840;
+    background: #2d3121;
     display: none;
     padding: 0;
 }
@@ -36,11 +36,12 @@
 label[for="bt_menu"]{
     font-size: 30px;
     color: white;
-    background: #162840;
+    background: #2d3121;
     text-shadow: 2px 2px 4px #000000;
     cursor: pointer;
     margin: 0;
     text-align: center;
+
 }
 #bt_menu{
     display: none;
@@ -49,11 +50,12 @@ label[for="bt_menu"]{
     display: none;
 }
 
-/* MEDIA QUERY MENU MOBILE */
-@media(max-width: 992px){
+/* menu mobile */
+@media(max-width: 769px){
     #bt_menu:checked ~ .menu-mobile{
         display: block;
         margin-left: 0;
+        height: 380px;
     }
     label[for="bt_menu"]{
         display: block;

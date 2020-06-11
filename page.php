@@ -1,6 +1,5 @@
 <?php get_header();?>
     <div class="content-area">
-        
 
          <!-- ÁREA DE SERVIÇOS - LOJA -->
          <div class="container">
@@ -14,12 +13,13 @@
                     </div>
                 </div>  
             </div>    
-           
+            <main>
+
         <!-- POSTS BLOG -->
-        <main>
         <section class="middle-area">
             <div class="container">
-                    <div class="post col-xl-8 col-lg-8 col-12">
+                <div class="row">
+                    <div class="pages-single col-xl-8 col-md-8 col-12">
                         <?php 
                             // Se houver algum post
                             if(have_posts()):
@@ -27,7 +27,7 @@
                                 while(have_posts() ): the_post(); 
 
                             ?>
-                                <?php get_template_part( 'template-parts/content'); ?>
+                                <?php get_template_part( 'template-parts/content-page'); ?>
                             <?php 
                             endwhile;
                         else:
@@ -37,14 +37,13 @@
                        
                     </div>  
                     <?php get_sidebar(); ?>
-
                 </div> 
             </div>
-
         </section>
     
         <!-- MAPA ACIMA FOOTER -->
         <section class="map">
+            <div class="row">
             <?php
             
             $key = get_theme_mod( 'set_map_apikey' );
@@ -57,6 +56,7 @@
                 frameborder="0" style="border:0"
                 src="https://www.google.com/maps/embed/v1/place?key=<?php echo $key; ?>&q=<?php echo $address; ?>" allowfullscreen>
             </iframe>
+            </div>
          </section>
 <!-- FOOTER -->
 <?php get_footer(); ?>

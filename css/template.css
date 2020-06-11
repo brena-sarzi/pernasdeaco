@@ -1,19 +1,30 @@
-/* TOPO */
+/* body site */
 body{
     overflow-x: hidden;
     font-family: 'Manrope', sans-serif !important;
-    background: #282a2e !important;
+    background: #131313 ;
     font-size: 20px !important;
     width: 100%;
 }
-
+/* link site */
+a{
+    color: white;
+}
+a:hover{
+    color:rgb(170, 159, 159) ;
+}
+/* html site */
 html{
     margin-top: 0 !important;
 }
-
+/* main pages */
 #main{
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 0px;
+}
+main{
+    padding-top: 20px;
+    background: none;
 }
 .middle-area{
     margin-top: 20px;
@@ -21,88 +32,51 @@ html{
     height: auto;
 }
 
-/* TITULO */
+html{
+    margin: 0px !important;
+}
+
+/* title site */
 h1{
     color: black;
     text-align: center;
     width: 100%;
 }
-
 h2{
     font-size: 28px ;
     text-align: center;
-    color: white; 
 }
 h2:hover{
     color: #8eb4c5;
 }
-/* PARAGRAFO */
+/* paragraph */
 p{
-    color: white;
     padding: 0;
     margin-bottom: 0;
     height: auto;
 }
-
-
-/* FORMULÁRIO */
-.widget_wrapper img{
-    width: 100%;
-    margin: auto;
-    display: flex;
-}
-.login{
-    align-self: center;
-    margin-left: 25%;
-}
-.logo-login{
-    display: flex;
-    margin: auto;
+.page-store{
+    height: 100%;
 }
 
-.notification{
-    color: red;
-    text-align: center;
-    width: 100%;
+ /* pagination site */
+.pagination {
+    display: block;
+    clear: right;
+    clear: left;
+    color:#81301f ;
 }
-
-.box form{
-    padding: 0;
+.pagination a{
+    color: #b9513c;
+    padding: 10px;
 }
-.box{
-    width: 100%;
+.pagination a:hover{
+    color: #c53c20;
 }
-
-.usuario{
-    margin-bottom: 10px;
-    font-size: 12px;
-  
-}
-.password{
-    font-size: 12px;
-    margin-bottom: 10px;
-}
-.box-usuario label{
-    font-size: 14px;
-    color: black;
-}
-.box-password label{
-    font-size: 14px;
-    color: black;
-}
-.button-login{
-    width: 100%;
-    height: 40px;
-    font-size: 18px;
-}
-
-/* PAGINA APOIAR */
+/* page apoiar */
 .apoiar{
-    background: gray;
-    margin-top: 25px;
     color: white;
 }
-
 .caixa-comentarios{
     float: left;
     margin-top: 100px;
@@ -112,16 +86,31 @@ p{
     margin-bottom: 10px;
     width: 100%;
 }
-/* PAGINA PROJETOS */
-.projetos{
-    background: gray;
-    margin-top: 25px;
+/* page projetos */
+.pages-single{
     color: white;
 }
+.pages-single p{   
+    margin-top: 20px;
+}
+.pages-single img{
+    margin: auto;
+    padding: 10px;
+    display: flex;
+}
+.page{
+    background:#242021;
 
+    height: 100%;
+}
+
+.page-post{
+    padding: 20px;
+}
+
+/* page 404-error */
 .error-404{
     margin-top: 15%;
-
 }
 .error-404 h1{
    color: #b9513c;
@@ -137,4 +126,39 @@ p{
     height: auto;
     margin: auto;
     display: block;
+}
+.link-video a{
+    margin-top: 20px ;
+    font-size: 24px;
+    color: white;
+}
+.link-video a:hover{
+    color: #a6523f;
+}
+.link-video{
+    margin-top: 30px;
+}
+.contet-search{
+    float: left;
+    width: 50%;
+    height: 546px !important;
+    margin-bottom: 20px;
+    color: white !important; 
+    padding: 0px 40px 0 0px;
+}
+.img-search img{
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    width: 100%;
+    height: 234px;
+}
+.text-search{
+    height: 349px;
+    background: #242021;
+    padding: 20px;
+    overflow: hidden;
+    text-align: center;
+    color: white;
 }

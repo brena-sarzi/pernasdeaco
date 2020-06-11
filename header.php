@@ -10,7 +10,7 @@
     <?php wp_head(); ?>
 </head>
     
-<body <?php body_class(); ?>>
+<body <?php body_class(''); ?>>
 <header>
             
     <!-- MENU MOBILE RESPONSIVO -->
@@ -35,12 +35,12 @@
             <div class="menu-top">
                 <div class="container">
                     <div class="row">
-                        <nav class="menu-top col-7">
+                        <nav class="menu-top col-xl-7 col-lg-8 col-9">
                             <?php wp_nav_menu( array('theme_location' => 'my_main_menu') ); ?>
                         </nav>
                                         
                             <!-- SOCIAL ICONS -->
-                            <section class="social-media-icons col-2 ">
+                            <section class="social-media-icons col-xl-2 col-sm-3  ">
                                 <div class="icons">
                                     <a class="header" href="https://www.facebook.com/pernasdeacocicloturismo/" target="_blank">
                                         <i class="fab fa-facebook-square"></i>
@@ -57,7 +57,7 @@
                             </section>
             
                         <!-- BARRA DE PESQUISA MENU DESKTOP -->
-                            <div class="search col-3">
+                            <div class="search col-xl-3 col-sm-2 ">
                                 <?php get_search_form() ?>
                             </div>
                     </div>

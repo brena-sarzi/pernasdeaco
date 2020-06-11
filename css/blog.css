@@ -1,19 +1,13 @@
-/* POST CARDS */
-#player{
-    width: 20px;
-}
+/* single cards */
 .cards{
     float: left;
     width: 50%;
-    height: 546px !important;
+    height: 546px ;
     margin-bottom: 20px;
-    color: white !important; 
-    padding: 0px 15px 0 15px;
+    padding: 0px 40px 0 0px;
 }
-
-/* IMAGEM DO POST CARD */
-
-/* ANIMATION IMG */
+/* img post
+   animations img post */
 .hover10 img {
 	-webkit-transform: scale(1);
 	transform: scale(1);
@@ -27,32 +21,40 @@
 	transform: scale(1.1);
 }
 
-.video{
-    height: auto;
+/* post youtube */
+#player{
+    width: 20px;
+}
+.video iframe{
+    height: 190px;
+    width: 100%;   
 }
 
-/* CATEGORIAS */
+/* categories */
 .post-categories {
     list-style-type: none;
     text-align: center;
     margin-right: 40px; 
+    padding-top:20px ;
 }
+
 .post-categories a{
     border: 2px solid #a6523f;
-    padding: 2px 5px;
+    padding: 2px 5px; 
     color: rgb(194, 191, 191);
     font-size: 12px;
     font-weight: bolder;
     text-decoration: none;
+
 }
 .post-categories a:hover{
     color: #8eb4c5;
 }
 
-/* CONTEÚDO DO POST */
+/* content post */
 .text-cards{
     height: 312px;
-    background: #162840;
+    background: #242021;
     padding: 20px;
     overflow: hidden;
     text-align: center;
@@ -60,17 +62,25 @@
 }
 .text-cards-video{
     height: 349px;
-    background: #162840;
+    background: #242021;
     padding: 20px;
     overflow: hidden;
     text-align: center;
     color: white;
 }
 .text-cards-video h2{
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.text-cards-video h2:hover{
+    color:#a6523f ;
+    text-decoration: none;
+}
+.text-cards-video a:hover{
+    text-decoration: none;
 }
 
-/* ICON AND LINK POST */
+/* icon post "read more" */
 .icon-post{
     font-size: 20px;
     padding: 10px;
@@ -79,7 +89,7 @@
     font-size:16px ;
 }
 
-/* LINK PARA O POST */
+/* link "read more" */
 .link-post i{
     margin-right: 5px;
     color: #a6523f;
@@ -97,7 +107,7 @@
     margin-top: 20px;
 }
 .link-post-video{
-    margin-top: 50px;
+    margin-top: 40px;
 }
 .link-post-video i{
     margin-right: 5px;
@@ -113,53 +123,13 @@
     border-bottom: 1px solid #a6523f;
 }
 
-/* MEDIA QUERY'S */
-/* DESKTOP */
-@media(max-width: 1119px){
-    .cards{
-        float: left;
-        margin-bottom: 20px;
-        padding: 0;
-        width: 40%;
-        padding: 0 15px 0 15px;
-    }
-    .sidebar{
-        display: none;
-    }
-    .post{
-        align-items: center;
-    }
-}
-/* TABLET */
-@media(max-width: 992px){
-    .cards{
-        float: left;
-        margin-bottom: 20px;
-        padding: 0;
-        width:50%;
-        padding: 0 10px 0 10px;
-    }
 
-    p{
-        margin: 5px;
-        font-size: 10px;
-    }
-    h2{
-        margin: 0;
-    }
 
-    .sidebar{
-        display: none;
-    }
-}
-/* MOBILE */
-@media(max-width: 600px){
-   .cards{
-       width: 100%;
-       margin-bottom: 20px;
-   }
-   .sidebar{
-       display: none;
-   }
 
-}
+
+
+
+
+
+
+

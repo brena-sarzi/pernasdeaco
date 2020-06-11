@@ -22,6 +22,22 @@ if ( post_password_required() ) {
 
 <div id="comments" class="comments-area">
 
+	<?php
+		// If comments are closed and there are comments, let's leave a little note, shall we?
+	if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
+		?>
+	<p class="no-comments"><?php _e( 'Comments are closed.', 'twentysixteen' ); ?></p>
+	<?php endif; ?>
+
+	<?php
+		comment_form(
+			array(
+				'title_reply_before' => '<h6 id="reply-title" class="comment-reply-title">',
+				'title_reply_after'  => '</h6>',
+			)
+		);
+		?>
+
 	<?php if ( have_comments() ) : ?>
 		<h6 class="comments-title">
 			<?php
@@ -46,7 +62,9 @@ if ( post_password_required() ) {
 			?>
 		</h6>
 
-		<?php the_comments_navigation(); ?>
+	<?php endif; // Check for have_comments(). ?>
+
+	<?php the_comments_navigation(); ?>
 
 		<ul class="comment-list">
 			<?php
@@ -60,24 +78,6 @@ if ( post_password_required() ) {
 			?>
 		</ul><!-- .comment-list -->
 
-		<?php the_comments_navigation(); ?>
-
-	<?php endif; // Check for have_comments(). ?>
-
-	<?php
-		// If comments are closed and there are comments, let's leave a little note, shall we?
-	if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
-		?>
-	<p class="no-comments"><?php _e( 'Comments are closed.', 'twentysixteen' ); ?></p>
-	<?php endif; ?>
-
-	<?php
-		comment_form(
-			array(
-				'title_reply_before' => '<h6 id="reply-title" class="comment-reply-title">',
-				'title_reply_after'  => '</h6>',
-			)
-		);
-		?>
+<?php the_comments_navigation(); ?>
 
 </div><!-- .comments-area -->

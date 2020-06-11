@@ -19,4 +19,3 @@
             </section>
         </main>
     </div>
-

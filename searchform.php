@@ -1,17 +1,15 @@
+
 <?php
 /**
- * Template for displaying search forms in Twenty Sixteen
+ * Template for displaying search forms in Twenty Eleven
  *
  * @package WordPress
- * @subpackage Twenty_Sixteen
- * @since Twenty Sixteen 1.0
+ * @subpackage Twenty_Eleven
+ * @since Twenty Eleven 1.0
  */
 ?>
-
-<form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-	<label>
-		<input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Search &hellip;', 'placeholder', 'twentysixteen' ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
-    </label>
-    <button type="submit" class="search-submit"><i class="fas fa-search"><?php echo _x( ' ', 'submit button', 'twentysixteen' ); ?></i></button>
-
-</form>
+	<form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+		<label for="s" class="assistive-text"><?php _e( '<i class="fas fa-search"></i>', 'twentyeleven' ); ?></label>
+		<input type="text" class="field" name="s" id="s" placeholder="<?php esc_attr_e( 'Search', 'twentyeleven' ); ?>" />
+		<input type="submit" class="submit" name="submit" id="searchsubmit" value="<?php esc_attr_e( 'Search', 'twentyeleven' ); ?>" />
+	</form>

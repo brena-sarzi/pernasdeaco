@@ -1,11 +1,10 @@
 <!-- POST -->
+
 <article class="post-card col-12">
-    
-    <!-- IMAGEM DO POST -->
-    <div class="imagem-post">
-        <?php the_post_thumbnail('full') ?>  
-    </div>
-     
+
+<div class="imagem-post">
+    <?php the_post_thumbnail( 'full' ) ?>
+</div>
     <!-- CATEGORIAS -->
      <?php the_category(''); ?>  
 
@@ -15,10 +14,13 @@
     <!-- DIA DE PUBLICAÇÃO -->
     <span style="font-size:12px;font-weight: bolder;"><p>Publicado em <?php echo get_the_date(); ?> por <?php
             the_author_posts_link(); ?></p></span>
+
+       <!-- IMAGEM DO POST -->
+    
     
     <!-- LIMITE DE LINHAS DO POST -->
     <?php echo the_content();?>
-    
+     
     <!-- SOCIAL ICONS -->
     <div class="icons-post col-12 ">
         <div class="icons-single">
@@ -37,4 +39,3 @@
     </div>
         
 </article>
-

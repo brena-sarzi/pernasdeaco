@@ -1,27 +1,29 @@
 
-/* IMAGEM DO POST */
-.imagem-post{
+/* post single */
+.imagem-post img{
     width: 100%;
     height: auto;
-    display: block;
-    margin-bottom: 20px;
+    margin-top: 0px;
+}
+.post{
+    float: left;
 }
 
-/* CONTEÚDO DO SITE */
+
+
+/* post content */
 .post-card h2{
     color: #a6523f;
     margin-bottom: 20px;
 }
 .post-card{
     color: white;
-    background: #162840;
+    background: #242021;
     width: 100%;
     height: auto;
     padding: 0;
     margin-top: 0;
-    padding-top: 10px;
-} 
-
+}
 .post-card p{
     text-align: center;
     padding: 0px 25px 15px 25px;
@@ -29,7 +31,7 @@
     margin-bottom: 0;
 }
 
-/* ICONS SOCIAIS */
+/* icons post */
 .icons-post{
     font-size: 18px;
     width: 100%;
@@ -45,9 +47,9 @@
     color: #a6523f;
 }
 
-/* LINK LOGIN */
+/* link login post */
 .comment-reply-title{
-    color: #8f9bbf;
+    color: #a6523f;
     padding-top: 30px;
     text-align: center;
 }
@@ -55,7 +57,7 @@
     text-align: center;
 }
 .comment-form a{
-    color: rgb(128, 102, 53);
+    color: #8f9bbf;
     font-size: 16px;
     text-align: center;
 }
@@ -64,63 +66,10 @@
 }
 
 .comment-respond{
-    background:#162840;
+    background:#242021;
     margin-top: 25px;
 }
-
-/* TITULO COMENTARIO */
-.comments-title {
-    display: none;
-}
-/* COMENTARIO */
-.comment-list{
-    display: none;
-}
-.comment-form-comment label{
-    display: none;
-}
-.comment-form{
-    padding: 20px;
-}
-
-/* TEXT AREA */
-.comment-form textarea{
-    height: 200px;
-    border: 2px solid #8f9bbf;
-    width: 100%;
-    align-items: center;
-    display: flex;
-    background: #162840;
-    padding: 10px;
-    color: white;
-}
-/* BUTTON */
-#submit{
-    border: 2px solid #8f9bbf;
-    background: #162840;
-    color: white;
-    font-family: 'Manrope', sans-serif;
-    font-size: 12px;
-    padding: 0 10px;
-    border-radius: 4px;
-    margin-bottom: 20px;
-}
-#submit:hover{
-    color: rgb(128, 102, 53);
-}
-.form-submit{
-    margin: 0;
-    text-align: center;
-}
-
-/* IMPORTANT */
-.comment-notes{
-    font-size: 12px;
-    text-align: center;
-    color: rgb(128, 102, 53);
-
-}
-/* LABEL AND INPUT */
+/* logins comment */
 .comment-form-author{
     float: left;
     margin-bottom: 25px;
@@ -135,16 +84,25 @@
 }
 .comment-form input{
     width: 150px;
-    border: 2px solid #8f9bbf;
-    background:#162840;
+    border: 2px solid #a6523f;
+    background:#242021;
     color: white;
 }
-.comment-form-cookies-consent input{
-    width: auto;
-    margin-left: 35px;
+.comment-form-comment label{
+    display: none;
 }
-.comment-form-cookies-consent {
+.comment-form-cookies-consent input{
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+}
+
+input[type=checkbox]:checked::before{
+    width: 40px;
+}
+#wp-comment-cookies-consent{
     text-align: center;
+    padding: 20px;
 }
 #author{
     font-size: 12px;
@@ -155,16 +113,14 @@
 #url{
     font-size: 12px;
 }
-
 .pages a{
     color: #a6523f;
     font-size: 20px;
-    margin-right: 15px;
+    margin-right: 35px;
 }
 .pages a:hover{
     color: #8f9bbf;
 }
-
 .pages-post a{
     color: #8f9bbf;
     text-decoration: none;
@@ -172,86 +128,105 @@
 .pages-post a:hover{
     color: #a6523f;
 }
-
-/* MEDIA QUERY'S */
-/* desktop */
-@media(max-width: 992px){
-    .post-card{
-        height: auto;
-    }
-    .post-card .wp-post-image{
-        margin: 0;
-        width: 100%;
-        padding-top: 0;
-    }
+/* title comments */
+.comment-form{
+    padding: 20px;
+    height: 100%;
 }
-/* tablet */
-@media(max-width: 767px){
-    .cards{
-        margin-bottom: 20px;
-    }
-
-    .post{
-        padding-left:15px;
-        padding-right: 0;
-    }
+/* text area */
+.comment-form textarea{
+    height: 150px;
+    border: 2px solid #a6523f;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    background: #242021;
+    padding: 10px;
+    color: white;
+    margin-bottom: 20px;
 }
-/* celular */
-@media(max-width: 600px){
-    
-    .sidebar{
-        display: none;
-    }
+/* button comments */
 
-    .post{
-        padding-right:0px;
-        padding-left: 15px;
-    }
-     
-    .post-card{
-       align-items: center;
-       margin-top: 0;
-       width: 100%;
-    }
-    .sidebar{
-        display: none;
-    }
-    .comment-form-author{
-        margin-bottom: 25px;
-        float: right;
-        margin-right: 25%;
-    }
-    .comment-form-email{
-        margin-bottom: 25px;
-        float: right;
-        margin-right: 25%;
-    }
-    .comment-form-url{
-        margin-bottom: 25px;
-        float: right;
-        margin-right: 25%;
-    }
-    #author{
-        font-size: 12px;
-    }
-    #email{
-        font-size: 12px;
-    }
-    #url{
-        font-size: 12px;
-    }
-    .comment-form label{
-        margin:0 20px 0 0;
-    }
+#submit{
+    border: 2px solid #a6523f;
+    background: #242021;
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    border-radius: 2px;
+    display: flex;
+    padding: 0px 40%;
+    width: 100%;
+}
+#submit:hover{
+    color: rgb(128, 102, 53);
+}
+.form-submit{
+    margin: 0;
+    text-align: center;
+}
+/* important */
+.comment-notes{
+    font-size: 12px;
+    text-align: center;
+    color: rgb(128, 102, 53);
+}
 
-    .comment-form-cookies-consent input{
-        margin: 10px 25px 10px 25px;
-        width: 30px;
-    }
+input#wp-comment-cookies-consent {
+    float: left;
+    clear: left;
+}
 
-    .comment-form-cookies-consent {
-        text-align: center;
-        width: auto;
-    }
-    
+.comment-form label{
+    float: left;
+}
+.comment-notes{
+    margin-bottom: 20px;
+}
+img.avatar{
+    display: none;
+}
+ul.comment-list{
+    display: inline;
+    list-style-type: none;
+}
+.fn{
+    color: white;
+    font-size: 16px;
+}
+.says{
+    display: none;
+}
+.comment-meta.commentmetadata a{
+    font-size:14px ;
+    color: rgb(175, 161, 161);
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.comment-body p {
+    font-size: 16px;
+    margin: 20px 0px 20px 0px ;
+   
+  
+}
+.comment-reply-link{
+    color: white;
+    font-size: 16px;
+}
+
+.comment-body{
+    border: 2px solid #a6523f ;
+    padding: 20px;
+    margin-top: 20px;
+}
+.children{
+    color: white;
+}
+a.url{
+    color: orange;
+}
+.comment-awaiting-moderation{
+    color: #afa1a1;
+    font-size: 14px;
 }

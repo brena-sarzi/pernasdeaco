@@ -1,8 +1,8 @@
 <!-- POST -->
-<article class="cards col-xl-12 col-md-8 col-12">
+<article class="contet-search col-xl-12 col-md-8 col-12">
     
     <!-- IMAGEM DO POST -->
-    <div class="hover10">
+    <div class="img-search">
         <a href="<?php the_permalink(); ?>">
         <?php the_post_thumbnail('medium') ?></a>
     </div>

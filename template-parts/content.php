@@ -22,12 +22,14 @@
             <p><?php the_tags( 'Tags:',','); ?></p>
             
             <!-- LIMITE DE LINHAS DO POST -->
+            <p class="abstract">
             <?php
             $excerpt = get_the_excerpt();
 
             $excerpt = substr($excerpt, 0, 70);
             $result = substr($excerpt, 0, strrpos($excerpt, ' '));
             echo $result;?>
+            </p>
             <div id="fourth">
             <div class="link-post">
                 <a href="<?php the_permalink(); ?>">

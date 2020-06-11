@@ -1,5 +1,5 @@
 <?php get_header();?>
-
+<main>
         <!-- POSTS BLOG -->
         <div id="primary">
             <div id="main">
@@ -20,8 +20,8 @@
 
                                 the_posts_pagination( 
                                     array(
-                                        'prev_text' => '<<',
-                                        'next_text' => '>>'
+                                        'prev_text' => '<i class="fas fa-angle-double-left"> </i><i class="fas fa-bicycle"></i>',
+                                        'next_text' => '<i class="fas fa-bicycle"></i> <i class="fas fa-angle-double-right"></i>'
                                     )
                                 );
                             ?>
@@ -32,6 +32,7 @@
                 </div> 
             </div> 
         </div>
+        </main>
 <!-- FOOTER -->
 <?php get_footer(); ?>
    
