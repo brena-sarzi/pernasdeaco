@@ -373,3 +373,10 @@ function custom_label( $label, $method ) {
 }
 add_filter( 'woocommerce_cart_shipping_method_full_label', 'custom_label', 10, 2 );
 
+
+add_filter( 'woocommerce_add_to_cart_fragments', 'woocommerce_header_add_to_cart_fragment' );
+
+		
+add_theme_support( 'wc-product-gallery-zoom' );
+add_theme_support( 'wc-product-gallery-lightbox' );
+add_theme_support( 'wc-product-gallery-slider' );

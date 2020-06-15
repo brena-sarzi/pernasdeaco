@@ -22,7 +22,7 @@
             <p><?php the_tags( 'Tags:',','); ?></p>
             
             <!-- LIMITE DE LINHAS DO POST -->
-            <p><?php the_content(); ?></p>
+                <?php the_content(); ?>
         
         </div>
 </article>

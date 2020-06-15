@@ -38,6 +38,7 @@ if ( post_password_required() ) {
     <div class="imagem-product">
         <?php global $product; ?>
         <img src="<?php echo wp_get_attachment_url( $product->get_image_id() ); ?>" />
+
     </div>
 
     <span style="text-align: center;"><h2><?php the_title();?></h2></span>
@@ -50,6 +51,7 @@ if ( post_password_required() ) {
 </div>
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>
+
 
 <script>
     document.querySelector(".pointcomunicacao-message-out-of-stock").style.display = 'none'

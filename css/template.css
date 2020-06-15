@@ -109,9 +109,6 @@ p{
 }
 
 /* page 404-error */
-.error-404{
-    margin-top: 15%;
-}
 .error-404 h1{
    color: #b9513c;
    text-shadow: 2px 2px 4px  #000000;
