@@ -1,4 +1,6 @@
-
+button.button:disabled, .woocommerce button.button:disabled[disabled]{
+    display: none;
+}
 .imagem-product img{
     width: 300px;
     height: 300px;
@@ -124,6 +126,14 @@ section.related.products h2{ color: white;width: 100%; }
 }
 .woocommerce #respond input#submit:hover{ background:#242021; color: rgb(170, 159, 159); }
 
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    background-color:#242021;
+    color: white;
+    border:solid 2px #a6523f;
+}
+.select2-container--default .select2-selection--single{
+    border: none;
+}
 /* LOJA */
 .store{ 
     float:right; 
@@ -399,14 +409,13 @@ ins .woocommerce-Price-amount{
     width: 20px;
     height: 20px;
 }
-input[type=radio]:checked::before{
-    width: 12px;
-    height: 12px;
-}
+
 .woocommerce ul#shipping_method li input {
     margin-top: 5px;
 }
-
+#your-profile label+a, label {
+    vertical-align: initial;
+}
 
 .woocommerce-cart .cart-collaterals .shipping-calculator-button{
     margin-top: 20px;
@@ -572,7 +581,7 @@ span.woocommerce-Price-amount{
 
 .woocommerce-page form .form-row .input-text{
     margin-top: 10px;
-    background:#282a2e ;
+    background:#242021 ;
     color: white;
     border: 2px solid #a6523f;
     border-radius: 0px;
@@ -603,7 +612,6 @@ span.woocommerce-Price-amount{
 
 .woocommerce-page form .form-row select {
     margin-top: 10px;
-    background:#282a2e ;
     color: white;
     border: 2px solid #a6523f;
     border-radius: 0px;
@@ -624,7 +632,6 @@ span.woocommerce-Price-amount{
 
 #order_comments{
     display: flex;
-    background:#282a2e ;
     color: white;
     border: 2px solid #a6523f;
     border-radius: 0px;

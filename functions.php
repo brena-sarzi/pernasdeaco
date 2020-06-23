@@ -141,32 +141,6 @@ function videoThumbSize($embed_size){
     
 add_filter('embed_defaults', 'videoThumbSize');
 
-function buy_now_submit_form() {
-    ?>
-     <script>
-         jQuery(document).ready(function(){
-             // listen if someone clicks 'Buy Now' button
-             jQuery('#buy_now_button').click(function(){
-                 // set value to 1
-                 jQuery('#is_buy_now').val('1');
-                 //submit the form
-                 jQuery('form.cart').submit();
-             });
-         });
-     </script>
-    <?php
-   }
-   add_action('woocommerce_after_add_to_cart_form', 'buy_now_submit_form');
-
-   add_filter('woocommerce_add_to_cart_redirect', 'redirect_to_checkout');
-function redirect_to_checkout($redirect_url) {
-  if (isset($_REQUEST['is_buy_now']) && $_REQUEST['is_buy_now']) {
-     global $woocommerce;
-     $redirect_url = wc_get_checkout_url();
-  }
-  return $redirect_url;
-}
-
 remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_coupon_form', 10 );
 
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
@@ -360,6 +334,10 @@ function mytheme_customize_css()
         .woocommerce-cart table.cart td [type=submit]:not(:disabled), button:not(:disabled){ background: <?php echo get_theme_mod('buttoncheckout-color', "#000000"); ?>; }
         .woocommerce-cart .wc-proceed-to-checkout a.checkout-button{ background: <?php echo get_theme_mod('buttoncheckout-color', "#000000"); ?>; }
         .woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover{ background: <?php echo get_theme_mod('checkouthover-color', "#000000"); ?>; }
+        .woocommerce-page form .form-row .input-text{ background: <?php echo get_theme_mod('card-color', "#000000"); ?>; }
+        .select2-container--default .select2-selection--single .select2-selection__rendered{ background: <?php echo get_theme_mod('card-color', "#000000"); ?>; }
+        .woocommerce-page form .form-row select{ background: <?php echo get_theme_mod('card-color', "#000000"); ?>; }
+        #order_comments{ background: <?php echo get_theme_mod('card-color', "#000000"); ?>; }
 </style>
     <?php
 }
@@ -368,15 +346,8 @@ function custom_label( $label, $method ) {
     if ( $method->cost == 0 ) {
         $label .= "(Free)";
     }
-
     return $label;
 }
 add_filter( 'woocommerce_cart_shipping_method_full_label', 'custom_label', 10, 2 );
 
-
 add_filter( 'woocommerce_add_to_cart_fragments', 'woocommerce_header_add_to_cart_fragment' );
-
-		
-add_theme_support( 'wc-product-gallery-zoom' );
-add_theme_support( 'wc-product-gallery-lightbox' );
-add_theme_support( 'wc-product-gallery-slider' );

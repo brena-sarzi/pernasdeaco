@@ -25,6 +25,7 @@
             </div>
         </div>
 </footer>
-<!-- CLOSUREs -->
+
+<?php wp_footer(); ?> 
 </body>
 </html>
