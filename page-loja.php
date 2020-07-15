@@ -22,15 +22,15 @@
 						wp_reset_postdata();
 					?>
 					
-					</div><!--/.products-->
-				<?php get_sidebar(); ?>
+				</div><!--/.products-->
+					<?php get_sidebar(); ?>
 			</div>
 		</div>
-		</main>
+</main>
 
 
         <!-- MAPA ACIMA FOOTER -->
-		<section class="map" style="margin-top: 20px;">
+		<section class="map">
             <?php
             
             $key = get_theme_mod( 'set_map_apikey' );
@@ -43,7 +43,8 @@
                 frameborder="0" style="border:0"
                 src="https://www.google.com/maps/embed/v1/place?key=<?php echo $key; ?>&q=<?php echo $address; ?>" allowfullscreen>
             </iframe>
-         </section>
+		 </section>
+		 
 <!-- FOOTER -->
 <?php get_footer(); ?>
    
