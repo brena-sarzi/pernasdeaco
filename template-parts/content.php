@@ -15,7 +15,7 @@
             <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
             
             <!-- DIA DE PUBLICAÇÃO -->
-            <span style="font-size:12px;font-weight: bolder;"><p>Publicado em <?php echo get_the_date(); ?> por <?php
+            <span style="font-size:12px !important; font-weight: bolder;"><p>Publicado em <?php echo get_the_date(); ?> por <?php
             the_author_posts_link(); ?></p></span>
             
             <!-- TAGS -->
