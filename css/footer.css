@@ -22,7 +22,7 @@
 .text-footer p{
     text-align: center;
     margin:0;
-    font-size: 14px;
+    font-size: 14px !important;
     color: white;
     text-shadow: 2px 2px 4px black;
 }
