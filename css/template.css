@@ -162,3 +162,6 @@ p{
     text-align: center;
     color: white;
 }
+.elementor-column-gap-default>.elementor-row>.elementor-column>.elementor-element-populated{
+    padding: 0px;
+}
