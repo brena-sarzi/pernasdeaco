@@ -274,8 +274,8 @@ ins .woocommerce-Price-amount{
     background:#463e3e ;
 }
 .woocommerce span.onsale{
-    background: #242021;
-    color: white;
+    background: rgb(223, 223, 60);
+    color: black;
     width: 70px;
     height: 70px;
     padding-top: 10px;
