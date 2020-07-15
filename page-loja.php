@@ -31,6 +31,7 @@
 
         <!-- MAPA ACIMA FOOTER -->
 		<section class="map">
+			<div class="row">
             <?php
             
             $key = get_theme_mod( 'set_map_apikey' );
@@ -42,7 +43,8 @@
                 height="200"
                 frameborder="0" style="border:0"
                 src="https://www.google.com/maps/embed/v1/place?key=<?php echo $key; ?>&q=<?php echo $address; ?>" allowfullscreen>
-            </iframe>
+			</iframe>
+			</div>
 		 </section>
 		 
 <!-- FOOTER -->
