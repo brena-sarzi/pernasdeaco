@@ -267,6 +267,7 @@ ins .woocommerce-Price-amount{
     font-size: 16px;
     font-weight: normal;
     font-style:italic ;
+    background: #a6523f;
 }
 
 .products-store li a.button:hover{
