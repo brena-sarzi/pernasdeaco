@@ -26,6 +26,8 @@
 				<?php get_sidebar(); ?>
 			</div>
 		</div>
+		</main>
+
 
         <!-- MAPA ACIMA FOOTER -->
 		<section class="map" style="margin-top: 20px;">
@@ -35,7 +37,6 @@
             $address = urlencode( get_theme_mod( 'set_map_address' ) );
 
 			?>
-</main>
             <iframe
                 width="100%"
                 height="200"
