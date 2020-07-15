@@ -99,25 +99,7 @@
     color: rgb(142, 180, 197);
     border-bottom: 1px solid #a6523f;
 }
-.link-post{
-    margin-top: 20px;
-}
-.link-post-video{
-    margin-top: 40px;
-}
-.link-post-video i{
-    margin-right: 5px;
-    color: #a6523f;
-}
-.link-post-video a{
-    font-size: 14px;
-    color: white;
-    text-decoration: none;
-}
-.link-post-video a:hover{
-    color: rgb(142, 180, 197);
-    border-bottom: 1px solid #a6523f;
-}
+
 
 
 

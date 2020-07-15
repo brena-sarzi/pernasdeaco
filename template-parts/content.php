@@ -25,7 +25,7 @@
 
             $excerpt = substr($excerpt, 0, 70);
             $result = substr($excerpt, 0, strrpos($excerpt, ' '));
-            echo $result;?>
+            echo $result;?>...
             </p>
             <div id="fourth">
             <div class="link-post">

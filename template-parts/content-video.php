@@ -26,7 +26,7 @@
             
             <!-- LIMITE DE LINHAS DO POST -->
             <div id="fourth">
-                <div class="link-post-video">
+                <div class="link-post">
                     <a href="<?php the_permalink(); ?>">
                         <i class="fas fa-book-reader"></i>
                             Leia mais...
