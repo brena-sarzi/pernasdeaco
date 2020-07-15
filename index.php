@@ -15,7 +15,6 @@
             </div>    
 
         <!-- POSTS BLOG -->
-        <main>
 
         <section class="middle-area">
             <div class="container">
@@ -69,9 +68,8 @@
                 src="https://www.google.com/maps/embed/v1/place?key=<?php echo $key; ?>&q=<?php echo $address; ?>" allowfullscreen>
             </iframe>
         </div>
-        </div>
-        </main>
     </div>
+</div>
 <!-- FOOTER -->
 <?php get_footer(); ?>
    

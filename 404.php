@@ -1,7 +1,6 @@
 <!-- PÁGINA DE ERRO DO SITE -->
 <?php wp_head(); ?>
     <div class="content-area">
-        <main>
             <!-- POSTS BLOG -->
             <section class="middle-area">
                 <div class="container">
@@ -17,7 +16,6 @@
                     </div>  
                 </div>
             </section>
-        </main>
     </div>
 
 

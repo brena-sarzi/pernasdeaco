@@ -13,7 +13,6 @@
                     </div>
                 </div>  
             </div>    
-            <main>
 
         <!-- POSTS BLOG -->
         <section class="middle-area">

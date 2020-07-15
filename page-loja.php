@@ -1,5 +1,4 @@
 <?php get_header();?>
-	<main>
 		<div class="container">
 			<div class="row">
 				<div class="products-store col-xl-8 col-md-8 col-12">
@@ -42,7 +41,6 @@
                 src="https://www.google.com/maps/embed/v1/place?key=<?php echo $key; ?>&q=<?php echo $address; ?>" allowfullscreen>
             </iframe>
          </section>
-	</main>
 <!-- FOOTER -->
 <?php get_footer(); ?>
    
