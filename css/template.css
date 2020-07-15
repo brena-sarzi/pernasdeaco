@@ -54,6 +54,7 @@ p{
     padding: 0;
     margin-bottom: 0;
     height: auto;
+    font-size: inherit !important;
 }
 .page-store{
     height: 100%;
