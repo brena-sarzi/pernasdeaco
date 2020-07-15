@@ -42,9 +42,6 @@ if ( post_password_required() ) {
     </div>
 
     <span style="text-align: center;"><h2><?php the_title();?></h2></span>
-  
-    <span style="text-align: center; font-size:12px;font-weight: bolder;"><p>Publicado em <?php echo get_the_date(); ?> por <?php
-    the_author_posts_link(); ?></p></span>
 
     <?php the_content(); ?>
 

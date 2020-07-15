@@ -14,9 +14,6 @@
     <!-- DIA DE PUBLICAÇÃO -->
     <span style="font-size:12px;font-weight: bolder;"><p>Publicado em <?php echo get_the_date(); ?> por <?php
             the_author_posts_link(); ?></p></span>
-
-       <!-- IMAGEM DO POST -->
-    
     
     <!-- LIMITE DE LINHAS DO POST -->
     <?php echo the_content();?>

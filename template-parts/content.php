@@ -18,9 +18,6 @@
             <span style="font-size:12px !important; font-weight: bolder;"><p>Publicado em <?php echo get_the_date(); ?> por <?php
             the_author_posts_link(); ?></p></span>
             
-            <!-- TAGS -->
-            <p><?php the_tags( 'Tags:',','); ?></p>
-            
             <!-- LIMITE DE LINHAS DO POST -->
             <p class="abstract">
             <?php

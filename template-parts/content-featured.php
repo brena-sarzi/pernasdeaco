@@ -19,8 +19,6 @@
             <p>Publicado em <?php echo get_the_date(); ?> por <?php
             the_author_posts_link(); ?></p>
             
-            <!-- TAGS -->
-            <p><?php the_tags( 'Tags:',','); ?></p>
             
             <!-- LIMITE DE LINHAS DO POST -->
             <?php

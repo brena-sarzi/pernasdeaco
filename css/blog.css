@@ -67,10 +67,7 @@
     text-align: center;
     color: white;
 }
-.text-cards-video h2{
-    margin-top: 30px;
-    margin-bottom: 20px;
-}
+
 .text-cards-video h2:hover{
     color:#a6523f ;
     text-decoration: none;
