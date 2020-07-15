@@ -1,4 +1,5 @@
 <?php get_header();?>
+<main>
 		<div class="container">
 			<div class="row">
 				<div class="products-store col-xl-8 col-md-8 col-12">
@@ -33,7 +34,8 @@
             $key = get_theme_mod( 'set_map_apikey' );
             $address = urlencode( get_theme_mod( 'set_map_address' ) );
 
-            ?>
+			?>
+</main>
             <iframe
                 width="100%"
                 height="200"

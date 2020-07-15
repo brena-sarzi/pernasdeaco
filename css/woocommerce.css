@@ -159,17 +159,6 @@ section.related.products h2{ color: white;width: 100%; }
     margin-right: 10px; 
 }
 
-a.button.product_type_variable {
-    width: 80px;
-    height: 45px;
-    font-size: 14px;
-    color: white;
-    background: #a6523f;
-}
-a.button.product_type_variable:hover{
-    background: #8a3c2a;
-    color: white;
-}
 .woocommerce td.product-quantity{
     min-width: 50px;
 }
@@ -245,10 +234,6 @@ a.button.product_type_variable:hover{
     text-decoration:none;
 }
 
-span.price{
-    width: auto;
-}
-
 span.woocommerce-Price-amount{
     padding:0px 5px 0px 5px;
 }
@@ -275,9 +260,9 @@ ins .woocommerce-Price-amount{
 /* BOTÃO LOJA */
 .products-store li a.button{
     width: 100%;
+    height: 40px;
     color: white;
     border-radius: 0;
-    margin: auto;
     text-align: center;
     font-size: 16px;
     font-weight: normal;
@@ -317,6 +302,7 @@ ins .woocommerce-Price-amount{
     text-align: center;
     color: rgb(116, 112, 112);
     margin-bottom: 10px;
+    font-size: 14px;
 }
 
 .woocommerce ul.products li.product .price{
