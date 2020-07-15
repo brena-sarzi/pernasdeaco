@@ -2,10 +2,9 @@
 <?php get_header();?>
 <main>
 <!-- POSTS BLOG -->
-<div id="primary">
-    <div id="main">
         <div class="container">
             <div class="row">
+                <div class="container">
                 <div class="post col-xl-8 col-md-8 col-12">
             <?php 
                 // Enquanto houver posts, mostre-os pra gente 
@@ -30,16 +29,13 @@
 
             endwhile;
             ?>
-     
+     </div>
            </div>
            <?php get_sidebar(); ?>
         </div>
 
         </div> 
         
-    </div> 
-   
-</div>
  <!-- MAPA ACIMA FOOTER -->
  <div class="map">
             <div class="row">
