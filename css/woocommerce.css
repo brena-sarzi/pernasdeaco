@@ -235,9 +235,8 @@ a.button.product_type_variable:hover{
     padding: 0;
 }
 .products-store h2{
-    margin: 20px 0px 10px 0px;
     text-decoration: none;
-    padding-top: 0px;
+    font-size: 20px !important;
 }
 .products-store h2:hover{
     color: #8f9bbf;
@@ -246,13 +245,6 @@ a.button.product_type_variable:hover{
     text-decoration:none;
 }
 
-.products-store .price{
-    display: flex;
-    margin-bottom: 10px;
-    margin-top: 0px;
-    float: none;
- 
-}
 span.price{
     width: auto;
 }
@@ -279,25 +271,19 @@ ins .woocommerce-Price-amount{
     color: white;
     margin-left: 10px; 
 }
-.price{
-    display: flex;
-    float:right ;
-    clear: left;
-    margin: 20px 0px 20px 0px ;
-    width: 100%;
-
-}
 
 /* BOTÃO LOJA */
 .products-store li a.button{
     width: 100%;
-    background:#242021;
     color: white;
     border-radius: 0;
     margin: auto;
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: normal;
+    font-style:italic ;
 }
+
 .products-store li a.button:hover{
     color: rgb(170, 159, 159);
     background:#463e3e ;
