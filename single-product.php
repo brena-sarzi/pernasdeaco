@@ -5,7 +5,7 @@
             <div id="main">
                 <div class="container">
                     <div class="row">
-                        <div class="single-product" col-xl-8 col-md-8 col-12">
+                        <div class="single-product col-xl-8 col-md-8 col-12">
 
                             <?php 
                             // Se houver algum post
