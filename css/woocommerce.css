@@ -19,9 +19,7 @@ button.button:disabled, .woocommerce button.button:disabled[disabled]{
 .tabs.wc-tabs{
     display: none;
 }
-.woocommerce div.product form.cart .variations label{
-    color: orange;
-}
+
 .product-single {
     padding: 20px;
     background: #242021;
@@ -89,7 +87,6 @@ button.button:disabled, .woocommerce button.button:disabled[disabled]{
 
 .woocommerce .quantity .qty {
     background: #242021;
-    border: 2px solid orange;
     color: white;
     border-radius: 0;
     height: 40px;
@@ -98,10 +95,7 @@ button.button:disabled, .woocommerce button.button:disabled[disabled]{
 .woocommerce div.product form.cart .reset_variations{
     color: gray;
 }
-.woocommerce div.product form.cart .woocommerce-variation-description p{
-    text-align: center;
-    color: orange;
-}
+
 
 .woocommerce div.product .out-of-stock {
     color: #a6523f;
@@ -119,7 +113,7 @@ button.button:disabled, .woocommerce button.button:disabled[disabled]{
 
 .woocommerce div.product .woocommerce-tabs .panel{ border-top: 1px solid white; padding-top: 20px;color: white; text-align: center; }
 
-.woocommerce div.product .woocommerce-tabs .panel h2{ color: white; padding: 0px;  width: 100%;}
+.woocommerce div.product .woocommerce-tabs .panel h2{ color: white; padding: 0px; border: none; width: 100%;}
 
 section.related.products h2{ color: white;width: 100%; }
 
@@ -216,11 +210,10 @@ section.related.products h2{ color: white;width: 100%; }
 
 .woocommerce div.product p.stock{
     text-align: center;
-    color: orange;
+    color: white;
 }
 .woocommerce div.product form.cart .woocommerce-variation-description p{
     text-align: center;
-    color: orange;
 }
 
 /* PRODUTOS LOJA */
@@ -253,20 +246,22 @@ section.related.products h2{ color: white;width: 100%; }
 
 /* VALOR DO PRODUTO */
 span.woocommerce-Price-amount {
-    color: orange;
+    color: white;
     font-size: 20px;
     text-align: right;
     padding:0px 5px 0px 5px;
 
 }
+.woocommerce div.product p.price, .woocommerce div.product span.price{
+    color: white;
+}
 span.woocommerce-Price-amount:hover{
-    color: rgb(207, 135, 0);
+    color: rgb(201, 201, 201);
 }
 .woocommerce-variation-price{
     text-align: center;
 }
 del .woocommerce-Price-amount{
-    color: orange;
     font-weight: bolder;
     margin-left: 10px; 
 }
