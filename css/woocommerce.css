@@ -208,6 +208,8 @@ section.related.products h2{ color: white;width: 100%; }
 .products h2{
     text-align: center;
     margin-bottom: 40px;
+    border: none;
+    width: 100%;
 }
 
 .woocommerce div.product p.stock{
@@ -249,7 +251,7 @@ section.related.products h2{ color: white;width: 100%; }
 /* VALOR DO PRODUTO */
 span.woocommerce-Price-amount {
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     text-align: right;
     padding:0px 5px 0px 5px;
 
@@ -266,6 +268,7 @@ span.woocommerce-Price-amount:hover{
 del .woocommerce-Price-amount{
     font-weight: bolder;
     margin-left: 10px; 
+    font-size: 14px;
 }
 
 /* BOTÃO LOJA */
