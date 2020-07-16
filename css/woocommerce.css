@@ -205,9 +205,12 @@ section.related.products h2{ color: white;width: 100%; }
 }
 
 .woocommerce div.product p.stock{
-    font-size: 16px;
+    text-align: center;
+    color: orange;
 }
-
+.woocommerce div.product .stock{
+    color: orange;
+}
 
 
 /* PRODUTOS LOJA */
@@ -256,10 +259,6 @@ span.woocommerce-Price-amount:hover{
 del .woocommerce-Price-amount{
     color: orange;
     font-weight: bolder;
-    margin-left: 10px; 
-}
-ins .woocommerce-Price-amount{
-    color: white;
     margin-left: 10px; 
 }
 
