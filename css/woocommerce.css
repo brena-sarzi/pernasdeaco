@@ -302,7 +302,7 @@ del .woocommerce-Price-amount{
 .woocommerce div.product form.cart .button{
     width: 100%;
     font-size: 12px;
-    color: black;}
+}
 
 .woocommerce .star-rating{
     float: none;
