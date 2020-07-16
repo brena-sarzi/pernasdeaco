@@ -7,10 +7,6 @@ button.button:disabled, .woocommerce button.button:disabled[disabled]{
     float: left;
     margin-bottom: 20px;
 }
-p.woocommerce-product-details__short-description{
-    height: auto;
-    color: orange;
-}
 .product-single h2{
     width: 50%;
     float: right;
@@ -93,8 +89,7 @@ p.woocommerce-product-details__short-description{
     border: 2px solid orange;
     color: white;
     border-radius: 0;
-    width: 330px;
-    margin-top: 20px;
+    height: 40px;
 }
 
 .woocommerce div.product form.cart .reset_variations{
