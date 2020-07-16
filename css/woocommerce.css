@@ -254,7 +254,7 @@ span.woocommerce-Price-amount{
 /* VALOR DO PRODUTO */
 span.woocommerce-Price-amount {
     color: orange;
-    font-size: 24px;
+    font-size: 20px;
     text-align: right;
 }
 span.woocommerce-Price-amount:hover{
