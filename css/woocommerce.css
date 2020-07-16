@@ -4,16 +4,12 @@ button.button:disabled, .woocommerce button.button:disabled[disabled]{
 .imagem-product img{
     width: 300px;
     height: 300px;
-    float: left;
     margin-bottom: 20px;
 }
 .product-single h2{
-    width: 50%;
-    float: right;
     border-top: 2px solid #a6523f;
     border-bottom: 2px solid #a6523f;
     padding: 10px 0px 10px 0px;
-    font-size: 22px !important;
 }
 
 .tabs.wc-tabs{
@@ -111,7 +107,7 @@ button.button:disabled, .woocommerce button.button:disabled[disabled]{
 
 .woocommerce div.product .woocommerce-tabs ul.tabs li::before{ display: none; }
 
-.woocommerce div.product .woocommerce-tabs .panel{ border-top: 1px solid white; padding-top: 20px;color: white; text-align: center; }
+.woocommerce div.product .woocommerce-tabs .panel{ border-top: 1px solid white; padding-top: 20px;color: white; text-align: center; font-size: 18px; }
 
 .woocommerce div.product .woocommerce-tabs .panel h2{ color: white; padding: 0px; border: none; width: 100%;}
 
@@ -202,8 +198,6 @@ section.related.products h2{ color: white;width: 100%; }
     color: #8a3c2a;
 }
 
-.woocommerce div.product{ margin-top: 20px; }
-
 /* TITULO PRODUTO */
 .products h2{
     text-align: center;
@@ -236,17 +230,15 @@ section.related.products h2{ color: white;width: 100%; }
     float: left;
     padding: 0;
 }
-.products-store h2{
-    text-decoration: none;
-    font-size: 20px !important;
-}
-.products-store h2:hover{
-    color: #8f9bbf;
-}
+
 .products-store a:hover{
     text-decoration:none;
 }
 
+.gallery img{
+    width: 100px;
+    height: 100px;
+}
 
 /* VALOR DO PRODUTO */
 span.woocommerce-Price-amount {
@@ -539,7 +531,10 @@ table, td, th {
     padding-right: 100px;
     margin-bottom: 0px;
 }
-
+.woocommerce-page div.product div.summary{
+    float: none;
+    width: 100%;
+}
 .checkout-button{
     float: right;
     clear: right;

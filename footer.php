@@ -25,6 +25,7 @@
             </div>
         </div>
 </footer>
+<script src="<?php get_template_directory_uri() . '/assets/js/xzoom-gallery.js' ?>"></script>
 
 <?php wp_footer(); ?> 
 </body>

@@ -3,7 +3,7 @@ body{
     overflow-x: hidden;
     font-family: 'Manrope', sans-serif !important;
     background: #131313 ;
-    font-size: 20px !important;
+    font-size: 16px !important;
     width: 100%;
 }
 /* link site */
@@ -44,9 +44,11 @@ h1{
     width: 100%;
 }
 h2{
-    font-size: 25px !important;
+    font-size: 20px !important;
     text-align: center;
     margin-top: 10px;
+    text-shadow: 2px 2px 4px  #000000;
+
 }
 h2:hover{
     color: #8eb4c5;
@@ -165,4 +167,11 @@ p{
 }
 .elementor-column-gap-default>.elementor-row>.elementor-column>.elementor-element-populated{
     padding: 0px !important;
+}
+.xzoom-gallery {
+    margin-top: 10px
+}
+
+.xzoom {
+    margin-top: 40px
 }

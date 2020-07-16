@@ -7,7 +7,7 @@
                     <div class="row">
                         <div class="error-404 col-12">
                             <!-- LOGO -->
-                            <img src="<?php echo get_template_directory_uri(); ?>/assests/img/Expandindo Mundos.png" alt="" width="225px" >
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Expandindo Mundos.png" alt="" width="225px" >
                             <!-- TITULO -->
                             <h1>Página não encontrada</h1>
                             <!-- PARAGRAFO -->
