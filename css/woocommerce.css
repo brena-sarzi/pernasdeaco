@@ -11,8 +11,8 @@ p.woocommerce-product-details__short-description{
     height: auto;
 }
 .product-single h2{
-    padding: 0px 0px 10px 0px ;
-    color: #a6523f;
+    padding: 0px 0px 00px 370px ;
+    color: orange;
 }
 
 .tabs.wc-tabs{
@@ -48,7 +48,7 @@ p.woocommerce-product-details__short-description{
 
 .woocommerce div.product p.price{
     text-align: center;
-    float: left;
+    margin-bottom: 20px;
 }
 
 .woocommerce-product-details__short-description{
@@ -92,11 +92,9 @@ p.woocommerce-product-details__short-description{
     width: 345px;
     margin-top: 20px;
 }
-.woocommerce div.product form.cart .variations td, .woocommerce div.product form.cart .variations th{
-    text-align: center;
-}
+
 .woocommerce div.product form.cart .reset_variations{
-    color: orange;
+    color: gray;
 }
 .woocommerce div.product form.cart .woocommerce-variation-description p{
     text-align: center;
