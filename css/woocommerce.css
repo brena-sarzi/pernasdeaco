@@ -9,6 +9,7 @@ button.button:disabled, .woocommerce button.button:disabled[disabled]{
 }
 p.woocommerce-product-details__short-description{
     height: auto;
+    color: orange;
 }
 .product-single h2{
     width: 50%;
@@ -55,7 +56,7 @@ p.woocommerce-product-details__short-description{
 }
 
 .woocommerce-product-details__short-description{
-    text-align:left; 
+    text-align:center; 
     margin: 0px 0px 30px 0px;
     width: 100%;
 }
