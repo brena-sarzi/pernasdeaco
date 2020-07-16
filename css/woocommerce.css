@@ -243,15 +243,18 @@ span.woocommerce-Price-amount{
 
 /* VALOR DO PRODUTO */
 span.woocommerce-Price-amount {
-    color: white;
-    font-size: 16px;
+    color: orange;
+    font-size: 24px;
     text-align: right;
 }
 span.woocommerce-Price-amount:hover{
-    color: #a63838;
+    color: rgb(207, 135, 0);
+}
+.woocommerce-variation-price{
+    text-align: center;
 }
 del .woocommerce-Price-amount{
-    color: #a63838;
+    color: orange;
     font-weight: bolder;
     margin-left: 10px; 
 }
@@ -438,6 +441,7 @@ table, td, th {
 }
 span.woocommerce-Price-amount{
     margin: 0px;
+    font-size: 24px;
 }
 .woocommerce-cart table.cart .product-thumbnail img{
     width: 50px;
