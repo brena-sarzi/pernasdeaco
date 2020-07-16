@@ -11,7 +11,8 @@ p.woocommerce-product-details__short-description{
     height: auto;
 }
 .product-single h2{
-    padding: 0px 0px 00px 370px ;
+    width: 50%;
+    float: right;
     color: orange;
 }
 
@@ -119,7 +120,7 @@ p.woocommerce-product-details__short-description{
 
 .woocommerce div.product .woocommerce-tabs .panel{ border-top: 1px solid white; padding-top: 20px;color: white; text-align: center; }
 
-.woocommerce div.product .woocommerce-tabs .panel h2{ color: white; padding: 0px; }
+.woocommerce div.product .woocommerce-tabs .panel h2{ color: white; padding: 0px;  width: 100%;}
 
 section.related.products h2{ color: white;width: 100%; }
 
