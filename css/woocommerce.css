@@ -11,6 +11,10 @@ button.button:disabled, .woocommerce button.button:disabled[disabled]{
     width: 50%;
     float: right;
     color: orange;
+    border-top: 2px solid #a6523f;
+    border-bottom: 2px solid #a6523f;
+    padding: 10px 0px 10px 0px;
+    font-size: 22px !important;
 }
 
 .tabs.wc-tabs{
