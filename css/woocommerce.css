@@ -18,7 +18,9 @@ p.woocommerce-product-details__short-description{
 .tabs.wc-tabs{
     display: none;
 }
-
+.woocommerce div.product form.cart .variations label{
+    color: orange;
+}
 .product-single {
     padding: 20px;
     background: #242021;
