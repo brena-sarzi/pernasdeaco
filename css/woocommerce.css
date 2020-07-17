@@ -21,6 +21,10 @@ button.button:disabled, .woocommerce button.button:disabled[disabled]{
     background: #242021;
     height: 100% ;
 }
+.woocommerce img, .woocommerce-page img{
+    float: left;
+    margin: 10px 10px 0px 0px;
+}
 
 /* area services */
 .services-item{
@@ -55,11 +59,7 @@ button.button:disabled, .woocommerce button.button:disabled[disabled]{
 }
 
 .product_meta{ 
-    text-align: left; 
-    margin-right: 20px; 
-    color: white;
-    width: 100%;
-    font-size: 16px;
+    display: none;
 }
 .product_meta a{
     color:  #808080;
@@ -201,13 +201,13 @@ section.related.products h2{ color: white;width: 100%; }
 /* TITULO PRODUTO */
 .products h2{
     text-align: center;
-    margin-bottom: 40px;
+    margin: 40px 0px 20px 0px;
     border: none;
     width: 100%;
 }
 
 .woocommerce div.product p.stock{
-    text-align: center;
+    text-align: start;
     color: white;
 }
 .woocommerce div.product form.cart .woocommerce-variation-description p{
@@ -256,6 +256,7 @@ span.woocommerce-Price-amount:hover{
 }
 .woocommerce-variation-price{
     text-align: center;
+    margin: 5px 0px 20px 0px;
 }
 del .woocommerce-Price-amount{
     font-weight: bolder;
@@ -297,6 +298,7 @@ del .woocommerce-Price-amount{
 .woocommerce div.product form.cart .button{
     width: 100%;
     font-size: 12px;
+    margin-top: 20px;
 }
 
 .woocommerce .star-rating{
@@ -352,7 +354,6 @@ del .woocommerce-Price-amount{
     margin-bottom: 10px;
 }
 .description p{
-    float: left;
     text-align: center;
 }
 .woocommerce ul.products li.product span.onsale{

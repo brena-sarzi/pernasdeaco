@@ -1,45 +1,209 @@
+
 <!-- POST -->
 <article class="product-single">
     
     <?php global $product; ?>
 
     <div class="imagens col-6" style="float: left;">
-        <div class="container d-flex justify-content-center">
-            <section id="default" class="padding-top0">
-                <div class="row">
-                    <div class="aleatorio">
-                        <div class="xzoom-container">  
-                            <img class="xzoom" id="xzoom-default" src="<?= wp_get_attachment_url( $product->get_image_id() ); ?>" xoriginal="<?= $image_link ?>" />
-                            <div class="xzoom-thumbs"> 
+        <script type="text/javascript" src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1565190285/Scripts/xzoom.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1565190284/Scripts/xzoom.css" media="all" />
+    
+        <div class="row">
+            <div class="xzoom-container"> <img class="xzoom" id="xzoom-default" src="<?= wp_get_attachment_url( $product->get_image_id() ); ?>" xoriginal="<?= $image_link ?>" />
+        
+                <?php $attachment_ids = $product->get_gallery_image_ids();
 
-                                <?php $attachment_ids = $product->get_gallery_image_ids();
-
-                                foreach( $attachment_ids as $attachment_id ) {
-                                $image_link = wp_get_attachment_url( $attachment_id ); ?>
-
-                                    <a href="">
-                                        <img class="xzoom-gallery" width="80" src="<?= $image_link ?>" xpreview="<?= $image_link ?>">
-                                    </a> 
-
-                                <?php } ?>
-                            </div>
-                        </div>
-                    </div>  
+                foreach( $attachment_ids as $attachment_id ) {
+                $image_link = wp_get_attachment_url( $attachment_id ); ?>
+                <div class="xzoom-thumbs"> 
+                    <a href="<?= $image_link ?>">
+                        <img class="xzoom-gallery" width="80" src="<?= $image_link ?>" xpreview="<?= $image_link ?>">
+                    </a>
                 </div>
-            </section>
+                <?php } ?>
+            </div>
         </div>
+
     </div>
 
     <div class="conteudo col-6" style="float: left;">
-        <div class="row">
             <span style="text-align: center;"><h2><?php the_title();?></h2></span>
-        </div>
+
         <?php the_content(); ?>
     </div>
-</div>
+
+    <div class="row col-12">
+        <div class="description col-12" id="descricao-produto">
+
+        </div>
+    </div>
+
+    <div class="row col-12">
+        <div class="relacionados col-12" id="relacionados">
+
+        </div>
+    </div>
     <script>
-        document.querySelector(".pointcomunicacao-message-out-of-stock").style.display = 'none'
-        document.querySelector(".onsale").style.display = 'none'
+        const descriptionOld = document.getElementById("tab-description")
+        const descriptionNew = document.getElementById("descricao-produto")
+        descriptionNew.appendChild(descriptionOld)
+
+        const relacionadosOld = document.querySelector(".up-sells.upsells")
+        const relacionadosNew = document.getElementById("relacionados")
+        relacionadosNew.appendChild(relacionadosOld)
     </script>
+
+<script>
+
+(function ($) {
+$(document).ready(function() {
+$('.xzoom, .xzoom-gallery').xzoom({zoomWidth: 400, title: true, tint: '#333', Xoffset: 15});
+$('.xzoom2, .xzoom-gallery2').xzoom({position: '#xzoom2-id', tint: '#ffa200'});
+$('.xzoom3, .xzoom-gallery3').xzoom({position: 'lens', lensShape: 'circle', sourceClass: 'xzoom-hidden'});
+$('.xzoom4, .xzoom-gallery4').xzoom({tint: '#006699', Xoffset: 15});
+$('.xzoom5, .xzoom-gallery5').xzoom({tint: '#006699', Xoffset: 15});
+
+//Integration with hammer.js
+var isTouchSupported = 'ontouchstart' in window;
+
+if (isTouchSupported) {
+//If touch device
+$('.xzoom, .xzoom2, .xzoom3, .xzoom4, .xzoom5').each(function(){
+var xzoom = $(this).data('xzoom');
+xzoom.eventunbind();
+});
+
+$('.xzoom, .xzoom2, .xzoom3').each(function() {
+var xzoom = $(this).data('xzoom');
+$(this).hammer().on("tap", function(event) {
+event.pageX = event.gesture.center.pageX;
+event.pageY = event.gesture.center.pageY;
+var s = 1, ls;
+
+xzoom.eventmove = function(element) {
+element.hammer().on('drag', function(event) {
+event.pageX = event.gesture.center.pageX;
+event.pageY = event.gesture.center.pageY;
+xzoom.movezoom(event);
+event.gesture.preventDefault();
+});
+}
+
+xzoom.eventleave = function(element) {
+element.hammer().on('tap', function(event) {
+xzoom.closezoom();
+});
+}
+xzoom.openzoom(event);
+});
+});
+
+$('.xzoom4').each(function() {
+var xzoom = $(this).data('xzoom');
+$(this).hammer().on("tap", function(event) {
+event.pageX = event.gesture.center.pageX;
+event.pageY = event.gesture.center.pageY;
+var s = 1, ls;
+
+xzoom.eventmove = function(element) {
+element.hammer().on('drag', function(event) {
+event.pageX = event.gesture.center.pageX;
+event.pageY = event.gesture.center.pageY;
+xzoom.movezoom(event);
+event.gesture.preventDefault();
+});
+}
+
+var counter = 0;
+xzoom.eventclick = function(element) {
+element.hammer().on('tap', function() {
+counter++;
+if (counter == 1) setTimeout(openfancy,300);
+event.gesture.preventDefault();
+});
+}
+
+function openfancy() {
+if (counter == 2) {
+xzoom.closezoom();
+$.fancybox.open(xzoom.gallery().cgallery);
+} else {
+xzoom.closezoom();
+}
+counter = 0;
+}
+xzoom.openzoom(event);
+});
+});
+
+$('.xzoom5').each(function() {
+var xzoom = $(this).data('xzoom');
+$(this).hammer().on("tap", function(event) {
+event.pageX = event.gesture.center.pageX;
+event.pageY = event.gesture.center.pageY;
+var s = 1, ls;
+
+xzoom.eventmove = function(element) {
+element.hammer().on('drag', function(event) {
+event.pageX = event.gesture.center.pageX;
+event.pageY = event.gesture.center.pageY;
+xzoom.movezoom(event);
+event.gesture.preventDefault();
+});
+}
+
+var counter = 0;
+xzoom.eventclick = function(element) {
+element.hammer().on('tap', function() {
+counter++;
+if (counter == 1) setTimeout(openmagnific,300);
+event.gesture.preventDefault();
+});
+}
+
+function openmagnific() {
+if (counter == 2) {
+xzoom.closezoom();
+var gallery = xzoom.gallery().cgallery;
+var i, images = new Array();
+for (i in gallery) {
+images[i] = {src: gallery[i]};
+}
+$.magnificPopup.open({items: images, type:'image', gallery: {enabled: true}});
+} else {
+xzoom.closezoom();
+}
+counter = 0;
+}
+xzoom.openzoom(event);
+});
+});
+
+} else {
+//If not touch device
+
+//Integration with fancybox plugin
+$('#xzoom-fancy').bind('click', function(event) {
+var xzoom = $(this).data('xzoom');
+xzoom.closezoom();
+$.fancybox.open(xzoom.gallery().cgallery, {padding: 0, helpers: {overlay: {locked: false}}});
+event.preventDefault();
+});
+
+//Integration with magnific popup plugin
+$('#xzoom-magnific').bind('click', function(event) {
+var xzoom = $(this).data('xzoom');
+xzoom.closezoom();
+var gallery = xzoom.gallery().cgallery;
+var i, images = new Array();
+for (i in gallery) {
+images[i] = {src: gallery[i]};
+}
+$.magnificPopup.open({items: images, type:'image', gallery: {enabled: true}});
+event.preventDefault();
+});
+}
+});
+})(jQuery);</script>
         
 </article>
