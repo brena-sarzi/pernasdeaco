@@ -28,6 +28,8 @@ function load_scripts(){
     'all' );
     wp_enqueue_style( 'mobile', get_template_directory_uri() . '/css/mobile.css', array(), '1.0',
     'all' );
+    wp_enqueue_style( 'wordpress', get_template_directory_uri() . '/css/wordpress.css', array(), '1.0',
+    'all' );
 
 
 }

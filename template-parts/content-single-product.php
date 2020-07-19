@@ -27,8 +27,9 @@
     </div>
 
     <div class="conteudo col-6" style="float: left;">
-            <span style="text-align: center;"><h2><?php the_title();?></h2></span>
-
+        <div class="row">
+            <h2><?php the_title();?></h2>
+        </div>
         <?php the_content(); ?>
     </div>
 
