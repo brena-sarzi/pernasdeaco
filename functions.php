@@ -41,8 +41,7 @@ add_action( 'wp_enqueue_scripts', 'load_scripts' );
     //Registrando nossos menus
         register_nav_menus(
             array(
-                'my_main_menu' => 'Main Menu',
-                'footer_menu'  => 'Footer Menu'
+                'main-menu' => 'Menu Principal',
             )
         );
         
@@ -353,3 +352,4 @@ function custom_label( $label, $method ) {
 add_filter( 'woocommerce_cart_shipping_method_full_label', 'custom_label', 10, 2 );
 
 add_filter( 'woocommerce_add_to_cart_fragments', 'woocommerce_header_add_to_cart_fragment' );
+

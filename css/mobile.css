@@ -1,25 +1,14 @@
 /* menu header */
 @media screen and (max-width: 1200px) {
  
+    .submit{
+        display: none;
+    }
+
     .cards{
         height: auto;
     }
-
-    .woocommerce-cart table.cart td [type=submit]:not(:disabled), button:not(:disabled){
-        font-size: 12px;
-    }
-
-    .pages-single img{
-        width: 100%;
-        height: auto;
-    }
-    .search input[type=text]{
-        width: 80px;
-    }
-    .search{
-        float: right;
-        font-size: 16px;
-    }
+   
     p.abstract{
         font-size: 14px;
         margin-top: 10px;

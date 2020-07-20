@@ -26,7 +26,16 @@
         </div>
 </footer>
 <script src="<?php get_template_directory_uri() . '/assets/js/xzoom-gallery.js' ?>"></script>
-
+<script>
+    $(document).ready(function(){
+        $("ul.sub-menu").parent().addClass("dropdown");
+        $("ul.sub-menu").addClass("dropdown-menu");
+        $("ul#menuid li.dropdown a").addClass("dropdown-toggle");
+        $("ul.sub-menu li a").removeClass("dropdown-toggle"); 
+        $('.navbar .dropdown-toggle').append('<b class="caret"></b>');
+        $('a.dropdown-toggle').attr('data-toggle', 'dropdown');
+    });
+</script>
 <?php wp_footer(); ?> 
 </body>
 </html>
