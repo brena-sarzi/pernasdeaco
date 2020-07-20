@@ -1,10 +1,6 @@
 <!-- POST -->
 <article class="cards col-full-2 col-12 ">
 
-    <!-- IMAGEM DO POST -->
-    <div class="video">
-        <?php the_content(); ?>
-    </div>
         <!-- DIVISAO DE TEXTO -->
         <div class="text-cards-video">
             
@@ -25,13 +21,21 @@
             </div>
             
             <!-- LIMITE DE LINHAS DO POST -->
+            <p class="abstract">
+            <?php
+            $excerpt = get_the_excerpt();
+
+            $excerpt = substr($excerpt, 0, 150);
+            $result = substr($excerpt, 0, strrpos($excerpt, ' '));
+            echo $result;?>...
+            </p>
             <div id="fourth">
-                <div class="link-post">
-                    <a href="<?php the_permalink(); ?>">
-                        <i class="fas fa-book-reader"></i>
-                            Leia mais...
-                    </a>
-                </div>
+            <div class="link-post">
+                <a href="<?php the_permalink(); ?>">
+                   <i class="fas fa-book-reader"></i>
+                    Leia mais...
+                </a>
+            </div>
             </div>
         
         </div>
