@@ -1,16 +1,10 @@
 <!-- POST -->
 <article class="page col-12 ">
-    
-    <!-- IMAGEM DO POST -->
+<div class="page-post" style="padding:20px;">
+     
     <div class="img-page">
-    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('full') ?></a>
-    </div>
-        <!-- DIVISAO DE TEXTO -->
-        <div class="page-post">
-            
-            <!-- CATEGORIAS -->
-            <?php the_category(''); ?>  
-
+        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('full') ?></a>
+    </div>         
             <!-- TITULO DO POST -->
             <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
             

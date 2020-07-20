@@ -18,7 +18,7 @@
         <section class="middle-area">
             <div class="container">
                 <div class="row">
-                    <div class="pages-single col-xl-8 col-md-8 col-12">
+                    <div class="pages-single col-xl-8 col-md-8 col-12" style="padding-left:0px;">
                         <?php 
                             // Se houver algum post
                             if(have_posts()):
