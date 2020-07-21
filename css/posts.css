@@ -22,6 +22,9 @@
     padding: 20px;
     margin-top: 0;
 }
+.category{
+    margin-top: 15px;
+}
 .post-card p{
     text-align: center;
     padding: 0px 25px 15px 25px;

@@ -6,8 +6,9 @@
     <?php the_post_thumbnail( 'full' ) ?>
 </div>
     <!-- CATEGORIAS -->
-     <span style="margin-top:15px;"><?php the_category(''); ?></span>  
-
+    <div class="category">
+     <?php the_category(''); ?>  
+    </div>
     <!-- TITULO DO POST -->
     <h2><?php the_title(); ?></h2>
 
