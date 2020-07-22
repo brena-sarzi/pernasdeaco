@@ -28,7 +28,7 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent23">
             <ul class="navbar-nav mr-auto">
-            
+                <?php wp_nav_menu( array('theme_location' => 'my_main_menu') ); ?>
             </ul>
         </div>
 
