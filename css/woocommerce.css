@@ -329,6 +329,7 @@ del .woocommerce-Price-amount{
 .woocommerce-loop-product__title{
     border: none;
     margin-top: 217px;
+    margin-bottom: 0px;
 }
 .woocommerce div.product .woocommerce-product-rating{
     display: none;
