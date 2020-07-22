@@ -10,7 +10,7 @@
             </div>
         
             <!-- TITULO DO POST -->
-            <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
+            <a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
             
             <div class="link-video">
             <p><a href="<?php the_permalink(); ?>"><i class="fas fa-step-backward"></i> <i class="far fa-play-circle"></i> <i class="fas fa-step-forward"></i></a></p>

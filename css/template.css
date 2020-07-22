@@ -56,6 +56,16 @@ h2{
 h2:hover{
     color: #8eb4c5;
 }
+h3{
+    font-size: 20px !important;
+    text-align: center;
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px  #000000;
+    color: white;
+}
+h3 a{
+    color: white;
+}
 /* paragraph */
 p{
     padding: 0;

@@ -12,7 +12,7 @@
             <?php the_category(''); ?>
 
             <!-- TITULO DO POST -->
-            <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
+            <a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
             
             <!-- LIMITE DE LINHAS DO POST -->
             <p class="abstract">
