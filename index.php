@@ -38,6 +38,9 @@
                         <p>There's nothing yet to be displayed...</p>
                         <?php endif; ?>
 
+                    </div>
+                    <?php get_sidebar(); ?> 
+                </div>  
                         <!-- PAGES POSTS -->
                         <div class="pages text-left col-8">
                             <?php previous_posts_link('<i class="fas fa-angle-double-left"></i> <i class="fas fa-bicycle"></i>'); ?>
@@ -47,11 +50,8 @@
                             <?php next_posts_link('<i class="fas fa-bicycle"></i> <i class="fas fa-angle-double-right"></i>') ?>
                         </div>
 
-                    </div>
-                    <?php get_sidebar(); ?> 
-                    </div> 
-
-                        </div> 
+                   
+            </div> 
         </section>
     
         <!-- MAPA ACIMA FOOTER -->
