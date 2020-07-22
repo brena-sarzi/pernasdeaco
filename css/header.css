@@ -2,7 +2,7 @@
 .menu-top{
     height: 50px;
 }
-#menu-menu-1{
+dl, ol, ul{
     padding: 0px;
     margin-top: 15px;
 }

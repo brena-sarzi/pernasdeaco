@@ -11,11 +11,8 @@
 }
 /* post content */
 .post-card h2{
-    color: white;
+    color: #a6523f;
     margin-bottom: 20px;
-    border-top: 2px solid #a6523f;
-    border-bottom: 2px solid #a6523f;
-    padding: 10px 0px 10px 0px;
 }
 .post-card{
     color: white;
