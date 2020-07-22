@@ -23,7 +23,6 @@ button.button:disabled, .woocommerce button.button:disabled[disabled]{
 }
 .woocommerce img, .woocommerce-page img{
     float: left;
-    margin: 10px 10px 0px 0px;
 }
 
 /* area services */
@@ -327,7 +326,10 @@ del .woocommerce-Price-amount{
     float: none;
     font-size: 18px;
 }
-
+.woocommerce-loop-product__title{
+    border: none;
+    margin-top: 217px;
+}
 .woocommerce div.product .woocommerce-product-rating{
     display: none;
 }

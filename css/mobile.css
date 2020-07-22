@@ -4,6 +4,9 @@
     .submit{
         display: none;
     }
+    .navbar{
+        display: flex !important;
+    }
 
     .cards{
         height: auto;
@@ -525,6 +528,8 @@
     .comment-respond{
         height: 400px;
     }
+
+}
 
 
 @media (max-width:430px){
