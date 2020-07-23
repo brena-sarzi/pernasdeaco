@@ -293,6 +293,16 @@ function mytheme_customize_register( $wp_customize ) {
             'label'        => __( 'Texto Menu', 'mytheme' ),
             'section'    => 'colors',
         ) ) );
+
+
+    $wp_customize->add_setting( 'links' , array(
+        'default'     => "#000000",
+        'transport'   => 'refresh',
+        ) );
+        $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'links', array(
+            'label'        => __( 'Links', 'mytheme' ),
+            'section'    => 'colors',
+        ) ) );
 }
 add_action( 'customize_register', 'mytheme_customize_register' );
 
@@ -331,6 +341,7 @@ function mytheme_customize_css()
         .icons a{ color: <?php echo get_theme_mod('text-menu', "#000000"); ?>; }
         .fa-search:before{ color: <?php echo get_theme_mod('text-menu', "#000000"); ?>; }
         .fa-bars:before{ color: <?php echo get_theme_mod('text-menu', "#000000"); ?>; }
+         a{ color: <?php echo get_theme_mod('links', "#000000"); ?>; }
         .woocommerce-cart table.cart td [type=submit]:not(:disabled), button:not(:disabled){ background: <?php echo get_theme_mod('buttoncheckout-color', "#000000"); ?>; }
         .woocommerce-cart .wc-proceed-to-checkout a.checkout-button{ background: <?php echo get_theme_mod('buttoncheckout-color', "#000000"); ?>; }
         .woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover{ background: <?php echo get_theme_mod('checkouthover-color', "#000000"); ?>; }

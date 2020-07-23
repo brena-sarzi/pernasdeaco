@@ -1,13 +1,13 @@
 /* menu header */
 @media screen and (max-width: 1200px) {
  
+    .search{
+        display: none;
+    }
     .submit{
         display: none;
     }
-    .navbar{
-        display: flex !important;
-    }
-
+   
     .cards{
         height: auto;
     }
@@ -241,6 +241,10 @@
 }  
 
  @media(max-width: 768px){
+    .navbar{
+        display: flex !important;
+    }
+
     .fa-search:before{
         float: right;
     }
@@ -602,7 +606,7 @@
         margin: 0px;
         margin-left: 130px;
     } 
-   
+
     .post{
         width: 100%;
     }
