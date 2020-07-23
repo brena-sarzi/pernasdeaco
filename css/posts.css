@@ -112,7 +112,7 @@ input[type=checkbox]:checked::before{
     font-size: 12px;
 }
 .emoji{
-    float: none;
+    float: none !important;
 }
 #url{
     font-size: 12px;
