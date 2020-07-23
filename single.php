@@ -34,7 +34,8 @@
         </div>
 
         </div> 
-        
+        </main>
+
  <!-- MAPA ACIMA FOOTER -->
  <div class="map">
             <div class="row">
@@ -50,6 +51,5 @@
             </iframe>
         </div>
         </div>
-        </main>
 <!-- FOOTER -->
 <?php get_footer(); ?>
