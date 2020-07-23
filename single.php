@@ -14,10 +14,10 @@
 
                <div class="row">
                     <div class="pages-post text-left col-6">
-                        <?php next_post_link('<i class="fas fa-angle-double-left"></i><i class="fas fa-bicycle"></i> %link'); ?>
+                        <?php next_post_link('<a href="<?php the_permalink(); ?>"><i class="fas fa-angle-double-left"></i><i class="fas fa-bicycle"></i></a> %link'); ?>
                     </div>
                     <div class="pages-post text-right col-6">
-                        <?php previous_post_link('%link  <i class="fas fa-bicycle"></i><i class="fas fa-angle-double-right"></i>'); ?>
+                        <?php previous_post_link('%link <a href="<?php the_permalink(); ?>"><i class="fas fa-bicycle"></i><i class="fas fa-angle-double-right"></i></a>'); ?>
                     </div>
                </div>
                
