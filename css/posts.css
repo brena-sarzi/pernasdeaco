@@ -111,6 +111,9 @@ input[type=checkbox]:checked::before{
 #email{
     font-size: 12px;
 }
+.emoji{
+    float: none;
+}
 #url{
     font-size: 12px;
 }
