@@ -4,7 +4,7 @@
         <div class="row">
             <div class="footer col-12">
                 <div class="text-footer">
-                    <p style="margin-top:15px;">Todos os direitos reservados a Pernas de Aço</p>
+                    <p style="margin-top:15px;">Todos os direitos reservados a Expandindo Mundos</p>
                         <p>Site desenvolvido por <span style="color:orange;">Estudio Roda Pião</span></p>
                 </div>
                 <!-- ICONS FOOTER -->
