@@ -4,7 +4,7 @@
          <!-- ÁREA DE SERVIÇOS - LOJA -->
          <div class="container">
                 <div class="row">
-                    <div class="services-item">
+                    <div class="services-item" style="padding-left:15px;">
                         <?php 
                         if(is_active_sidebar('services' )){
                             dynamic_sidebar('services');
@@ -18,7 +18,7 @@
         <section class="middle-area">
             <div class="container">
                 <div class="row">
-                    <div class="pages-single col-xl-8 col-md-8 col-12" style="padding-left:0px;">
+                    <div class="pages-single col-xl-8 col-md-8 col-12">
                         <?php 
                             // Se houver algum post
                             if(have_posts()):
