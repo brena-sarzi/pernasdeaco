@@ -28,7 +28,7 @@
 
     <div class="conteudo col-xl-6 col-12" style="float: left;">
         <div class="row" style="padding-left:20px;">
-            <h2><?php the_title();?></h2>
+            <h2 style="width:100%;"><?php the_title();?></h2>
         </div>
         <?php the_content(); ?>
     </div>
