@@ -2,7 +2,7 @@
 @media screen and (max-width: 1200px) {
  
     .products-single .imagens img{
-        width: 100%;
+        width: 100% !important;
         height: auto;
     }
     .search{
