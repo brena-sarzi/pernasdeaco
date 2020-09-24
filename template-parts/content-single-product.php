@@ -4,7 +4,7 @@
     
     <?php global $product; ?>
 
-    <div class="imagens col-6" style="float: left;">
+    <div class="imagens col-xl-6 col-12" style="float: left;">
         <script type="text/javascript" src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1565190285/Scripts/xzoom.min.js"></script>
         <link rel="stylesheet" type="text/css" href="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1565190284/Scripts/xzoom.css" media="all" />
     
@@ -26,8 +26,8 @@
 
     </div>
 
-    <div class="conteudo col-6" style="float: left;">
-        <div class="row">
+    <div class="conteudo col-xl-6 col-12" style="float: left;">
+        <div class="row" style="padding-left:20px;">
             <h2><?php the_title();?></h2>
         </div>
         <?php the_content(); ?>

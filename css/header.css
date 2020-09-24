@@ -11,7 +11,7 @@ dl, ol, ul{
     display: inline;
 }
 .navbar-inner { overflow: visible !important; }
-.menu ul { display: none; position: absolute; margin-left: 0px; padding:0px ; top: 35px; border-radius: 0px;}
+.menu ul { display: none; position: absolute; margin-left: 0px; padding:0px ; top: 35px; border-radius: 0px; left: -1px;}
 .menu ul li, .menu ul li a { display: block !important; }
 .menu-item-has-children li:hover > ul { display: block !important; }
 .menu-item-has-children:hover ul { display: block !important; }
