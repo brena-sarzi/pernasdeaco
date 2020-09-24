@@ -26,5 +26,5 @@
     padding-left: 10px;
 }
 .xzoom-gallery.xactive{
-    margin: 0px;
+    margin: 0px !important;
 }
