@@ -393,6 +393,9 @@
 
 }
 @media(max-width: 576px){
+    .woocommerce form .form-row-first, .woocommerce form .form-row-last, .woocommerce-page form .form-row-first, .woocommerce-page form .form-row-last{
+        width: 100%;
+    }
     .sidebar{
         display: none;
     }
