@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" style="height: auto;">
 
 <head>
     <meta charset="UTF-8">
@@ -17,11 +17,13 @@
 <header>
             
     <!-- MENU MOBILE RESPONSIVO -->
-        <nav class="navbar navbar-dark red lighten-1 mb-4">
+        <nav style="width:100%;" class="navbar navbar-dark red lighten-1 mb-4">
 
-        <a class="navbar-brand" href="#">Expandindo Mundos</a>
+        <div class="logo" style="float:rigth;">
+            <?php the_custom_logo(); ?>
+        </div>
 
-        <button class="navbar-toggler second-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent23"
+        <button style="float:left;" class="navbar-toggler second-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent23"
             aria-controls="navbarSupportedContent23" aria-expanded="false" aria-label="Toggle navigation">
             <div class="animated-icon2"><span></span><span></span><span></span><span></span></div>
         </button>

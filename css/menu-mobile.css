@@ -180,3 +180,15 @@
     top: 21px;
     left: 8px;
     }
+    button.navbar-toggler.second-button.collapsed{
+        background: black !important;
+        border: none;
+    }
+    button.navbar-toggler.second-button{
+        background: black !important;
+        border: none;
+
+    }
+    button.navbar-toggler.second-button.collapsed:onclick{
+        border: black;
+    }
