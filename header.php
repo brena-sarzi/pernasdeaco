@@ -23,7 +23,7 @@
             <?php the_custom_logo(); ?>
         </div>
 
-        <button style="float:left;" class="navbar-toggler second-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent23"
+        <button style="width: auto;padding: 0px;" class="navbar-toggler second-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent23"
             aria-controls="navbarSupportedContent23" aria-expanded="false" aria-label="Toggle navigation">
             <div class="animated-icon2"><span></span><span></span><span></span><span></span></div>
         </button>

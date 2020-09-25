@@ -192,3 +192,12 @@
     button.navbar-toggler.second-button.collapsed:onclick{
         border: black;
     }
+    .menu-menu-container ul li{
+        display: inline;
+    }
+    .menu-menu-container li{
+        width: 100%;
+    }
+    .menu-menu-container .sub-menu.dropdown-menu{
+        background: black;
+    }
