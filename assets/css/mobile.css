@@ -272,6 +272,7 @@
     }
 
     .menu-mobile{
+        display: block;
         background: #1D1D20;
         width: 100%;
         background-image: url('../img/Expandindo\ Mundos.png');
