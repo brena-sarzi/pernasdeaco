@@ -248,7 +248,44 @@
     #shiftnav-toggle-main{
         display: block;
     }
+    .search{
+        display: block;
+    }
+    .buscar{
+        display: none;
+    }
+    .search input[type=text] {
+        width: 0px;
+        box-sizing: border-box;
+        border: none;
+        font-size: 16px;
+        background-color: transparent;
+        background-image: url('../img/search.png');
+        background-size: 30px 30px;
+        background-position: 10px 15px; 
+        background-repeat: no-repeat;
+        padding: 15px 20px 15px 40px;
+        transition: width 0.4s ease-in-out;
+        float: right;
+        color: #fff;
 
+    }
+
+    .menu-mobile{
+        background: #1D1D20;
+        width: 100%;
+        background-image: url('../img/Expandindo\ Mundos.png');
+        background-size: 100px;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 60px;
+    }
+    .search input[type=text]:focus {
+        padding: 15px 20px 15px 60px;
+        width: 40%;
+        border: none;
+        box-shadow: none;
+    }
     .fa-search:before{
         float: right;
     }

@@ -53,6 +53,14 @@
                 </section>  
         </div>
 
+        <div class="row">
+            <div class="menu-mobile col-12">
+
+                    <?php get_search_form(); ?>
+                
+            </div>
+        </div>
+
     <!-- MENU DESKTOP RESPONSIVO -->
         <section class="top-bar">
             <div class="menu-top">
@@ -80,7 +88,7 @@
                             </section>
 
                         <!-- BARRA DE PESQUISA MENU DESKTOP -->
-                            <div class="search col-xl-3 col-sm-2 ">
+                            <div class="search-menu col-xl-3 col-sm-2 ">
                                 <?php get_search_form() ?>
                             </div>
                     </div>
