@@ -1,5 +1,7 @@
 <?php get_header();?>
 <div class="container">
+	<div class="row">
+		<div class="checkout">
 	<?php
 	if ( ! defined( 'ABSPATH' ) ) {
 		exit;
@@ -23,21 +25,23 @@
 
 			<?php do_action( 'woocommerce_checkout_before_customer_details' ); ?>
 
-			<div class="col6-set col-xl-6 col-12" id="customer_details">
-				<div class="col-12">
-					<?php do_action( 'woocommerce_checkout_billing' ); ?>
-				</div>
+			<div class="formulario col-xl-6 col-12" id="customer_details">
+				
+				<?php do_action( 'woocommerce_checkout_billing' ); ?>
+
 				<p><label for="order_comments" class="order-comments">
-					Order notes &nbsp;
+					Observações &nbsp;
 					<span class="optional">(optional)</span>
 				</label></p>
+				
 				<textarea name="order_comments" class="input-text " id="order_comments" placeholder="Notes about your order, e.g. special notes for delivery." rows="5" cols="12"></textarea>
 
 			</div>
-			
+
 			<?php do_action( 'woocommerce_checkout_after_customer_details' ); ?>
 
-		<?php endif; ?>
+			<?php endif; ?>
+
 			<div class="pagamento col-xl-6 col-md-12">
 				<?php do_action( 'woocommerce_checkout_before_order_review_heading' ); ?>
 			
@@ -55,5 +59,6 @@
 
 		<?php do_action( 'woocommerce_after_checkout_form', $checkout ); ?>
 </div>
-
+</div>
+</div>
 <?php get_footer(); ?>

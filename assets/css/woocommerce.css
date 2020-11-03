@@ -485,6 +485,16 @@ table, td, th {
     margin-bottom: 10px;
 }
 
+.woocommerce-cart table.cart td [type=submit]:not(:disabled), button:not(:disabled){
+    margin-top: 10px;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: none;
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+}
 .button-cupon:hover{
     color: rgb(170, 159, 159);
     background:#8a3c2a;
@@ -558,28 +568,8 @@ table, td, th {
     border: 2px solid #a6523f;
     border-radius: 0px;
     font-size: 18px;
-    width:500px;
+    width:100%;
     margin-bottom: 10px;
-}
-
-#billing_last_name {
-    width: 230px;
-} 
-
-#billing_first_name{
-    width: 230px;
-}
-
-.woocommerce-billing-fields h3{
-    color: white;
-    padding: 10px;
-    width: 100%;
-    margin-top: 20px;
-    text-align: center;
-}
-
-.woocommerce form .form-row label, .woocommerce-page form .form-row label{
-    width: 100%;
 }
 
 .woocommerce-page form .form-row select {
@@ -588,32 +578,32 @@ table, td, th {
     border: 2px solid #a6523f;
     border-radius: 0px;
     font-size: 18px;
-    width: 500px;
+    width: 100%;
     height: 42px;
     margin-bottom: 10px;
 }
 
-.woocommerce-billing-fields__field-wrapper label{
-    margin: 20px 0px 0px 0px ;
+.woocommerce form .form-row label, .woocommerce-page form .form-row label{
+    float: none;
+    width: 100%;
 }
 
 #customer_details{
     width: auto;
     float: left;
 }
-
+.woocommerce-input-wrapper{
+    height: 50px;
+}
 #order_comments{
     display: flex;
     color: white;
     border: 2px solid #a6523f;
     border-radius: 0px;
-    width: 500px;
-    margin: 0px 0px 20px 10px ;
+    width: 100%;
 }
 
-.order-comments{
-    margin: 20px 0px 10px 10px;
-}
+
 
 .pagamento{
     float: left;
@@ -653,7 +643,7 @@ table, td, th {
 .woocommerce #payment #place_order, .woocommerce-page #payment #place_order {
     width: 100%;
     font-size: 20px;
-	padding-bottom: 50px;
+    padding-bottom: 50px;
 }
 .woocommerce-checkout #payment div.form-row p{
     padding: 10px 20px ;

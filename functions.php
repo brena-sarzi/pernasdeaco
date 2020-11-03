@@ -343,9 +343,7 @@ function mytheme_customize_css()
         .woocommerce-cart table.cart td [type=submit]:not(:disabled), button:not(:disabled){ background: <?php echo get_theme_mod('buttoncheckout-color', "#000000"); ?>; }
         .woocommerce-cart .wc-proceed-to-checkout a.checkout-button{ background: <?php echo get_theme_mod('buttoncheckout-color', "#000000"); ?>; }
         .woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover{ background: <?php echo get_theme_mod('checkouthover-color', "#000000"); ?>; }
-        .woocommerce-page form .form-row .input-text{ background: <?php echo get_theme_mod('card-color', "#000000"); ?>; }
         .select2-container--default .select2-selection--single .select2-selection__rendered{ background: <?php echo get_theme_mod('card-color', "#000000"); ?>; }
-        .woocommerce-page form .form-row select{ background: <?php echo get_theme_mod('card-color', "#000000"); ?>; }
         #order_comments{ background: <?php echo get_theme_mod('card-color', "#000000"); ?>; }
 </style>
     <?php
