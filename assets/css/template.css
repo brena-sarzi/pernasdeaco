@@ -314,7 +314,7 @@ input:focus {
     padding-top: 10px;
 }
 .shiftnav-toggle-main-block{
-    padding: 2px 5px !important;
+    padding: 8px 5px !important;
 }
 .shiftnav-main-toggle-content, .shiftnav-main-toggle-content img{
     width: 80px;
