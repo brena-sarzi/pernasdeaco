@@ -16,26 +16,6 @@
 <body <?php body_class(''); ?>>
 <header>
             
-    <!-- MENU MOBILE RESPONSIVO -->
-        <nav style="width:100%;" class="navbar navbar-dark red lighten-1 mb-4">
-
-        <div class="logo" style="float:rigth;">
-            <?php the_custom_logo(); ?>
-        </div>
-
-        <button style="width: auto;padding: 0px;" class="navbar-toggler second-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent23"
-            aria-controls="navbarSupportedContent23" aria-expanded="false" aria-label="Toggle navigation">
-            <div class="animated-icon2"><span></span><span></span><span></span><span></span></div>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent23">
-            <ul class="navbar-nav mr-auto">
-                <?php wp_nav_menu( array('theme_location' => 'my_main_menu') ); ?>
-            </ul>
-        </div>
-
-        </nav>
-            
     <!-- SLIDE RESPONSIVO -->
         <div class="row">
             <section class="cover col-12">
@@ -43,7 +23,7 @@
                 width="<?php echo get_custom_header()->width;?>" alt="" />
                 </section>  
         </div>
-        
+
     <!-- MENU DESKTOP RESPONSIVO -->
         <section class="top-bar">
             <div class="menu-top">

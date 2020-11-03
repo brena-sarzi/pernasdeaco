@@ -245,8 +245,8 @@
 }  
 
  @media(max-width: 768px){
-    .navbar{
-        display: flex !important;
+    #shiftnav-toggle-main{
+        display: block;
     }
 
     .fa-search:before{
@@ -261,7 +261,7 @@
         -webkit-transition: .3s ease-in-out;
         transition: .3s ease-in-out;
         width: 100%;
-        height: 250px;
+        height: auto;
     }
     .video iframe{
         height: 250px;
@@ -417,8 +417,8 @@
         margin-bottom: 20px;
     }
     .cards{
-        width: 340px;
-        height: 546px;
+        width: 100%;
+        height: auto;
         margin-bottom: 20px;
         color: white !important; 
         padding-right: 20px;
@@ -433,7 +433,7 @@
         width: 100% ;   
     }
     .hover10 img{
-        height: 240px;
+        height: auto;
     }
     .pages .text-right{
         display: none;
