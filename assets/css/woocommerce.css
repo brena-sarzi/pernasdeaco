@@ -653,7 +653,7 @@ table, td, th {
 .woocommerce #payment #place_order, .woocommerce-page #payment #place_order {
     width: 100%;
     font-size: 20px;
-    padding-bottom: 50px;
+	padding-bottom: 50px;
 }
 .woocommerce-checkout #payment div.form-row p{
     padding: 10px 20px ;
