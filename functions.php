@@ -8,27 +8,27 @@ function load_scripts(){
     array( 'jquery' ), '4.4.1', true );
     wp_enqueue_style('bootstrap-css', 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css', 
     array(), '4.4.1', 'all' );
-    wp_enqueue_style('template', get_template_directory_uri() . '/css/template.css', array(), '1.0',
+    wp_enqueue_style('template', get_template_directory_uri() . '/assets/css/template.css', array(), '1.0',
     'all' );
-    wp_enqueue_style( 'header', get_template_directory_uri() . '/css/header.css', array(), '1.0',
+    wp_enqueue_style( 'header', get_template_directory_uri() . '/assets/css/header.css', array(), '1.0',
     'all' );
-    wp_enqueue_style( 'footer', get_template_directory_uri() . '/css/footer.css', array(), '1.0',
+    wp_enqueue_style( 'footer', get_template_directory_uri() . '/assets/css/footer.css', array(), '1.0',
     'all' );
-    wp_enqueue_style( 'menu-mobile', get_template_directory_uri() . '/css/menu-mobile.css', array(), '1.0',
+    wp_enqueue_style( 'menu-mobile', get_template_directory_uri() . '/assets/css/menu-mobile.css', array(), '1.0',
     'all' );
-    wp_enqueue_style( 'blog', get_template_directory_uri() . '/css/blog.css', array(), '1.0',
+    wp_enqueue_style( 'blog', get_template_directory_uri() . '/assets/css/blog.css', array(), '1.0',
     'all' );
-    wp_enqueue_style( 'home', get_template_directory_uri() . '/css/home.css', array(), '1.0',
+    wp_enqueue_style( 'home', get_template_directory_uri() . '/assets/css/home.css', array(), '1.0',
     'all' );
-    wp_enqueue_style( 'login', get_template_directory_uri() . '/css/login.css', array(), '1.0',
+    wp_enqueue_style( 'login', get_template_directory_uri() . '/assets/css/login.css', array(), '1.0',
     'all' );
-    wp_enqueue_style( 'posts', get_template_directory_uri() . '/css/posts.css', array(), '1.0',
+    wp_enqueue_style( 'posts', get_template_directory_uri() . '/assets/css/posts.css', array(), '1.0',
     'all' );
-    wp_enqueue_style( 'woocommerce', get_template_directory_uri() . '/css/woocommerce.css', array(), '1.0',
+    wp_enqueue_style( 'woocommerce', get_template_directory_uri() . '/assets/css/woocommerce.css', array(), '1.0',
     'all' );
-    wp_enqueue_style( 'mobile', get_template_directory_uri() . '/css/mobile.css', array(), '1.0',
+    wp_enqueue_style( 'mobile', get_template_directory_uri() . '/assets/css/mobile.css', array(), '1.0',
     'all' );
-    wp_enqueue_style( 'wordpress', get_template_directory_uri() . '/css/wordpress.css', array(), '1.0',
+    wp_enqueue_style( 'wordpress', get_template_directory_uri() . '/assets/css/wordpress.css', array(), '1.0',
     'all' );
 
 
@@ -327,8 +327,6 @@ function mytheme_customize_css()
         .sidebar{ background: <?php echo get_theme_mod('sidebar-color', "#000000"); ?>; }
         .menu-top{ background: <?php echo get_theme_mod('menu-color', "#000000"); ?>; }
         .social-media-icons{ background: <?php echo get_theme_mod('menu-color', "#000000"); ?>; }
-        .search{ background: <?php echo get_theme_mod('menu-color', "#000000"); ?>; }
-        .search input[type=text]{ background: <?php echo get_theme_mod('menu-color', "#000000"); ?>; }
         .footer { background: <?php echo get_theme_mod('menu-color', "#000000"); ?>; }
         .menu-top ul li:hover{ background: <?php echo get_theme_mod('hover-color', "#000000"); ?>; }
         main{ background: <?php echo get_theme_mod('background-color', "#000000"); ?>; }
@@ -363,3 +361,62 @@ add_filter( 'woocommerce_cart_shipping_method_full_label', 'custom_label', 10, 2
 
 add_filter( 'woocommerce_add_to_cart_fragments', 'woocommerce_header_add_to_cart_fragment' );
 
+//Não trazer resultados ao pesquisar uma página
+if (!is_admin()) {
+    function wpb_search_filter($query) {
+    if ($query->is_search) {
+    $query->set('post_type', 'post');
+    }
+    return $query;
+    }
+    add_filter('pre_get_posts','wpb_search_filter');
+}
+
+// HOOKS
+add_action( 'add_meta_boxes', 'featuredVideo_add_custom_box' );
+add_action( 'save_post', 'featuredVideo_save_postdata' );
+
+// Create metabox
+function featuredVideo_add_custom_box() {
+    add_meta_box(  'featuredVideo_sectionid', 'Featured Video', 'featuredVideo_inner_custom_box', 'post', 'side' );
+}
+
+// Create print box
+function featuredVideo_inner_custom_box( $post ) {
+    wp_nonce_field( plugin_basename( __FILE__ ), 'featuredVideo_noncename' );
+ 
+    // mostre-me a featured do video se existir
+    echo getFeaturedVideo( $post->ID, 260, 120);   
+ 
+    echo '<h4 style="margin: 10px 0 0 0;">URL [YouTube Only]</h4>';
+    echo '<input type="text" id="featuredVideoURL_field" name="featuredVideoURL_field" value="'.get_post_meta($post->ID, 'featuredVideoURL', true).'" style="width: 100%;" />';
+}
+// handle box post
+function featuredVideo_save_postdata( $post_id ) {
+ 
+    // verificar e salvar automaticamente
+    if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) 
+      return;
+ 
+    // verificar autorização
+    if ( !wp_verify_nonce( $_POST['featuredVideo_noncename'], plugin_basename( __FILE__ ) ) )
+      return;
+ 
+    // atualizar metabox
+    update_post_meta( $post_id, 'featuredVideoURL', $_POST['featuredVideoURL_field'] );
+}
+// função auxiliar, exibe o vídeo do YouTube
+// que também pode ser usado para exibir o vídeo do YouTube dentro do seu tema
+function getFeaturedVideo($post_id, $width = 680, $height = 360) {
+    $featuredVideoURL = get_post_meta($post_id, 'featuredVideoURL', true);
+ 
+    preg_match('%(?:youtube\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*[?&]v=)|youtu\.be/)([^"&?/ ]{11})%i', $featuredVideoURL, $youTubeMatch);
+ 
+    if ($youTubeMatch[1])
+        return '<iframe width="'.$width.'" height="'.$height.'" src="http://ww'.
+               'w.youtube.com/embed/'.$youTubeMatch[1].'?rel=0&showinfo=0&cont'.
+               'rols=0&autoplay=0&modestbranding=1" frameborder="0" allowfulls'.
+               'creen ></iframe>';
+    else
+        return null;
+}

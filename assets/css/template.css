@@ -36,9 +36,14 @@ main{
     margin-bottom: 20px;
     height: auto;
 }
-
+#shiftnav-toggle-main .shiftnav-toggle-burger, #shiftnav-toggle-main.shiftnav-toggle-main-entire-bar:before{
+    padding: 12px 20px !important;
+}
 html{
     margin: 0px !important;
+}
+#shiftnav-toggle-main{
+    display: none;
 }
 
 /* title site */
@@ -245,4 +250,68 @@ fieldset {
         width: 250px;
         height: 350px
     }
+}
+#shiftnav-toggle-main .shiftnav-toggle-burger, #shiftnav-toggle-main.shiftnav-toggle-main-entire-bar:before{
+    background: transparent;
+    margin: 0px;
+    border: none;
+}
+#shiftnav-toggle-main .shiftnav-toggle-burger, #shiftnav-toggle-main.shiftnav-toggle-main-entire-bar:after{
+    border: none;
+}
+/* search */
+.buscar{
+    padding-top: 8px;
+}
+.buscar input{
+    border: none !important;
+    color: white !important;
+    background: transparent !important;
+    width: 205px;
+}
+input:focus {
+    outline:none !important;
+}
+.buscar button{
+    background: transparent !important;
+    border: none !important;
+}
+.buscar form{
+    border-bottom: 2px solid #a6523f ;
+    width: 250px;
+}
+.pesquisa img{
+    max-width:200px !important;
+    max-height: 140px !important;
+    float: left;
+    margin-right: 20px;
+}
+.pesquisa iframe{
+    max-width:200px !important;
+    max-height: 140px;
+    float: left;
+    margin-right: 20px; 
+}
+.title-search{
+    padding: 60px 0px;
+    text-align: center;
+    width: 100%;
+}
+.category .post-categories{
+    border: none !important;
+    text-align: left;
+}
+.category .post-categories a{
+    border: none !important;
+    padding: 0px;
+    font-size: 14px;
+}
+.abstract-search{
+    font-size: 14px !important;
+}
+.pesquisa .link-post a{
+    font-size: 14px !important;
+}
+.pesquisa .link-post{
+    padding-top: 10px;
 }

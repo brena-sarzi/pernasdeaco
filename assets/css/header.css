@@ -50,39 +50,3 @@ nav.standard ul li { vertical-align: top; }
     margin: auto;
 }
 
-/* search menu */
-.search {
-    background: #2d3121;
-    height: 50px;
-}
-.search input[type=text]{
-    float: left;
-    width: 200px;
-    margin-top: 10px;
-    color: white;
-    background:#2d3121 ;
-    border: 2px solid #a6523f;
-    border-radius: 0px;
-}
-.search-submit{
-     color: white;
-     height: 20px;
-     width: 25px;
-     background: #2d3121;
-     border: none;
-     font-size: 20px;
-}
-
-.fa-search:before{
-     color: white;
-     font-size: 25px;
-     padding: 10px;
-     margin-top: 10px;
-     height: 100%;
-}
-.assistive-text{
-    margin-top: 10px;
-}
-.submit{
-    display: none;
-}
