@@ -283,7 +283,7 @@
     }
     .search input[type=text]:focus {
         padding: 15px 20px 15px 60px;
-        width: 40%;
+        width: 35%;
         border: none;
         box-shadow: none;
     }
