@@ -1,0 +1,20 @@
+[08-Jul-2020 23:48:01 America/Fortaleza] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1654 but version 1650 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[08-Jul-2020 23:48:01 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home1/expan267/public_html/wp-content/themes/pernasdeaco/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home1/expan267/public_html/wp-content/themes/pernasdeaco/index.php on line 1
+[09-Jul-2020 00:06:51 America/Fortaleza] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1654 but version 1650 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[09-Jul-2020 00:06:51 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home1/expan267/public_html/wp-content/themes/pernasdeaco/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home1/expan267/public_html/wp-content/themes/pernasdeaco/index.php on line 1
+[09-Jul-2020 10:03:50 America/Fortaleza] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1654 but version 1650 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[09-Jul-2020 10:03:50 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home1/expan267/public_html/wp-content/themes/pernasdeaco/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home1/expan267/public_html/wp-content/themes/pernasdeaco/index.php on line 1
+[09-Jul-2020 11:22:23 America/Fortaleza] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1654 but version 1650 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[09-Jul-2020 11:22:23 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home1/expan267/public_html/wp-content/themes/pernasdeaco/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home1/expan267/public_html/wp-content/themes/pernasdeaco/index.php on line 1

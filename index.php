@@ -55,9 +55,10 @@
         </section>
     
         <!-- MAPA ACIMA FOOTER -->
-        <div class="map">
+	<div class="map" >
+		<h6 style="color:#fff; font-size:18px;">Onde estamos</h6>
             <div class="row">
-            <?php
+	    <?php
             $key = get_theme_mod( 'set_map_apikey' );
             $address = urlencode( get_theme_mod( 'set_map_address' ) );
             ?>

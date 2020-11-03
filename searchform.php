@@ -1,4 +1,3 @@
-
 <?php
 /**
  * Template for displaying search forms in Twenty Eleven

@@ -22,12 +22,21 @@
         <div class="logo" style="float:rigth;">
             <?php the_custom_logo(); ?>
         </div>
-
+		<!--Estou adicionando logo expandindo mundos - Por luciano-->
+		<a href="https://www.expandindomundos.com.br/">
+			<img src="http://expandindomundos.com.br/wp-content/uploads/2020/10/Expandindo-Mundos-branco-paleta-1-red-2.png" class="logoEM-mobile" alt="Expandindo Mundos">
+		</a>
+		<!--Termina logo Luciano-->
+		<!--Estou adicionando carrinho no menu- po luciano-->
+		<a href="https://expandindomundos.com.br/index.php/carrinho/">
+			<i class="fas fa-shopping-cart carrinho-menu-mobile" aria-hidden="true"></i>
+		</a>
+		<!--Termina carrinho Luciano-->
         <button style="width: auto;padding: 0px;" class="navbar-toggler second-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent23"
             aria-controls="navbarSupportedContent23" aria-expanded="false" aria-label="Toggle navigation">
             <div class="animated-icon2"><span></span><span></span><span></span><span></span></div>
         </button>
-
+		
         <div class="collapse navbar-collapse" id="navbarSupportedContent23">
             <ul class="navbar-nav mr-auto">
                 <?php wp_nav_menu( array('theme_location' => 'my_main_menu') ); ?>
