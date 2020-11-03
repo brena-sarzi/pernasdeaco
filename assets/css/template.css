@@ -36,9 +36,7 @@ main{
     margin-bottom: 20px;
     height: auto;
 }
-#shiftnav-toggle-main .shiftnav-toggle-burger, #shiftnav-toggle-main.shiftnav-toggle-main-entire-bar:before{
-    padding: 12px 20px !important;
-}
+
 html{
     margin: 0px !important;
 }
