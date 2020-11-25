@@ -2,11 +2,6 @@
 /**
  * Register Custom Navigation Walker
  */
-function register_navwalker(){
-	require_once get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php';
-}
-add_action( 'after_setup_theme', 'register_navwalker' );
-
 require get_template_directory() . '/inc/customizer.php';
 
 //Carregando scripts e folhas de estilos
@@ -38,6 +33,9 @@ function load_scripts(){
     wp_enqueue_style( 'wordpress', get_template_directory_uri() . '/assets/css/wordpress.css', array(), '1.0',
     'all' );
 
+    if ( ! is_admin() && ( ! defined( 'DOING_AJAX' ) || ! DOING_AJAX ) ) {
+        require_once get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php';
+    }
 
 }
 
