@@ -16,56 +16,33 @@
 <body>
 <header>
 
-    <!-- MENU MOBILE RESPONSIVO -->
-        <nav style="width:100%; display:none;" class="navbar navbar-dark red lighten-1 mb-4">
 
-        <div class="logo" style="float:rigth;">
-            <?php the_custom_logo(); ?>
-        </div>
-		<!--Estou adicionando logo expandindo mundos - Por luciano-->
-		<a href="https://www.expandindomundos.com.br/">
-			<img src="http://expandindomundos.com.br/wp-content/uploads/2020/10/Expandindo-Mundos-branco-paleta-1-red-2.png" class="logoEM-mobile" alt="Expandindo Mundos">
-		</a>
-		<!--Termina logo Luciano-->
-		<!--Estou adicionando carrinho no menu- po luciano-->
-		<a href="https://expandindomundos.com.br/index.php/carrinho/">
-			<i class="fas fa-shopping-cart carrinho-menu-mobile" aria-hidden="true"></i>
-		</a>
-		<!--Termina carrinho Luciano-->
-        <button style="width: auto;padding: 0px;" class="navbar-toggler second-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent23"
-            aria-controls="navbarSupportedContent23" aria-expanded="false" aria-label="Toggle navigation">
-            <div class="animated-icon2"><span></span><span></span><span></span><span></span></div>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent23">
-            <ul class="navbar-nav mr-auto">
-                <?php wp_nav_menu( array('theme_location' => 'my_main_menu') ); ?>
-            </ul>
+<div class="menu-mobile">
+    <div class="row">
+        <a href="<?php echo get_home_url() ?>">
+        <div class="topo-topo col-12">
+        </a>
+            <?php get_search_form(); ?>
         </div>
 
-        </nav>
+    </div>
 
-    <!-- SLIDE RESPONSIVO -->
-        <div class="row">
-            <section class="cover col-12">
-                <img src="<?php header_image(); ?>" height="<?php echo get_custom_header('full')->height;?>"
-                width="<?php echo get_custom_header()->width;?>" alt="" />
-                </section>  
-        </div>
+</div>
 
-        <div class="row">
-            <div class="menu-mobile col-12">
+<!-- SLIDE RESPONSIVO -->
+<div class="row">
+    <section class="cover col-12">
+        <img src="<?php header_image(); ?>" height="<?php echo get_custom_header('full')->height;?>"
+        width="<?php echo get_custom_header()->width;?>" alt="" />
+        </section>  
+</div>
 
-                    <?php get_search_form(); ?>
-                
-            </div>
-        </div>
 
 <div class="top-bar">
         <div class="container">
             <div class="row">
             
-                <nav class="navbar navbar-expand-sm col-xl-7 col-lg-8 col-9" style="padding: 0px;">  
+                <nav class="navbar navbar-expand-sm col-xl-7 col-lg-7 col-md-9 col-9" style="padding: 0px;">  
                     <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -85,7 +62,7 @@
 
                 </nav>
 
-                <section class="social-media-icons col-xl-2 col-sm-3  ">
+                <section class="social-media-icons col-xl-2 col-lg-2 col-md-3 col-sm-3   ">
                     <div class="icons">
                         <a class="header" href="https://www.facebook.com/pernasdeacocicloturismo/" target="_blank">
                             <i class="fab fa-facebook-square"></i>

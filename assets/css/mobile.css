@@ -57,6 +57,9 @@
     .menu-top{
         font-size: 14px;
     }
+    .buscar{
+        display: none;
+    }
     .cards{
         width:50%;
         height: auto;
@@ -239,6 +242,9 @@
 }  
 
  @media(max-width: 768px){
+     .top-bar{
+         display: none;
+     }
     #shiftnav-toggle-main{
         display: block;
     }
