@@ -17,7 +17,7 @@
 <header>
 
     <!-- MENU MOBILE RESPONSIVO -->
-        <nav style="width:100%;" class="navbar navbar-dark red lighten-1 mb-4">
+        <nav style="width:100%; display:none;" class="navbar navbar-dark red lighten-1 mb-4">
 
         <div class="logo" style="float:rigth;">
             <?php the_custom_logo(); ?>
@@ -61,38 +61,51 @@
             </div>
         </div>
 
-    <!-- MENU DESKTOP RESPONSIVO -->
-        <section class="top-bar">
-            <div class="menu-top">
-                <div class="container">
-                    <div class="row">
-                        <nav class="menu-top col-xl-7 col-lg-8 col-9">
-                            <?php wp_nav_menu( array('theme_location' => 'my_main_menu') ); ?>
-                        </nav>
+<div class="top-bar">
+        <div class="container">
+            <div class="row">
+            
+                <nav class="navbar navbar-expand-sm navbar-light col-xl-7 col-lg-8 col-9">  
+                    <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                            <!-- SOCIAL ICONS -->
-                            <section class="social-media-icons col-xl-2 col-sm-3  ">
-                                <div class="icons">
-                                    <a class="header" href="https://www.facebook.com/pernasdeacocicloturismo/" target="_blank">
-                                        <i class="fab fa-facebook-square"></i>
-                                    </a>
+                    <?php
+                        wp_nav_menu( array(
+                            'theme_location'    => 'menu',
+                            'depth'             => 2,
+                            'container'         => 'div',
+                            'container_class'   => 'collapse navbar-collapse',
+                            'container_id'      => 'bs-example-navbar-collapse-1',
+                            'menu_class'        => 'nav navbar-nav',
+                            'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+                            'walker'            => new WP_Bootstrap_Navwalker(),
+                        ) );
+                    ?>
 
-                                    <a class="header" href="https://www.instagram.com/pernas_de_aco/" target="_blank">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
+                </nav>
 
-                                    <a class="header" href="https://www.youtube.com/channel/UCR4_IdacBcPapezoASfjKoQ" target="_blank">
-                                        <i class="fab fa-youtube"></i>
-                                    </a>
-                                </div>    
-                            </section>
+                <section class="social-media-icons col-xl-2 col-sm-3  ">
+                    <div class="icons">
+                        <a class="header" href="https://www.facebook.com/pernasdeacocicloturismo/" target="_blank">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
 
-                        <!-- BARRA DE PESQUISA MENU DESKTOP -->
-                            <div class="search-menu col-xl-3 col-sm-2 ">
-                                <?php get_search_form() ?>
-                            </div>
-                    </div>
+                        <a class="header" href="https://www.instagram.com/pernas_de_aco/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+
+                        <a class="header" href="https://www.youtube.com/channel/UCR4_IdacBcPapezoASfjKoQ" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>    
+                </section>
+
+                <div class="buscar col-xl-3 col-lg-3">
+                    <?php get_search_form(); ?>
                 </div>
+
             </div>
-        </section>                 
-</header> 
+        </div>
+    </div>
+    </header> 
