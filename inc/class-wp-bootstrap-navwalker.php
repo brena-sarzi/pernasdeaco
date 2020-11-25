@@ -1,3 +1,4 @@
+
 <?php
 /**
  * WP Bootstrap Navwalker
@@ -210,26 +211,14 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) :
 				$atts['rel'] = ! empty( $item->xfn ) ? $item->xfn : '';
 			}
 
-			// If the item has_children add atts to <a>.
-			if ( $this->has_children && 0 === $depth ) {
-				$atts['href']          = '#';
+			if ( $args->has_children && $depth === 0 ) {
+				$atts['href']          = ! empty( $item->url ) ? $item->url : '';
 				$atts['data-toggle']   = 'dropdown';
-				$atts['aria-haspopup'] = 'true';
-				$atts['aria-expanded'] = 'false';
-				$atts['class']         = 'dropdown-toggle nav-link';
-				$atts['id']            = 'menu-item-dropdown-' . $item->ID;
-			} else {
-				if ( true === $this->has_schema ) {
-					$atts['itemprop'] = 'url';
-				}
-
-				$atts['href'] = ! empty( $item->url ) ? $item->url : '#';
-				// For items in dropdowns use .dropdown-item instead of .nav-link.
-				if ( $depth > 0 ) {
-					$atts['class'] = 'dropdown-item';
-				} else {
-					$atts['class'] = 'nav-link';
-				}
+				$atts['class']         = 'dropdown-toggle';
+				$atts['aria-haspopup']    = 'true';
+				//$atts['data-toggle']   = 'dropdown'; <- gets added in jQuery file on < 768 window
+			  } else {
+				$atts['href'] = ! empty( $item->url ) ? $item->url : '';
 			}
 
 			$atts['aria-current'] = $item->current ? 'page' : '';

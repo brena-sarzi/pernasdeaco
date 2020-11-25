@@ -65,15 +65,15 @@
         <div class="container">
             <div class="row">
             
-                <nav class="navbar navbar-expand-sm navbar-light col-xl-7 col-lg-8 col-9">  
+                <nav class="navbar navbar-expand-sm col-xl-7 col-lg-8 col-9" style="padding: 0px;">  
                     <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
                     <?php
                         wp_nav_menu( array(
-                            'theme_location'    => 'menu',
-                            'depth'             => 2,
+                            'theme_location'    => 'main-menu',
+                            'depth'             => 4,
                             'container'         => 'div',
                             'container_class'   => 'collapse navbar-collapse',
                             'container_id'      => 'bs-example-navbar-collapse-1',
@@ -101,7 +101,7 @@
                     </div>    
                 </section>
 
-                <div class="buscar col-xl-3 col-lg-3">
+                <div class="buscar-form col-xl-3 col-lg-3">
                     <?php get_search_form(); ?>
                 </div>
 

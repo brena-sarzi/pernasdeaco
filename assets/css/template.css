@@ -257,19 +257,76 @@ fieldset {
 #shiftnav-toggle-main .shiftnav-toggle-burger, #shiftnav-toggle-main.shiftnav-toggle-main-entire-bar:after{
     border: none;
 }
+
 /* search */
+.row.banner-search{
+    content:url('../img/banner/pesquisa.png');
+    margin:0px 0px 50px 0px; 
+    height: 241px;
+    width: 100%;
+    object-fit: cover !important;
+    object-position: 50% 0% !important;
+    position: absolute;
+    z-index: -1;
+}
+
+.banner-topo-search{
+    height: 241px;
+}
+
+
+.titles-search h2{
+    color:white;
+    font-size:50px;
+    font-weight:600;
+    font-style:italic;
+    padding: 0px 10px;
+}
+
+.titles-search h6{
+    color:white;
+    font-size:26px;
+    font-weight:normal;
+    padding-left:10px;
+    margin: 0px;
+    padding: 0px 15px;
+    margin-top: 60px;
+}
 
 .buscar input{
     border: none !important;
-    color: white !important;
+    color: white;
+    width: 170px;
     background: transparent !important;
-    width: 205px;
 }
-input[type="text"]:focus {
-    outline:none !important;
-    background: transparent;
-    border: none;
-    outline-width: 0;
+input:focus {
+    outline:none;
+}
+.buscar form{
+    border-bottom: 2px solid #b9513c ;
+    width: 250px;
+}
+.buscar{
+    top: -10px;
+    position: absolute;
+}
+.buscar button{
+    background: transparent !important;
+}
+.pesquisa img{
+    max-width:100% !important;
+    max-height: 140px;
+    float: left;
+    margin-right: 20px;
+}
+.pesquisa iframe{
+    width:100%;
+    height: auto;
+    float: left;
+    margin-right: 20px; 
+}
+.pesquisa{
+    margin-top: 40px;
 }
 .banner-topo-search{
     margin-top: 50px;
@@ -277,16 +334,6 @@ input[type="text"]:focus {
 .search-content{
     margin: 50px 0px;
 
-}
-
-.buscar button{
-    background: transparent !important;
-    border: none !important;
-}
-.buscar form{
-    border-bottom: 2px solid #a6523f ;
-    width: 265px;
-    height: 45px;
 }
 
 .pesquisa img{

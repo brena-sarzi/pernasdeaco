@@ -10,17 +10,6 @@ dl, ol, ul{
     padding: 10px;
     display: inline;
 }
-.navbar-inner { overflow: visible !important; }
-.menu ul { display: none; position: absolute; margin-left: 0px; padding:0px ; top: 35px; border-radius: 0px; left: -1px;}
-.menu ul li, .menu ul li a { display: block !important; }
-.menu-item-has-children li:hover > ul { display: block !important; }
-.menu-item-has-children:hover ul { display: block !important; }
-nav.standard ul li ul li a { line-height: 100px !important; margin-top: 10px !important; }
-nav.standard ul li { vertical-align: top; }
-#fullscreen-menu .menu-inner nav ul ul { position: relative; top: 10px; }
-.dropdown-menu{
-    background: #2d3121;
-}
 
 /* icons menu */
 .social-media-icons {
@@ -49,4 +38,56 @@ nav.standard ul li { vertical-align: top; }
     height: auto;
     margin: auto;
 }
+#menu-menu{
+    margin: 0px;
+}
+.navbar-nav{
+ text-align: center;
+}
 
+.navbar-nav a{
+    color: white;
+}
+
+ul.dropdown-menu li > ul.dropdown-menu{
+    left: 100%;
+    top: 0;
+    margin: 0px;
+    padding: 10px 5px !important;
+    background: #2d3027;
+    text-align: left;
+}
+
+ul.dropdown-menu li:hover > ul.dropdown-menu, ul.dropdown-menu li:focus > ul.dropdown-menu{
+    display: block
+} 
+    
+.dropdown-menu{
+    padding: 0px;
+    top: 35px;
+    padding: 10px 0px;
+    width: max-content;
+    background: #282a22;
+
+}
+.dropdown-menu a{
+    padding: 0px 10px!important;
+}
+.dropdown-menu li{
+    padding: 5px 0px;
+}
+.dropdown-menu a:hover{
+    background: #282a22;
+    color: rgb(230, 230, 230);
+}
+.top-bar{
+    background: #2d3027;
+}
+/*Dropdown Css*/
+.dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+ 
+.collapse.navbar-collapse a{
+    padding: 20px 10px ;
+}
