@@ -1,8 +1,14 @@
+
 <?php get_header(); ?>
-<div class="row bannerPesquisa">
-        <div class="container">
-            <div class="row">
-                <div class="title-search">
+<div class="banner-topo-search">
+    <div class="row bannerPesquisa">
+        <div class="container"></div>
+    </div>
+
+    <div class="row">   
+        <div class="titles-mobile-search col-12">
+            <div class="container">
+                <div class="titles-search">
                     <h2>
                         RESULTADOS DA PESQUISA
                     </h2>
@@ -13,7 +19,7 @@
 </div>
     <div class="container">
         <div class="row">
-            <div class="search col-12">
+            <div class="search-content col-12">
                 <?php 
                     // Enquanto houver posts, mostre-os pra gente 
                     while(have_posts() ): the_post(); 

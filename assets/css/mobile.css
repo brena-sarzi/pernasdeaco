@@ -264,7 +264,15 @@
         color: #fff;
 
     }
-
+    .pesquisa img{
+        max-width: 100% !important;
+        max-height: 100% !important;
+        height: auto;
+    }
+    .pesquisa iframe{
+        max-width: 500px!important;
+        max-height: 300px !important;
+    }
     .menu-mobile{
         display: block;
         background: #1D1D20;

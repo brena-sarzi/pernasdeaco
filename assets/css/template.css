@@ -258,26 +258,37 @@ fieldset {
     border: none;
 }
 /* search */
-.buscar{
-    padding-top: 8px;
-}
+
 .buscar input{
     border: none !important;
     color: white !important;
     background: transparent !important;
     width: 205px;
 }
-input:focus {
+input[type="text"]:focus {
     outline:none !important;
+    background: transparent;
+    border: none;
+    outline-width: 0;
 }
+.banner-topo-search{
+    margin-top: 50px;
+}
+.search-content{
+    margin: 50px 0px;
+
+}
+
 .buscar button{
     background: transparent !important;
     border: none !important;
 }
 .buscar form{
     border-bottom: 2px solid #a6523f ;
-    width: 250px;
+    width: 265px;
+    height: 45px;
 }
+
 .pesquisa img{
     max-width:200px !important;
     max-height: 140px !important;
