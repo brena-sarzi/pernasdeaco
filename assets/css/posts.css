@@ -98,9 +98,6 @@
     font-size: 18px;
 }
 
-input[type=checkbox]:checked::before{
-    width: 40px;
-}
 #wp-comment-cookies-consent{
     text-align: center;
     padding: 20px;

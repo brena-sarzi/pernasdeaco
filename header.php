@@ -26,19 +26,17 @@
         </div>
 
     </div>
-
 </div>
 
 <!-- SLIDE RESPONSIVO -->
 <div class="row">
     <section class="cover col-12">
-        <img src="<?php header_image(); ?>" height="<?php echo get_custom_header('full')->height;?>"
-        width="<?php echo get_custom_header()->width;?>" alt="" />
-        </section>  
+        <img src="<?php header_image(); ?>" height="<?php echo get_custom_header('full')->height;?>" width="<?php echo get_custom_header()->width;?>" alt="" />
+    </section>  
 </div>
 
 
-<div class="top-bar">
+    <div class="top-bar">
         <div class="container">
             <div class="row">
             
@@ -85,4 +83,4 @@
             </div>
         </div>
     </div>
-    </header> 
+</header> 

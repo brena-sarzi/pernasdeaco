@@ -25,7 +25,7 @@
 
 			<?php do_action( 'woocommerce_checkout_before_customer_details' ); ?>
 
-			<div class="formulario col-xl-6 col-12" id="customer_details">
+			<div class="formulario" id="customer_details">
 				
 				<?php do_action( 'woocommerce_checkout_billing' ); ?>
 
@@ -42,7 +42,7 @@
 
 			<?php endif; ?>
 
-			<div class="pagamento col-xl-6 col-md-12">
+			<div class="pagamento">
 				<?php do_action( 'woocommerce_checkout_before_order_review_heading' ); ?>
 			
 				<h3 id="order_review_heading"><?php esc_html_e( 'Your order', 'woocommerce' ); ?></h3>

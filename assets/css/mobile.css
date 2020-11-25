@@ -472,10 +472,7 @@
         padding-top: 20px;
         margin-top: 0px;
     }
-    /* comment area */
-    input[type=checkbox]:checked::before{
-        width: 30px;
-    }
+  
     input#wp-comment-cookies-consent {
         display: block ;
         float: left;

@@ -387,15 +387,11 @@ input:focus {
 .buscar{
     display: block;
 }
-.formulario input{
-    width: 100%;
-}
+
 .woocommerce-page form .form-row .input-text{
     width: 100%;
 }
-.checkout label{
-    margin-top: 15px;
-}
+
 .checkout{
     margin:40px 0px ;
 }
@@ -408,4 +404,25 @@ input:focus {
 }
 #pagseguro-card-installments{
     height: 35px;
+}
+.checkout label{
+    width: 100%;
+}
+.woocommerce-input-wrapper{
+    width: 100%;
+}
+.woocommerce-input-wrapper input{
+    width: 100%;
+    background: transparent !important;
+    border: 2px solid #a6523f !important;
+    border-radius: 0px !important;
+    color: white !important;
+}
+.woocommerce-password-hint{
+    display: none;
+}
+.formulario .order-comments{
+    display: none;
+}.woocommerce-account-fields{
+    padding-bottom: 30px;
 }

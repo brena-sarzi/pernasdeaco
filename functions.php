@@ -425,3 +425,44 @@ function getFeaturedVideo($post_id, $width = 680, $height = 360) {
     else
         return null;
 }
+add_filter('woocommerce_checkout_fields', 'custom_override_checkout_fields');
+
+function custom_override_checkout_fields($fields)
+ {
+    unset($fields['billing']['billing_address_2']);
+
+    $fields['billing']['billing_company']['placeholder'] = 'Nome da Empresa';
+    $fields['billing']['billing_company']['label'] = 'Empresa';
+
+    $fields['billing']['billing_first_name']['placeholder'] = 'Nome'; 
+    $fields['billing']['billing_first_name']['label'] = 'Nome'; 
+    $fields['shipping']['shipping_first_name']['placeholder'] = 'Nome';
+
+    $fields['billing']['billing_last_name']['placeholder'] = 'Sobrenome';
+    $fields['billing']['billing_last_name']['label'] = 'Sobrenome';
+    $fields['shipping']['shipping_last_name']['placeholder'] = 'Sobrenome';
+    
+    $fields['billing']['billing_country']['label'] = 'País'; 
+
+    $fields['billing']['billing_email']['placeholder'] = 'Email';
+    $fields['billing']['billing_email']['label'] = 'Email';
+    $fields['shipping']['billing_email']['placeholder'] = 'Email';
+
+
+
+    $fields['billing']['billing_phone']['placeholder'] = 'Telefone';
+    $fields['billing']['billing_phone']['label'] = 'Telefone';
+    $fields['shipping']['billing_phone']['placeholder'] = 'Telefone';
+
+
+    $fields['billing']['billing_city']['placeholder'] = 'Cidade';
+    $fields['billing']['billing_city']['label'] = 'Cidade';
+    $fields['shipping']['billing_city']['placeholder'] = 'Cidade';
+
+
+    $fields['billing']['billing_postcode']['placeholder'] = 'Código Postal';
+    $fields['billing']['billing_postcode']['label'] = 'Código Postal';
+    $fields['shipping']['billing_postcode']['placeholder'] = 'Código Postal';
+
+ return $fields;
+ }
