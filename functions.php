@@ -57,11 +57,8 @@ add_action( 'wp_enqueue_scripts', 'load_scripts' );
         add_theme_support('custom-header', $args );
         add_theme_support('post-thumbnails');
         add_theme_support('custom-store', $args);
-    
-        
-    }
-
-    
+     
+}
 
 add_action('after_setup_theme','wpsite_config',0);
 add_action('widgets_init','wpsite_sidebars');
@@ -128,8 +125,6 @@ function wpsite_sidebars(){
         )
     );
 }
-
-
 
 function videoThumbSize($embed_size){
     if ( is_home() == 1 ) {
@@ -351,7 +346,7 @@ function mytheme_customize_css()
         .select2-container--default .select2-selection--single .select2-selection__rendered{ background: <?php echo get_theme_mod('card-color', "#000000"); ?>; }
         #order_comments{ background: <?php echo get_theme_mod('card-color', "#000000"); ?>; }
 </style>
-    <?php
+<?php
 }
 add_action( 'wp_head', 'mytheme_customize_css');
 function custom_label( $label, $method ) {

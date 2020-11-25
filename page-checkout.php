@@ -1,7 +1,7 @@
 <?php get_header();?>
 <div class="container">
 	<div class="row">
-		<div class="checkout">
+		<div class="checkout col-12">
 	<?php
 	if ( ! defined( 'ABSPATH' ) ) {
 		exit;
