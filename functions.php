@@ -459,4 +459,7 @@ function custom_override_checkout_fields($fields)
 
  return $fields;
  }
+
  add_filter( 'woocommerce_cart_needs_shipping_address', '__return_false');
+
+

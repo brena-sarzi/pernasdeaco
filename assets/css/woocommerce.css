@@ -367,10 +367,6 @@ del .woocommerce-Price-amount{
     padding-top:5px ;
 }
 
-.woocommerce-cart-form{
-    margin-top: 40px;
- 
-}
 
 .woocommerce-message{
     background:transparent ;
@@ -482,7 +478,6 @@ table, td, th {
 }
 
 .woocommerce-cart table.cart td [type=submit]:not(:disabled), button:not(:disabled){
-    margin-top: 10px;
     color: white;
     font-size: 16px;
     padding: 5px 10px;
