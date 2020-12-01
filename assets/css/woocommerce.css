@@ -625,6 +625,9 @@ table, td, th {
 #pagseguro-payment-methods label{
     color: white !important;
 }
+#pagseguro-bank-transfer-form label{
+    color: white !important;
+}
 button#place_order{
     width: 100%;
     border-radius: none;
