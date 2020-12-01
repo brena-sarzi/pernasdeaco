@@ -469,10 +469,6 @@ table, td, th {
     margin-bottom: 10px;
 }
 
-.woocommerce table.shop_table_responsive tr td, .woocommerce-page table.shop_table_responsive tr td{
-    display: table-cell;
-}
-
 .woocommerce-cart table.cart input{
     margin-top: 10px;
     background:#242021 ;
@@ -580,11 +576,6 @@ table, td, th {
     width: 100%;
     height: 42px;
     margin-bottom: 10px;
-}
-
-.woocommerce form .form-row label, .woocommerce-page form .form-row label{
-    float: none;
-    width: 100%;
 }
 
 .woocommerce-input-wrapper{
