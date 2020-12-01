@@ -242,19 +242,10 @@
 }  
 
  @media(max-width: 768px){
-    input[type=radio]:checked:before{
-        margin: -.1875rem 0 0 -.25rem !important;
-        height: 1.3125rem !important;
-        width: 1.3125rem !important;
-    }
-    } 
-    input[type=checkbox], input[type=radio]{
-        height: 16px !important;
-        width: 0 !important;
-    }
+
     .top-bar{
-         display: none;
-     }
+        display: none;
+    }
     #shiftnav-toggle-main{
         display: block;
     }
