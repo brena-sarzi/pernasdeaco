@@ -402,9 +402,7 @@ input:focus {
 .pagseguro-credit-card-form label{
     font-size: 12px;
 }
-#pagseguro-card-installments{
-    height: 35px;
-}
+
 .checkout label{
     width: 100%;
 }

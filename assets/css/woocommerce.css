@@ -622,15 +622,20 @@ table, td, th {
     margin-top: 20px;
 
 }
+#pagseguro-payment-methods label{
+    color: white !important;
+}
+button#place_order{
+    width: 100%;
+    border-radius: none;
+    padding: 0px !important;
+}
 .woocommerce-checkout #payment ul.payment_methods{
     background: #282a2e ;
-    padding: 10px 20px 10px 10px;
- }
+}
 .woocommerce-checkout #payment ul.payment_methods li{
-    background: #282a2e;
     color: white;
     border: none;
-    text-align: center;
 }
 .woocommerce-info::before{
     color: #a6523f;
