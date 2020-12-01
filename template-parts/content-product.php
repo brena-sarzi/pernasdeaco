@@ -1,58 +1,31 @@
 <?php
+    
+    $url = $_GET['product_cat'];
+   
+    $args = array(
+        'post_type'      => 'product',
+        'posts_per_page' => 6,
+        'product_cat' => $url,
+        'orderby' => 'title', 
+        'order' => 'ASC',
+    );
+    
+    $loop = new WP_Query( $args );
 
-defined( 'ABSPATH' ) || exit;
+    while ( $loop->have_posts() ) : $loop->the_post();
+    
+    $thumbnail = get_the_post_thumbnail($post->ID);
 
-global $product;
+    global $product;
 
-// Ensure visibility.
-if ( empty( $product ) || ! $product->is_visible() ) {
-	return;
-}
+        echo '<div class="produtos-categoria col-xl-4 col-md-4 col-sm-6 col-12">';
+            echo '<a href="'.get_permalink().'">';
+            echo $thumbnail; 
+            echo '<h2>' . get_the_title() . '</h2>';
+            echo '</a>';
+        echo '</div>';
+
+    endwhile;
+    wp_reset_query(); 
+
 ?>
-
-<li <?php wc_product_class( '', $product ); ?>>
-
-	<?php
-	/**
-	 * Hook: woocommerce_before_shop_loop_item.
-	 *
-	 * @hooked woocommerce_template_loop_product_link_open - 10
-	 */
-	do_action( 'woocommerce_before_shop_loop_item' );
-?>
-
-<?php
-	/**
-	 * Hook: woocommerce_before_shop_loop_item_title.
-	 *
-	 * @hooked woocommerce_show_product_loop_sale_flash - 10
-	 * @hooked woocommerce_template_loop_product_thumbnail - 10
-	 */
-	do_action( 'woocommerce_before_shop_loop_item_title' );
-	?>
-
-<?php
-	/**
-	 * Hook: woocommerce_shop_loop_item_title.
-	 *
-	 * @hooked woocommerce_template_loop_product_title - 10
-	 */
-	do_action( 'woocommerce_shop_loop_item_title' );
-	?>
-
-			
-<?php
-	/**
-	 * Hook: woocommerce_after_shop_loop_item_title.
-	 *
-	 * @hooked woocommerce_template_loop_rating - 5
-	 * @hooked woocommerce_template_loop_price - 10
-	 */
-	do_action( 'woocommerce_after_shop_loop_item_title' );
-?>
-
-
-<?php do_action( 'woocommerce_after_shop_loop_item' ); ?>
-
-
-</li>

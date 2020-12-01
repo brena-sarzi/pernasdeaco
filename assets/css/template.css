@@ -421,3 +421,15 @@ input:focus {
 }.woocommerce-account-fields{
     padding-bottom: 30px;
 }
+.imagens img{
+    width: 100%;
+    height: auto;
+}
+img.img-gallery{
+    width: 90px !important;
+    height: auto;
+    margin: 20px 20px 20px 0px;
+}
+.woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary{
+    width: 100% !important;
+}

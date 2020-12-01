@@ -147,6 +147,7 @@ section.related.products h2{ color: white;width: 100%; }
     margin-left: 10px; 
     margin-right: 10px; 
     float: none; 
+    display: inline;
 }
 
 
@@ -577,7 +578,14 @@ table, td, th {
     height: 42px;
     margin-bottom: 10px;
 }
-
+.produtos-categoria{
+    float: left;
+    height: 315px !important;
+    margin-bottom: 20px;
+}
+.produtos-categoria h2{
+    font-size: 16px !important;
+}
 
 .woocommerce-input-wrapper{
     height: 50px;
