@@ -1,7 +1,7 @@
 <?php get_header();?>
 
 	<div class="container">
-		<div class="row col-12" style="color:white;">
+		<div class="row col-12">
 
 		<?php while (have_posts()) : the_post(); ?>
 

@@ -388,14 +388,6 @@ del .woocommerce-Price-amount{
 .woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
     width: 100%;
 }
-.woocommerce ul#shipping_method li input{
-    width: 20px;
-    height: 20px;
-}
-
-.woocommerce ul#shipping_method li input {
-    margin-top: 5px;
-}
 #your-profile label+a, label {
     vertical-align: initial;
 }
