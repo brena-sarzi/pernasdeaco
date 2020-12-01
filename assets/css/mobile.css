@@ -574,7 +574,7 @@
     }
     .hover10 img {
         width: 100%;
-        height: 200px;
+        height: auto;
     }
     .woocommerce .quantity .qty{
         width: 40px;
