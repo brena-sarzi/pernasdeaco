@@ -244,10 +244,12 @@
  @media(max-width: 768px){
     input[type=radio]:checked:before{
         margin:2.5px !important;
+        width: auto;
+        height: auto;
     } 
     input[type=checkbox], input[type=radio]{
-        height: auto;
-        width: auto;
+        height: 16px !important;
+        width: 0 !important;
     }
     .top-bar{
          display: none;
