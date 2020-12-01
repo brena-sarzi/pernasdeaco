@@ -244,8 +244,8 @@
  @media(max-width: 768px){
     input[type=radio]:checked:before{
         margin:2.5px !important;
-        width: auto;
-        height: auto;
+        width: auto !important;
+        height: auto !important;
     } 
     input[type=checkbox], input[type=radio]{
         height: 16px !important;
